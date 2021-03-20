@@ -1,0 +1,21 @@
+@use '../abstracts' as *
+/* Links */
+a
+  color: $gen11
+  text-decoration: none
+  transition: color $base-duration $base-timing
+  font-family: $font-stack-lucida-grande
+
+  &:visited
+    background-color: $gen14
+    color: $visited
+    text-decoration: overline
+    font-family: $font-stack-garamond
+
+  &:hover
+    color: $gen12
+    text-decoration: underline
+
+  &:focus, :active
+    color: $gold
+    text-shadow: 1px 1px 3px black

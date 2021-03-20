@@ -1,0 +1,647 @@
+/**
+ * /* Config
+ *
+ * @format
+ */
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: MerriweatherSans;
+  src: url("../fonts/MerriweatherSans-VariableFont_wght.ttf");
+  src-format: "tff supports variations";
+  src: url("../fonts/MerriweatherSans-VariableFont_wght.ttf");
+  src-format: "tff-variations";
+  font-weight: 300 800;
+  font-optical-sizing: auto;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  background-color: #FFF8DC;
+}
+
+/* Elements */
+p {
+  padding-bottom: 3px;
+  font-size: 1.2rem;
+}
+
+mark {
+  background-color: #ef9a9a;
+  font-size: 1.2rem;
+  padding: 0.25rem 1rem;
+}
+
+/* Links */
+a {
+  color: #080b4a;
+  text-decoration: none;
+  transition: color 150ms ease;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif;
+}
+a:visited {
+  background-color: #6724e1;
+  color: #62144c;
+  text-decoration: overline;
+  font-family: "Garamond", "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+a:hover {
+  color: #f8740b;
+  text-decoration: underline;
+}
+a:focus, a :active {
+  color: #ffd700;
+  text-shadow: 1px 1px 3px black;
+}
+
+.underline {
+  border-bottom: 1px solid #000;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.error {
+  color: #841B2D;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.text-small {
+  font-size: 0.85rem;
+}
+
+.height1 {
+  height: 6rem;
+}
+
+.input-small {
+  width: 10%;
+}
+
+.input-med {
+  width: 30%;
+}
+
+.input-med-lg {
+  width: 50%;
+}
+
+.input-large {
+  width: 75%;
+}
+
+.input-full {
+  width: 100%;
+}
+
+.fs-1 {
+  font-size: 0.5vw;
+  /* Font weight mixin */
+}
+
+.fs-2 {
+  font-size: 1vw;
+  /* Font weight mixin */
+}
+
+.fs-3 {
+  font-size: 1.5vw;
+  /* Font weight mixin */
+}
+
+.fs-4 {
+  font-size: 2vw;
+  /* Font weight mixin */
+}
+
+.fs-5 {
+  font-size: 2.5vw;
+  /* Font weight mixin */
+}
+
+.fs-6 {
+  font-size: 3vw;
+  /* Font weight mixin */
+}
+
+.fs-7 {
+  font-size: 3.5vw;
+  /* Font weight mixin */
+}
+
+.fs-8 {
+  font-size: 4vw;
+  /* Font weight mixin */
+}
+
+.fs-9 {
+  font-size: 4.5vw;
+  /* Font weight mixin */
+}
+
+.fs-10 {
+  font-size: 5vw;
+  /* Font weight mixin */
+}
+
+.bold-1 {
+  font-weight: 100;
+}
+
+.bold-2 {
+  font-weight: 200;
+}
+
+.bold-3 {
+  font-weight: 300;
+}
+
+.bold-4 {
+  font-weight: 400;
+}
+
+.bold-5 {
+  font-weight: 500;
+}
+
+.bold-6 {
+  font-weight: 600;
+}
+
+.bold-7 {
+  font-weight: 700;
+}
+
+.bold-8 {
+  font-weight: 800;
+}
+
+.bold-9 {
+  font-weight: 900;
+}
+
+.bold-10 {
+  font-weight: 1000;
+}
+
+/* typography */
+h1,
+h2 {
+  letter-spacing: 2px;
+}
+
+strong {
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+code {
+  font-family: "Courier New", "Courier", "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-weight: 300;
+  font-size: get-vw(14px);
+}
+
+h1 {
+  font-size: get-vw(36px);
+  counter-reset: subsection;
+}
+
+h2 {
+  font-size: get-vw(26px);
+  font-family: MerriweatherSans;
+}
+
+h3 {
+  font-size: get-vw(20px);
+  font-family: MerriweatherSans;
+}
+
+h4 {
+  font-size: get-vw(16px);
+  font-family: MerriweatherSans;
+}
+
+h5 {
+  font-size: get-vw(13px);
+}
+
+h6 {
+  font-size: get-vw(10.7px);
+}
+
+/*forms*/
+button[type=submit],
+button[type=reset] {
+  border-radius: 4px;
+  background-color: #ffcc99;
+  color: #212121;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+fieldset {
+  border: 1px solid #841B2D;
+}
+
+legend {
+  padding: 1em;
+  color: rgba(126, 66, 66, 0.5);
+}
+
+select {
+  width: 50%;
+}
+
+input::placeholder {
+  color: red;
+  opacity: 0.75;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-indent: 2em;
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
+input::-moz-placeholder {
+  color: red;
+  opacity: 0.75;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-indent: 2em;
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
+input:focus {
+  background: yellow;
+  font-style: italic;
+}
+input:focus::placeholder {
+  line-height: 13;
+}
+
+/* Gradients */
+.example {
+  background: radial-gradient(circle at top left, #bac8ff 15%, #748ffc 5%, #5c7cfa, #4c6ef5, #4263eb, #364fc7);
+}
+
+.ptext {
+  background-image: linear-gradient(to right, #ECD0C2, #e67e22);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+/*lists */
+.inline-list {
+  display: inline;
+}
+
+dd > p {
+  color: #B7A096;
+  padding-top: 0;
+  padding-bottom: 1px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+dt {
+  color: #F0DABD;
+  font-size: 1.2rem;
+}
+
+.link-list {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.link-list li {
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.link-list li a:link {
+  color: #080b4a;
+}
+.link-list li a:visited {
+  color: #6724e1;
+}
+.link-list li a:hover {
+  color: #f8740b;
+  background-color: beige;
+}
+
+/* Tables */
+.tea_show {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cent {
+  text-align: center;
+}
+
+th {
+  border-bottom: 1px dotted #443B3C;
+}
+
+/*Cards */
+.card {
+  flex: 1;
+  min-width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.card--inside {
+  min-width: 100%;
+  border: 1px solid #d8cdd3;
+  border-radius: 6px;
+  margin: 0.5rem auto 0.5rem auto;
+  padding: 0.5rem 1rem;
+}
+.card--inside p {
+  font-size: 1rem;
+}
+.card--inside-header {
+  border-radius: 6px;
+  display: flex;
+  min-height: 2rem;
+  width: 100%;
+  padding-left: 3rem;
+}
+
+.date {
+  display: flex;
+  justify-content: end;
+}
+
+.tags {
+  width: 15%;
+  font-family: cursive;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.headline {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.box {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Containers */
+.container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.container header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container--left {
+  width: 300px;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container--left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 766px) {
+  .container--left {
+    width: 100%;
+  }
+}
+.container main {
+  flex: 2.5 1;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 766px) {
+  .container main {
+    width: 100%;
+  }
+}
+.container--right {
+  flex: 1 1;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container--right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 766px) {
+  .container--right {
+    width: 100%;
+  }
+}
+.container footer {
+  width: 100%;
+  min-height: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 766px) {
+  .container footer {
+    width: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.top {
+  text-shadow: 3px 2px 2px #ffcc33;
+}
+
+header {
+  border-bottom: 2px solid #080b4a;
+}
+
+footer {
+  border-top: 1px solid #080b4a;
+  border-bottom: 1px solid #080b4a;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Main */
+.container--right {
+  padding-left: 1rem;
+}
+
+/* Calendar if needed */
+.calendar {
+  background: #CFC79E;
+  padding: 1em;
+  border: 2px solid #000;
+  width: 100%;
+}
+
+.day {
+  padding: 2px;
+  height: 10em;
+  vertical-align: top;
+  width: calc(100% / 7);
+}
+
+.highlight {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #050533;
+  background: #FE5532;
+}
+
+.day_num {
+  color: #00007F;
+  vertical-align: top;
+  font-family: "Consolas", "monaco", monospace;
+}
+
+.content {
+  color: #211E9C;
+}
+
+th {
+  text-align: center;
+}
+
+.coloring {
+  background: tint(#050533, 40%);
+}
+
+.size {
+  color: #000;
+  text-align: center;
+}
+
+.thheader {
+  color: #050533;
+}
+/*# sourceMappingURL=main.css.map */
