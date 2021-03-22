@@ -23,6 +23,9 @@ class Pages extends CI_Controller {
 		if($query = $this->pagesModel->singleFile()) {
 			$data['single'] = $query;
 		}
+		if($query = $this->pagesModel->getKeys()){
+			$data['keys'] = $query;
+		}
 
 		$data['title'] = "Single View";
 		$data["header"] = "Single View";

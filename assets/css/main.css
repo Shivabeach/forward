@@ -176,6 +176,10 @@ a:focus, a :active {
   height: 6rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .input-small {
   width: 10%;
 }
@@ -304,31 +308,31 @@ code {
 }
 
 h1 {
-  font-size: get-vw(36px);
+  font-size: 40px;
   counter-reset: subsection;
 }
 
 h2 {
-  font-size: get-vw(26px);
+  font-size: 32px;
   font-family: MerriweatherSans;
 }
 
 h3 {
-  font-size: get-vw(20px);
+  font-size: 28px;
   font-family: MerriweatherSans;
 }
 
 h4 {
-  font-size: get-vw(16px);
+  font-size: 24px;
   font-family: MerriweatherSans;
 }
 
 h5 {
-  font-size: get-vw(13px);
+  font-size: 20px;
 }
 
 h6 {
-  font-size: get-vw(10.7px);
+  font-size: 16px;
 }
 
 /*forms*/
@@ -418,9 +422,9 @@ dt {
   flex-direction: column;
 }
 .link-list li {
-  height: 2.5rem;
+  height: auto;
   width: 100%;
-  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: start;
   align-items: center;

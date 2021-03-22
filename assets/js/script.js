@@ -13,11 +13,11 @@ const tag = document.getElementById('tags');
 const blogger = document.getElementById('blogger');
 
 const str = 'Home';
-const item11 = str.link('#');
+const item11 = str.link('http://forward/');
 item1.innerHTML = item11;
 
-const str1 = 'Location';
-const item22 = str1.link('#');
+const str1 = 'Forms';
+const item22 = str1.link('http://forward/forms');
 item2.innerHTML = item22;
 
 const str2 = 'Page Two';
@@ -59,3 +59,5 @@ tagg.forEach(function (tag1, i) {
 		tag1.style.color = '#fff';
 	}
 });
+
+//@prepros-append jquery.js
