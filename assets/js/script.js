@@ -11,6 +11,8 @@ const title = document.getElementById('title');
 const content = document.getElementById('content');
 const tag = document.getElementById('tags');
 const blogger = document.getElementById('blogger');
+const prime = document.getElementById('primeKeys');
+const error = document.getElementById('error');
 
 const str = 'Home';
 const item11 = str.link('http://forward/');
@@ -20,8 +22,8 @@ const str1 = 'Forms';
 const item22 = str1.link('http://forward/forms');
 item2.innerHTML = item22;
 
-const str2 = 'Page Two';
-const item33 = str2.link('#');
+const str2 = 'General Health';
+const item33 = str2.link('http://forward/pages/health');
 item3.innerHTML = item33;
 
 const str3 = 'Page Three';
@@ -31,8 +33,8 @@ item4.innerHTML = item44;
 let keys = document.querySelector('.blog--keys');
 if (keys !== null) {
 	const splitter = keys.textContent.split(',');
-	splitter.forEach(function (suc, i) {
-		const html = `<p>${suc}</p>`;
+	splitter.forEach(function (suc) {
+		const html = `<p class="ital">${suc}</p>`;
 		keys.insertAdjacentHTML('afterbegin', html);
 	});
 }
@@ -59,5 +61,38 @@ tagg.forEach(function (tag1, i) {
 		tag1.style.color = '#fff';
 	}
 });
+
+if (blogger != null) {
+	blogger.addEventListener('click', (e) => {
+		let messages = [];
+		if (date.value === '' || date.value === null) {
+			messages.push('Date cannot be empty');
+			date.style.border = '3px solid #ff0000';
+		}
+		if (title.value <= 6) {
+			messages.push('Fill out the title');
+			title.style.border = '3px solid #ff0000';
+		}
+		if (content.value <= 15) {
+			messages.push('a total lack of content');
+			content.style.border = '3px solid #ff0000';
+		}
+
+		if (tags.value === '' || tags.value === null) {
+			messages.push('Need a Positive or Negative');
+			tags.style.border = '3px solid #ff0000';
+		}
+		if (prime.value <= 6) {
+			messages.push('Need some guiding words');
+			prime.style.border = '3px solid #ff0000';
+		}
+
+		// display messages / errors
+		if (messages.length > 0) {
+			e.preventDefault();
+			error.innerText = messages.join(', ');
+		}
+	});
+}
 
 //@prepros-append jquery.js

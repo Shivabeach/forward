@@ -1,7 +1,7 @@
 /** @format */
 'use strict';
 $(function () {
-	$('form#weight').on('submit', function (e) {
+	$('#weight').on('submit', function (e) {
 		e.preventDefault();
 		var that = $(this),
 			url = that.attr('action'),

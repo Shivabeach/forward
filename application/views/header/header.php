@@ -18,10 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
-    integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
-  <script src="<?php echo base_url('assets/js/script.js');?>" defer></script>
+
   <script>
   let FF_FOUC_FIX;
   </script>

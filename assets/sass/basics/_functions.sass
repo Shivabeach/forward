@@ -35,6 +35,14 @@
 	.bold-#{$i}
 		font-weight: weight($i)
 
-// @function head($heading)
-//   $heading = 1rem
-//   return $heading * 1.618
+@function margin($value)
+	@return	($value * 1px)
+@for $i from 1 through 10
+	.margin-#{$i}
+		margin: margin($i)
+
+@function padd($value)
+	@return	($value * 1rem)
+@for $i from 1 through 10
+	.padding-#{$i}
+		padding: padd($i)

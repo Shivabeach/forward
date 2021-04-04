@@ -106,13 +106,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  background-color: #FFF8DC;
+  background-image: linear-gradient(to right, #fad961, #E97451, #DDF7B0);
 }
 
 /* Elements */
 p {
-  padding-bottom: 3px;
-  font-size: 1.2rem;
+  padding-bottom: 5px;
+  font-size: 18.4px;
+  padding-bottom: 0.75rem;
 }
 
 mark {
@@ -178,6 +179,11 @@ a:focus, a :active {
 
 .hidden {
   display: none;
+}
+
+.ital {
+  font-style: italic;
+  font-variant: small-caps;
 }
 
 .input-small {
@@ -288,6 +294,86 @@ a:focus, a :active {
 
 .bold-10 {
   font-weight: 1000;
+}
+
+.margin-1 {
+  margin: 1px;
+}
+
+.margin-2 {
+  margin: 2px;
+}
+
+.margin-3 {
+  margin: 3px;
+}
+
+.margin-4 {
+  margin: 4px;
+}
+
+.margin-5 {
+  margin: 5px;
+}
+
+.margin-6 {
+  margin: 6px;
+}
+
+.margin-7 {
+  margin: 7px;
+}
+
+.margin-8 {
+  margin: 8px;
+}
+
+.margin-9 {
+  margin: 9px;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.padding-1 {
+  padding: 1rem;
+}
+
+.padding-2 {
+  padding: 2rem;
+}
+
+.padding-3 {
+  padding: 3rem;
+}
+
+.padding-4 {
+  padding: 4rem;
+}
+
+.padding-5 {
+  padding: 5rem;
+}
+
+.padding-6 {
+  padding: 6rem;
+}
+
+.padding-7 {
+  padding: 7rem;
+}
+
+.padding-8 {
+  padding: 8rem;
+}
+
+.padding-9 {
+  padding: 9rem;
+}
+
+.padding-10 {
+  padding: 10rem;
 }
 
 /* typography */
@@ -431,6 +517,7 @@ dt {
 }
 .link-list li a:link {
   color: #080b4a;
+  font-size: 18.4px;
 }
 .link-list li a:visited {
   color: #6724e1;
@@ -468,9 +555,7 @@ th {
   border-radius: 6px;
   margin: 0.5rem auto 0.5rem auto;
   padding: 0.5rem 1rem;
-}
-.card--inside p {
-  font-size: 1rem;
+  box-shadow: 2px 2px 3px #b0bec5;
 }
 .card--inside-header {
   border-radius: 6px;
@@ -502,7 +587,7 @@ th {
 .box {
   width: 20%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #E0E7CD;
 }
 
 /* Containers */

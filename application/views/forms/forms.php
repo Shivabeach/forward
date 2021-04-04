@@ -33,14 +33,18 @@
 								"class"       => "input-med",
 								"name"        => "date",
 								"placeholder" => "Date"
+
 							];
+              echo form_error('date');
 							echo form_input($date1);
 							$distance = [
 								"id"          => "distance",
 								"class"       => "input-med",
 								"name"        => "distance",
 								"placeholder" => "distance"
+
 							];
+              echo form_error('distance');
 							echo form_input($distance);
 
 							$place = [
@@ -48,7 +52,9 @@
 								"class"       => "input-med",
 								"name"        => "place",
 								"placeholder" => "place"
+
 							];
+              echo form_error('place');
 							echo form_input($place);
 							echo "<br>";
 							echo "<button type='submit' value='Submit'>Submit</button>";
@@ -65,32 +71,37 @@
 
         <fieldset>
           <legend>Blog</legend>
-          <div id="display"></div>
 
-          <!-- date time place -->
+
+          <div id="display"></div>
+          <p id="error"></p>
           <?php
 							$form2 = [
 								"id" => "weight"
 							];
 							echo form_open('forms/blogs', $form2);
 							$date1 = [
+								"id"					=> "date",
 								"type"        => "date",
 								"class"       => "input-med",
 								"name"        => "date",
 								"placeholder" => "Date"
 							];
+							echo "<p>";
 							echo form_input($date1);
-							echo "<br>";
+							echo "</p>";
+
 							$title = [
 								"id"          => "title",
 								"class"       => "input-med-lg",
 								"name"        => "title",
 								"placeholder" => "Title"
 							];
+							echo "<p>";
 							echo form_input($title);
-							echo "<br>";?>
-          <span role="alert" id="nameError" aria-hidden="true"> Entry is required </span>
-          <?php echo "<br>";
+
+							echo "</p>";
+
 							$content = [
 								"id"          => "content",
 								"name"        => "content",
@@ -99,33 +110,42 @@
 								"rows"				=> 15
 							];
 							echo form_textarea($content);
-							echo "<br>";?>
-          <span role="alert" id="contentError" aria-hidden="true"> Entry is required </span>
-          <?php echo "<br>";
+							echo "<br>";
+
+							$type = [
+								"" => "Nothing",
+								"blog" => "Blog",
+								"health" => "Health"
+							];
+							$argg = [
+								"id" => "type",
+								"name" => "type",
+								"class" => "input-med"
+							];
+							echo form_dropdown($argg, $type);
+							echo "<br>";
 							$tags = [
 								"id"       => "tags",
 								"name"     => "tags",
-								"class"    => "input-med",
-								"required" => true
+								"class"    => "input-med"
 							];
+
 							$drop = [
-								"" => "",
+								"" => "Pick One",
 								"Negative" => "Negative",
 								"Positive" => "Positive "
 							];
 							echo form_dropdown($tags, $drop);
-								echo "<br>";?>
-          <span role="alert" id="tagsError" aria-hidden="true"> Entry is required </span>
-          <?php echo "<br>";
+								echo "<br>";
+
 							$keys = [
 								"name" => "primeKeys",
 								"id" => "primeKeys",
 								"class" => "input-large"
 							];
 							echo form_input($keys);
-							echo "<br>";?>
-          <span role="alert" id="primeError" aria-hidden="true"> Entry is required </span>
-          <?php echo "<br>";
+							echo "<br>";
+
 
 							echo "<button id='blogger' type='submit' value='Submit'>Submit</button>";
 						echo "<button type='reset' value='Reset'>Reset</button>";
@@ -138,24 +158,7 @@
   <div class="container--right">
     <div class="card--inside">
       <h5 class="headline fs-3 bold-6">Keys</h5>
-
+      <div id="display"></div>
+      <!--  -->
     </div>
   </div>
-
-  <footer>
-    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit labore delectus accusantium dolor
-      nisi aperiam.</div>
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio adipisci reiciendis ea unde
-        perferendis.</p>
-    </div>
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio adipisci reiciendis ea unde
-        perferendis.</p>
-    </div>
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio adipisci reiciendis ea unde
-        perferendis.</p>
-    </div>
-  </footer>
-</div>

@@ -16,11 +16,11 @@
 
   <main>
     <div class="card">
-      <?php foreach($blog as $row): ?>
+      <?php foreach($health as $row): ?>
       <?php $output = $row->date;
 				$final = date('M d, Y', strtotime($output));?>
       <div class="card--inside">
-        <h2 class="card--inside-header"><?php echo anchor("pages/single/$row->id", ucwords($row->title));?></h2>
+        <h2 class="card--inside-header"><?php echo anchor("pages/singles/$row->id", ucwords($row->title));?></h2>
         <div class="date fs-2"><?php echo $final;?></div>
         <div class="blog-content">
           <p><?php echo word_limiter($row->content, 40);?>
@@ -35,9 +35,9 @@
 
   <div class="container--right">
     <div class="card--inside">
-      <h5 class="headline fs-3 bold-6">Keys</h5>
+      <h5 class="headline fs-3 bold-6">Health Keys</h5>
       <ul class="link-list" role="list">
-        <?php foreach($keys as $row):?>
+        <?php foreach($healthkeys as $row):?>
         <li><?=$row->primeKeys;?> </li>
         <?php endforeach;?>
       </ul>

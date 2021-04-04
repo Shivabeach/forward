@@ -121,7 +121,7 @@ Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
     ExpiresByType application/json                      "access plus 0 seconds"
     ExpiresByType application/ld+json                   "access plus 0 seconds"
     ExpiresByType application/xml                       "access plus 0 seconds"
-    ExpiresByType text/xml                              "access plus 0 seconds"
+    ExpiresByType text/xml                           "access plus 0 seconds"
 
   # Favicon (cannot be renamed!) and cursor images
     ExpiresByType image/x-icon                          "access plus 1 week"

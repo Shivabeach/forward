@@ -1,6 +1,7 @@
 <div class="container">
+  <?php foreach($single as $row): ?>
   <header>
-    <h1><?=$title;?></h1>
+    <h1><?=ucwords($row->title);?></h1>
   </header>
 
   <div class="container--left">
@@ -15,12 +16,12 @@
 
   <main>
     <div class="card">
-      <?php foreach($single as $row): ?>
+
       <?php $output = $row->date;
 				$final = date('M d, Y', strtotime($output));?>
       <div class="card--inside">
-        <h2 class="card--inside-header"><?php echo $row->title;?></h2>
-        <div class="date fs-2"><?php echo $final;?></div>
+
+        <div class="date fs-2 bold-7"><?php echo $final;?></div>
         <div class="blog-content">
           <p><?php echo auto_typography($row->content);?>
           </p>
@@ -37,27 +38,17 @@
     <div class="card--inside">
       <h5 class="headline fs-3 bold-6">Keys</h5>
       <ul class="link-list" role="list">
-        <?php foreach($keys as $row):?>
-        <li><?=$row->primeKeys;?> </li>
-        <?php endforeach;?>
+        <?php
+        if(isset($healthKeys)){
+          foreach($healthKeys as $row) {
+            echo "<li>$row->primeKeys </li>";
+          }
+        }else {
+          foreach($keys as $row) {
+            echo "<li>$row->primeKeys</li>";
+          }
+        }
+        ?>
       </ul>
     </div>
   </div>
-
-  <footer>
-    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit labore delectus accusantium dolor
-      nisi aperiam.</div>
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio adipisci reiciendis ea unde
-        perferendis.</p>
-    </div>
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio adipisci reiciendis ea unde
-        perferendis.</p>
-    </div>
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio adipisci reiciendis ea unde
-        perferendis.</p>
-    </div>
-  </footer>
-</div>
