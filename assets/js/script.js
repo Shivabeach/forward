@@ -13,6 +13,7 @@ const tag = document.getElementById('tags');
 const blogger = document.getElementById('blogger');
 const prime = document.getElementById('primeKeys');
 const error = document.getElementById('error');
+const three = document.getElementById('three');
 
 const str = 'Home';
 const item11 = str.link('http://forward/');
@@ -41,7 +42,7 @@ if (keys !== null) {
 
 //colors the positive/negative tags
 const tags = document.querySelectorAll('.tags');
-tags.forEach(function (tag, i) {
+tags.forEach(function (tag) {
 	if (tag.textContent === 'Positive') {
 		tag.style.backgroundColor = '#ffff00';
 		tag.style.color = '#000';
@@ -94,5 +95,9 @@ if (blogger != null) {
 		}
 	});
 }
+const para = document.createElement('p');
+const textual = 'This is completely about my weight';
+para.append(textual);
+three.append(para);
 
 //@prepros-append jquery.js

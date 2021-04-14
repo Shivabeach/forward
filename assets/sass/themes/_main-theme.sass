@@ -1,0 +1,9 @@
+@use '../abstracts' as *
+#primary
+  background-color: map-get($colors, "bkgd")
+  h1
+    color: map-get($colors, "text1")
+
+#health,
+#single
+  @extend #primary

@@ -7,6 +7,7 @@ class PagesModel extends CI_Model {
 		$this->db->select("date,content,id,tags,title");
 		$this->db->where('type', 'blog');
 		$this->db->order_by('date', 'desc');
+		$this->db->limit(5);
 		$query = $this->db->get("blog");
 		return $query->result();
 	}
@@ -59,6 +60,22 @@ class PagesModel extends CI_Model {
 		$this->db->select_max('date');
 		$query = $this->db->get('walk');
 		return $query->result();
+	}
+	public function blog_title()
+	{
+		$this->db->select("title,id");
+		$this->db->where('type', 'blog');
+		$this->db->order_by("date", "desc");
+		$query = $this->db->get("blog");
+		return $query->result();
+	}
+	public function health_title()
+	{
+		$this->db->select("title,id");
+		$this->db->where('type', 'health');
+		$query = $this->db->get("blog");
+		return $query->result();
+
 	}
 
 }

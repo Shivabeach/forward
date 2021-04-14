@@ -1,19 +1,18 @@
 @use '../abstracts' as *
 /* Links */
 a
-  color: $gen11
+  color: map-get($colors, "text3")
   text-decoration: none
   transition: color $base-duration $base-timing
   font-family: $font-stack-lucida-grande
 
   &:visited
-    background-color: $gen14
-    color: $visited
+    color: map-get($colors, "text7")
     text-decoration: overline
     font-family: $font-stack-garamond
 
   &:hover
-    color: $gen12
+    color: #d7ccc8
     text-decoration: underline
 
   &:focus, :active

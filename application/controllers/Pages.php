@@ -1,22 +1,26 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pages extends CI_Controller {
+class Pages extends CI_Controller
+{
 
-  public function index()
+	public function index()
 	{
-		if($query = $this->pagesModel->get_blog()) {
+		if ($query = $this->pagesModel->get_blog()) {
 			$data['blog'] = $query;
 		}
-		if($query = $this->pagesModel->getKeys()){
+		if ($query = $this->pagesModel->getKeys()) {
 			$data['keys'] = $query;
 		}
-		if($query = $this->pagesModel->walks()){
+		if ($query = $this->pagesModel->walks()) {
 			$data['waled'] = $query;
 		}
-		if($query = $this->pagesModel->last_date()){
+		if ($query = $this->pagesModel->last_date()) {
 			$data['last'] = $query;
+		}
+		if ($query = $this->pagesModel->blog_title()) {
+			$data['bt'] = $query;
 		}
 
 		$data['title'] = "Blog";
@@ -25,18 +29,18 @@ class Pages extends CI_Controller {
 		$this->load->view("template/template", $data);
 	}
 
-  public function single()
+	public function single()
 	{
-		if($query = $this->pagesModel->singleFile()) {
+		if ($query = $this->pagesModel->singleFile()) {
 			$data['single'] = $query;
 		}
-		if($query = $this->pagesModel->getKeys()){
+		if ($query = $this->pagesModel->getKeys()) {
 			$data['keys'] = $query;
 		}
-		if($query = $this->pagesModel->walks()){
+		if ($query = $this->pagesModel->walks()) {
 			$data['waled'] = $query;
 		}
-		if($query = $this->pagesModel->last_date()){
+		if ($query = $this->pagesModel->last_date()) {
 			$data['last'] = $query;
 		}
 
@@ -48,17 +52,20 @@ class Pages extends CI_Controller {
 
 	public function health()
 	{
-		if($query = $this->pagesModel->get_health()) {
+		if ($query = $this->pagesModel->get_health()) {
 			$data['health'] = $query;
 		}
-		if($query = $this->pagesModel->getHealthKeys()){
+		if ($query = $this->pagesModel->getHealthKeys()) {
 			$data['healthkeys'] = $query;
 		}
-		if($query = $this->pagesModel->walks()){
+		if ($query = $this->pagesModel->walks()) {
 			$data['waled'] = $query;
 		}
-		if($query = $this->pagesModel->last_date()){
+		if ($query = $this->pagesModel->last_date()) {
 			$data['last'] = $query;
+		}
+		if ($query = $this->pagesModel->health_title()) {
+			$data['ht'] = $query;
 		}
 
 		$data['title'] = "General Health";
@@ -69,16 +76,16 @@ class Pages extends CI_Controller {
 
 	public function singles()
 	{
-		if($query = $this->pagesModel->singleFile()) {
+		if ($query = $this->pagesModel->singleFile()) {
 			$data['single'] = $query;
 		}
-		if($query = $this->pagesModel->getHealthKeys()){
+		if ($query = $this->pagesModel->getHealthKeys()) {
 			$data['healthKeys'] = $query;
 		}
-		if($query = $this->pagesModel->walks()){
+		if ($query = $this->pagesModel->walks()) {
 			$data['waled'] = $query;
 		}
-		if($query = $this->pagesModel->last_date()){
+		if ($query = $this->pagesModel->last_date()) {
 			$data['last'] = $query;
 		}
 
@@ -87,7 +94,6 @@ class Pages extends CI_Controller {
 		$data["content"] = "pages/single";
 		$this->load->view("template/template", $data);
 	}
-
 }
 
 /* End of file Pages.php */

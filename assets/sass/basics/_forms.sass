@@ -3,23 +3,26 @@
 
 button[type='submit'],
 button[type='reset']
-  border-radius: 4px
-  background-color: $color--peach-orange
-  color: $primarytext
+  border-radius: 6px
+  background-color: map-get($purpleColor, "darkprimary")
+  color: map-get($purpleColor, "accent")
   margin: 0 5px
-  padding: 0 5px
+  padding: .5rem 1rem
+  font-size: 1.2rem
+  transition: color $base-duration $base-timing
+  &:hover
+    background-color: map-get($purpleColor, "light-primary")
+    color: map-get($purpleColor, "primarytext")
 
 fieldset
-  border: 1px solid $antique-ruby
+  border: 1px solid map-get($greenie,"color")
 
 legend
   padding: 1em
-  color: $soft-peach-dark
+  color: map-get($theme, "secondary")
 
 select
   width: 50%
-
-
 
 input::placeholder
   color: red
@@ -29,7 +32,6 @@ input::placeholder
   text-indent: 2em
   font-variant: small-caps
   font-weight: 700
-
 
 input::-moz-placeholder
   color: red

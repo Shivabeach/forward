@@ -16,20 +16,18 @@ dt
 	font-size: 1.2rem
 
 .link-list
-	margin-left: 0
+	margin-left: 1rem
 	padding-left: 0
-	display: flex
 	flex-direction: column
-	li
-		height: auto
-		width: 100%
-		padding-bottom: .5rem
-		+center(start, center)
-		a:link
-			color: $gen11
-			font-size: $h6-font-size * 1.15
-		a:visited
-			color: $gen14
-		a:hover
-			color: $gen12
-			background-color: beige
+
+li
+	height: auto
+	width: 100%
+	padding-bottom: .5rem
+
+::marker
+	color: yellow
+	content: "\261B\00A0"
+
+ul
+	display: list-item

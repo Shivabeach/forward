@@ -1,29 +1,30 @@
-<div class="container">
-  <header>
-    <h1><?=$title;?></h1>
-  </header>
+<body id="forms">
+  <div class="container">
+    <header>
+      <h1><?=$title;?></h1>
+    </header>
 
-  <div class="container--left">
-    <h3>Future Links</h3>
-    <ul role="list" class="link-list">
-      <li class="item-1"></li>
-      <li class="item-2"></li>
-      <li class="item-3"></li>
-      <li class="item-4"></li>
-    </ul>
+    <div class="container--left">
+      <h3 class="headline">Future Links</h3>
+      <ul role="list" class="link-list">
+        <li class="item-1"></li>
+        <li class="item-2"></li>
+        <li class="item-3"></li>
+        <li class="item-4"></li>
+      </ul>
 
-  </div>
+    </div>
 
-  <main>
-    <div class="card">
-      <div class="card--inside">
-        <div class="card--inside-header">
-          <h5>Exercise Form</h5>
-        </div>
-        <fieldset>
-          <legend>Walking Record</legend>
-          <!-- date time place -->
-          <?php
+    <main>
+      <div class="card">
+        <div class="card--inside">
+          <div class="card--inside-header">
+            <h4>Exercise Form</h4>
+          </div>
+          <fieldset>
+            <legend>Walking Record</legend>
+            <!-- date time place -->
+            <?php
 							$form1 = [
 								"id" => "weight"
 							];
@@ -61,21 +62,21 @@
 						echo "<button type='reset' value='Reset'>Reset</button>";
 							echo form_close();
 						?>
-        </fieldset>
-      </div>
-
-      <div class="card--inside">
-        <div class="card--inside-header">
-          <h5>Blog Form</h5>
+          </fieldset>
         </div>
 
-        <fieldset>
-          <legend>Blog</legend>
+        <div class="card--inside">
+          <div class="card--inside-header">
+            <h4>Blog Form</h4>
+          </div>
+
+          <fieldset>
+            <legend>Blog</legend>
 
 
-          <div id="display"></div>
-          <p id="error"></p>
-          <?php
+            <div id="display"></div>
+            <p id="error"></p>
+            <?php
 							$form2 = [
 								"id" => "weight"
 							];
@@ -151,14 +152,14 @@
 						echo "<button type='reset' value='Reset'>Reset</button>";
 							echo form_close();
 						?>
-        </fieldset>
+          </fieldset>
+        </div>
+      </div>
+    </main>
+    <div class="container--right">
+      <div class="card--inside">
+        <h5 class="headline fs-3 bold-6">Keys</h5>
+        <div id="display"></div>
+        <!--  -->
       </div>
     </div>
-  </main>
-  <div class="container--right">
-    <div class="card--inside">
-      <h5 class="headline fs-3 bold-6">Keys</h5>
-      <div id="display"></div>
-      <!--  -->
-    </div>
-  </div>

@@ -5,15 +5,13 @@
   min-width: 100%
   min-height: 100px
   display: flex
-
   flex-direction: column
-
   &--inside
+    box-sizing: border-box
     min-width: 100%
     border: 1px solid $gen4
     border-radius: $base-border-radius
-    margin: .5rem auto .5rem auto
-    padding: .5rem 1rem
+    padding: 1rem
     box-shadow: 2px 2px 3px $bg200
     &-header
       border-radius: $base-border-radius
@@ -21,7 +19,6 @@
       min-height: 2rem
       width: 100%
       padding-left: 3rem
-      //margin-bottom: 1rem
 
 .date
   display: flex
@@ -41,4 +38,3 @@
 .box
   width: 20%
   height: 100%
-  background-color: $kidnapper
