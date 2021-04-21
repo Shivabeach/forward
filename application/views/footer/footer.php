@@ -23,8 +23,7 @@
 
     </div>
     <div id="four" class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio adipisci reiciendis ea unde
-        perferendis.</p>
+      <p class="copyr"></p>
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

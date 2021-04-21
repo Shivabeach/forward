@@ -94,6 +94,20 @@ class Pages extends CI_Controller
 		$data["content"] = "pages/single";
 		$this->load->view("template/template", $data);
 	}
+
+	public function grids()
+	{
+		if($query = $this->pagesModel->walks()) {
+			$data['waled'] = $query;
+		}
+		if($query = $this->pagesModel->last_date()) {
+			$data['last'] = $query;
+		}
+		$data['title'] = "Grid View";
+		$data["header"] = "Grid View";
+		$data["content"] = "pages/tables";
+		$this->load->view("template/template", $data);
+	}
 }
 
 /* End of file Pages.php */

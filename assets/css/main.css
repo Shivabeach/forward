@@ -350,7 +350,7 @@ h6 {
 button[type=submit],
 button[type=reset] {
   border-radius: 6px;
-  background-color: #311b92;
+  background-color: #311b93;
   color: #bbdefb;
   margin: 0 5px;
   padding: 0.5rem 1rem;
@@ -611,6 +611,53 @@ footer {
 }
 
 /* Main */
+/** @format */
+#gridly header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 2fr repeat(5, 1fr);
+  grid-template-rows: repeat(6, 2fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+.parent {
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.top {
+  height: 2rem;
+  display: flex;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 3rem;
+}
+.top a {
+  color: #261fcc;
+  margin-right: 1rem;
+  text-shadow: 1px 1px 1px #6724e1;
+  text-decoration: none;
+}
+.top a:visited {
+  color: #593e3e;
+  text-shadow: none;
+  text-decoration: none;
+}
+.top a:hover {
+  color: #efebe9;
+  text-shadow: none;
+  text-decoration: none;
+}
+
 /* Calendar if needed */
 .calendar {
   background: #CFC79E;
@@ -668,6 +715,21 @@ th {
 #primary h1, #health h1,
 #single h1 {
   color: #f9c59b;
+}
+
+#gridly {
+  background: #bf877a;
+}
+
+[class^=div] {
+  background-color: #8c353d;
+  color: #bfa68f;
+  padding: 5px;
+}
+
+[class^=primer] {
+  border: 1px solid black;
+  padding: 5px;
 }
 
 .card--inside p {

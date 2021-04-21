@@ -14,6 +14,7 @@ const blogger = document.getElementById('blogger');
 const prime = document.getElementById('primeKeys');
 const error = document.getElementById('error');
 const three = document.getElementById('three');
+const copyr = document.querySelector('.copyr');
 
 const str = 'Home';
 const item11 = str.link('http://forward/');
@@ -27,8 +28,8 @@ const str2 = 'General Health';
 const item33 = str2.link('http://forward/pages/health');
 item3.innerHTML = item33;
 
-const str3 = 'Page Three';
-const item44 = str3.link('#');
+const str3 = 'Grid Page';
+const item44 = str3.link('http://forward/pages/grids');
 item4.innerHTML = item44;
 
 let keys = document.querySelector('.blog--keys');
@@ -53,7 +54,7 @@ tags.forEach(function (tag) {
 });
 
 const tagg = document.querySelectorAll('.tags');
-tagg.forEach(function (tag1, i) {
+tagg.forEach(function (tag1) {
 	if (tag1.textContent === 'Positive') {
 		tag1.style.backgroundColor = '#ffff00';
 		tag1.style.color = '#000';
@@ -62,7 +63,7 @@ tagg.forEach(function (tag1, i) {
 		tag1.style.color = '#fff';
 	}
 });
-
+// form validation
 if (blogger != null) {
 	blogger.addEventListener('click', (e) => {
 		let messages = [];
@@ -99,5 +100,8 @@ const para = document.createElement('p');
 const textual = 'This is completely about my weight';
 para.append(textual);
 three.append(para);
+
+let yer = new Date();
+copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
 
 //@prepros-append jquery.js
