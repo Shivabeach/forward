@@ -26,8 +26,7 @@
 
           <div class="date fs-2 bold-7"><?php echo $final;?></div>
           <div class="blog-content">
-            <p><?php echo auto_typography($row->content);?>
-            </p>
+            <?php echo auto_typography($row->content);?>
           </div>
           <div class="blog--keys"><span class="hidden"><?php echo $row->primeKeys;?></span> </div>
           <div class="tags bold-8 fs-2"><?=$row->tags;?></div>

@@ -103,8 +103,8 @@ class Pages extends CI_Controller
 		if($query = $this->pagesModel->last_date()) {
 			$data['last'] = $query;
 		}
-		$data['title'] = "Grid View";
-		$data["header"] = "Grid View";
+		$data['title'] = "Factoids";
+		$data["header"] = "Factoids";
 		$data["content"] = "pages/tables";
 		$this->load->view("template/template", $data);
 	}

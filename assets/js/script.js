@@ -15,6 +15,12 @@ const prime = document.getElementById('primeKeys');
 const error = document.getElementById('error');
 const three = document.getElementById('three');
 const copyr = document.querySelector('.copyr');
+const div30 = document.querySelector('.div30');
+
+const rady = parseInt(Math.random() * 1501 + 1);
+if (div30 !== null) {
+	div30.innerHTML = `<p>${rady}</p>`;
+}
 
 const str = 'Home';
 const item11 = str.link('http://forward/');
@@ -35,7 +41,7 @@ item4.innerHTML = item44;
 let keys = document.querySelector('.blog--keys');
 if (keys !== null) {
 	const splitter = keys.textContent.split(',');
-	splitter.forEach(function (suc) {
+	splitter.forEach(function(suc) {
 		const html = `<p class="ital">${suc}</p>`;
 		keys.insertAdjacentHTML('afterbegin', html);
 	});
@@ -43,7 +49,7 @@ if (keys !== null) {
 
 //colors the positive/negative tags
 const tags = document.querySelectorAll('.tags');
-tags.forEach(function (tag) {
+tags.forEach(function(tag) {
 	if (tag.textContent === 'Positive') {
 		tag.style.backgroundColor = '#ffff00';
 		tag.style.color = '#000';
@@ -54,7 +60,7 @@ tags.forEach(function (tag) {
 });
 
 const tagg = document.querySelectorAll('.tags');
-tagg.forEach(function (tag1) {
+tagg.forEach(function(tag1) {
 	if (tag1.textContent === 'Positive') {
 		tag1.style.backgroundColor = '#ffff00';
 		tag1.style.color = '#000';
