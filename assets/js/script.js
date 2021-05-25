@@ -6,6 +6,7 @@ const item1 = document.querySelector('.item-1');
 const item2 = document.querySelector('.item-2');
 const item3 = document.querySelector('.item-3');
 const item4 = document.querySelector('.item-4');
+const item5 = document.querySelector('.item-5');
 const date = document.getElementById('date');
 const title = document.getElementById('title');
 const content = document.getElementById('content');
@@ -16,7 +17,10 @@ const error = document.getElementById('error');
 const three = document.getElementById('three');
 const copyr = document.querySelector('.copyr');
 const div30 = document.querySelector('.div30');
-
+const date1 = document.getElementById('date1');
+const distance = document.getElementById('distance');
+const place = document.getElementById('place');
+let errors;
 const rady = parseInt(Math.random() * 1501 + 1);
 if (div30 !== null) {
 	div30.innerHTML = `<p>${rady}</p>`;
@@ -34,9 +38,13 @@ const str2 = 'General Health';
 const item33 = str2.link('http://forward/pages/health');
 item3.innerHTML = item33;
 
-const str3 = 'Grid Page';
+const str3 = 'Statistics';
 const item44 = str3.link('http://forward/pages/grids');
 item4.innerHTML = item44;
+
+const str4 = 'Grid';
+const item55 = str4.link('http://forward/pages/learn');
+item5.innerHTML = item55;
 
 let keys = document.querySelector('.blog--keys');
 if (keys !== null) {
@@ -69,7 +77,7 @@ tagg.forEach(function(tag1) {
 		tag1.style.color = '#fff';
 	}
 });
-// form validation
+// form validation with an array
 if (blogger != null) {
 	blogger.addEventListener('click', (e) => {
 		let messages = [];
@@ -109,5 +117,19 @@ three.append(para);
 
 let yer = new Date();
 copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
+
+if (date1 === null || date1 === '') {
+	errors = true;
+} else {
+	errors = false;
+}
+
+function prints(parent) {
+	var printContents = document.querySelector('.parent').innerHTML;
+	var originalContents = document.body.innerHTML;
+	document.body.innerHTML = printContents;
+	window.print();
+	document.body.innerHTML = originalContents;
+}
 
 //@prepros-append jquery.js

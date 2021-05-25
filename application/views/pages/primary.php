@@ -12,7 +12,9 @@
           <li class="item-2"></li>
           <li class="item-3"></li>
           <li class="item-4"></li>
+          <li class="item-5"></li>
         </ul>
+        <hr class="rule">
         <ol role="list" class="link-list">
           <?php foreach($bt as $row):?>
           <li><?php echo anchor("pages/single/$row->id", ucwords($row->title));?></li>
@@ -35,8 +37,10 @@
             </p>
           </div>
           <div class="tags bold-8 fs-2"><?=$row->tags;?></div>
+          <hr class="rule">
         </div>
         <?php endforeach;?>
+
 
       </div>
     </main>

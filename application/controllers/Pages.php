@@ -108,6 +108,20 @@ class Pages extends CI_Controller
 		$data["content"] = "pages/tables";
 		$this->load->view("template/template", $data);
 	}
+
+	public function learn()
+	{
+		if($query = $this->pagesModel->walks()) {
+			$data['waled'] = $query;
+		}
+		if($query = $this->pagesModel->last_date()) {
+			$data['last'] = $query;
+		}
+		$data['title'] = "Learning Grid";
+		$data["header"] = "Learning Grid";
+		$data["content"] = "pages/grid";
+		$this->load->view("template/template", $data);
+	}
 }
 
 /* End of file Pages.php */

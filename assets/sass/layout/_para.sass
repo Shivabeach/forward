@@ -1,14 +1,15 @@
 @use '../abstracts' as *
 
 #gridly header
-	width: 100%
-	height: 8rem
+	width: 95%
+	height: 4rem
+	margin: 0 auto
 	+center(center, center)
 
 .parent
 	display: grid
-	grid-template-columns: 2fr repeat(5, 1fr)
-	grid-template-rows: repeat(7, 2fr)
+	grid-template-columns: 1fr repeat(5, 1fr)
+	grid-template-rows: repeat(9, 2fr)
 	grid-column-gap: 8px
 	grid-row-gap: 8px
 
@@ -35,3 +36,15 @@
 			color: map-get($colors, "text6")
 			text-shadow: none
 			text-decoration: none
+.div-head
+	+center(center, center)
+
+//highlighting for negative values in the grid page
+.highe:before
+	content: '('
+
+.highe:after
+	content: ')'
+
+.highe
+	color: $gen21

@@ -1,0 +1,15 @@
+@use '../abstracts' as *
+@media print
+  body
+    color: black
+    font: 9pt $font-stack-georgia
+    background: #fff
+    line-height: 1.1
+  .parent
+    width: 99%
+    margin: 0 auto
+    padding: 0
+    float: none
+  @page
+    margin: 2cm
+    size: landscape

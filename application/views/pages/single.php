@@ -13,7 +13,9 @@
           <li class="item-2"></li>
           <li class="item-3"></li>
           <li class="item-4"></li>
+          <li class="item-5"></li>
         </ul>
+        <hr class="rule">
       </div>
     </div>
 

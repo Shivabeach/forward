@@ -1,0 +1,2 @@
+"use strict";const steps=document.querySelectorAll(".steps"),miles=document.querySelectorAll(".miles"),sleep=document.querySelectorAll(".sleep"),calories=document.querySelectorAll(".calories"),exercise=document.querySelectorAll(".exercise");let stuff={steps:steps.innerText,miles:miles.innerText,sleep:sleep.innerText,calories:calories.innerText,exercise:exercise.innerText};
+//# sourceMappingURL=stats-dist.js.map

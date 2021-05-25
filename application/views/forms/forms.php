@@ -11,6 +11,7 @@
         <li class="item-2"></li>
         <li class="item-3"></li>
         <li class="item-4"></li>
+        <li class="item-5"></li>
       </ul>
 
     </div>
@@ -30,6 +31,7 @@
 							];
 							echo form_open('forms/walk', $form1);
 							$date1 = [
+								"id"          => "date1",
 								"type"        => "date",
 								"class"       => "input-med",
 								"name"        => "date",
@@ -58,7 +60,7 @@
               echo form_error('place');
 							echo form_input($place);
 							echo "<br>";
-							echo "<button type='submit' value='Submit'>Submit</button>";
+							echo "<button type='submit' id='walk' value='Submit'>Submit</button>";
 						echo "<button type='reset' value='Reset'>Reset</button>";
 							echo form_close();
 						?>

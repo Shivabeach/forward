@@ -1,0 +1,84 @@
+/** @format */
+
+@use '../abstracts' as *;
+//top grid on page
+.grid-container {
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 200px auto 100px;
+	grid-template-rows: repeat(2, 75px);
+	grid-gap: 1rem;
+}
+//-----------------------------------------
+//purple grid
+.example {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-gap: 1rem;
+	min-height: 100px;
+	background-color: $gen4;
+	width: 90%;
+	margin: 2rem auto;
+}
+
+[class^='example-item'] {
+	background-color: $opac;
+	padding: 1rem;
+}
+.tuts2,
+.tuts5 {
+	background: $gen8;
+}
+[class^='tuts'] {
+	border: 1px solid black;
+	padding: 0.25rem;
+}
+//-----------------------------------------
+// large grid
+.filer {
+	height: auto;
+	width: 90%;
+	margin: 0.5rem auto;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 0.75fr repeat(4, 1fr);
+	grid-template-areas:
+		'side side topper topper topper slider'
+		'side side boxer boxer boxer slider'
+		'side side boxer boxer boxer slider'
+		'boxy boxy boxer boxer boxer slider'
+		'boxy boxy boxer boxer boxer slider';
+}
+#named1 {
+	grid-area: topper;
+	border: 1px solid black;
+	@include center(end, center);
+}
+#named2 {
+	grid-area: side;
+	border: 1px solid black;
+}
+#named3 {
+	grid-area: boxer;
+	border: 1px solid black;
+}
+#named4 {
+	grid-area: slider;
+	border: 1px solid black;
+}
+#named5 {
+	grid-area: boxy;
+	border: 1px solid black;
+}
+.multi {
+	column-count: 2;
+	column-gap: 2rem;
+}
+//-------------------------------------------
+//Attempt 1
+.attempt1 {
+	width: 95%;
+	margin: 0.5rem auto;
+}

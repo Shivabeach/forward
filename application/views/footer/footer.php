@@ -8,7 +8,13 @@
 				$distance = round($row->distance, 2);
 				if($date == "04-2021"):
 					echo "<p>I have walked " . $distance . " miles from August 2020 to April 2021 </p>";
-				else:
+				elseif($date == "05-2021"):
+          echo "<p>I have walked " . $distance . " miles from August 2020 to May 2021 </p>";
+        elseif($date == "06-2021"):
+          echo "<p>I have walked " . $distance . " miles from August 2020 to June 2021 </p>";
+        elseif($date == "07-2021"):
+          echo "<p>I have walked " . $distance . " miles from August 2020 to July 2021 </p>";
+        else:
 					echo "No Date";
 				endif;
 			?>
@@ -19,10 +25,10 @@
       <p>Last time I walked was <?=nice_date($list->date, "D  M d, Y");?></p>
       <?php endforeach;?>
     </div>
-    <div id="three" class="box">
+    <div id="three" class="box padding-1">
 
     </div>
-    <div id="four" class="box">
+    <div id="four" class="box padding-1">
       <p class="copyr"></p>
     </div>
   </footer>
