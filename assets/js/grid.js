@@ -1,6 +1,8 @@
 /** @format */
 'use strict';
 //1.609344
+import { properCase, log, listen } from './utils.js';
+
 const gridpage = document.getElementById('grid-page');
 const box = document.querySelectorAll('.box');
 const gridly = document.getElementById('gridly');

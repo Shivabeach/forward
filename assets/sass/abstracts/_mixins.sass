@@ -49,7 +49,6 @@ $desktop1: 1024px
 =bodys
 	min-height: 100vh
 	scroll-behavior: smooth
-	text-rendering: optimizeSpeed
 	-moz-osx-font-smoothing: grayscale
 	-webkit-font-smoothing: antialiased
 
@@ -59,3 +58,6 @@ $desktop1: 1024px
 =set-background($color)
 	background-color: $color
 	color: set-text-color($color)
+
+@mixin round($radius)
+	border-radius: $radius

@@ -38,5 +38,5 @@
   	<div id="named5" class="names5">Something else</div>
 	</div>
 
-<script src="<?php echo base_url('assets/js/grid.js');?>" defer></script>
+<script type="module" src="<?php echo base_url('assets/js/grid.js');?>" defer></script>
 

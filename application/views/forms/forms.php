@@ -78,9 +78,10 @@
 
             <div id="display"></div>
             <p id="error"></p>
+            <p> Words: <span id="counted"></span></p>
             <?php
 							$form2 = [
-								"id" => "weight"
+								"id" => "weights"
 							];
 							echo form_open('forms/blogs', $form2);
 							$date1 = [
@@ -165,3 +166,4 @@
         <!--  -->
       </div>
     </div>
+    <script defer src="<?php echo base_url('assets/js/forms.js');?>" ></script>

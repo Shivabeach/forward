@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * /* Config
  *
@@ -24,12 +23,12 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: calc(18px + 0.05vw);
 }
 
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
@@ -232,10 +231,6 @@ a:focus, a :active {
   font-weight: 900;
 }
 
-.bold-10 {
-  font-weight: 1000;
-}
-
 .margin-1 {
   margin: 1px;
 }
@@ -330,7 +325,7 @@ strong {
 code {
   font-family: "Courier New", "Courier", "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   font-weight: 300;
-  font-size: get-vw(14px);
+  font-size: 1rem;
 }
 
 h1 {
@@ -486,13 +481,18 @@ li {
   padding-bottom: 0.5rem;
 }
 
-::marker {
-  color: yellow;
-  content: "☛ ";
-}
-
 ul {
   display: list-item;
+  list-style-type: none;
+  padding-left: 0.25rem;
+}
+
+.pb25 {
+  padding-bottom: 0.25rem;
+}
+
+.summary {
+  border: 1px solid #1313be;
 }
 
 /* Tables */
@@ -677,12 +677,14 @@ footer {
 }
 
 .top {
-  height: 2.5rem;
+  height: 3rem;
   display: flex;
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-right: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
 }
 .top a {
   color: #261fcc;
@@ -717,6 +719,10 @@ footer {
 
 .highe {
   color: #3209d0;
+}
+
+.gen7 {
+  color: #0af820;
 }
 
 /** @format */
@@ -859,7 +865,7 @@ th {
 }
 
 .coloring {
-  background: tint(#050533, 40%);
+  background: #1313be;
 }
 
 .size {
@@ -888,9 +894,10 @@ th {
 
 [class^=div] {
   background-color: #8c353d;
-  color: #bfa68f;
+  color: #73cac2;
   padding: 5px;
   border: 1px solid black;
+  border-radius: 7px;
 }
 [class^=div] p {
   padding: 0 5px;
@@ -901,6 +908,19 @@ th {
 [class^=primer] {
   border: 1px solid black;
   padding: 5px;
+  background: #1313be;
+}
+
+.top {
+  background: #d8cdd3;
+}
+
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  background: #050533;
 }
 
 .card--inside p {

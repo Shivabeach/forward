@@ -20,6 +20,7 @@ const div30 = document.querySelector('.div30');
 const date1 = document.getElementById('date1');
 const distance = document.getElementById('distance');
 const place = document.getElementById('place');
+
 let errors;
 const rady = parseInt(Math.random() * 1501 + 1);
 if (div30 !== null) {

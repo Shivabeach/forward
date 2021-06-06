@@ -16,9 +16,10 @@
 
 [class^= "div"]
   background-color: map-get($vintage, "dark")
-  color: map-get($vintage, "lt-bg")
+  color: $inver
   padding: 5px
   border: 1px solid black
+  @include round(7px)
 
   p
     padding: 0 5px
@@ -28,3 +29,16 @@
 [class^= "primer"]
   border: 1px solid black
   padding: 5px
+  background: $some-color
+//map-get($vintage, "lt-bg")
+//
+.top
+  background: $gen4
+
+
+.div2,
+.div3,
+.div4,
+.div5,
+.div6
+  background: #050533

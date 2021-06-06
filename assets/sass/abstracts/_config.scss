@@ -55,7 +55,7 @@ $base-duration: 350ms;
 $base-timing: ease;
 
 //constants
-$base-font-size: 1rem;
+$base-font-size: calc(18px + 0.05vw);
 
 $heading-font-family: $font-stack-georgia;
 
@@ -100,10 +100,10 @@ $display2-size: 5.5rem;
 $display3-size: 4.5rem;
 $display4-size: 3.5rem;
 
-$display1-weight: 300;
-$display2-weight: 300;
-$display3-weight: 300;
-$display4-weight: 300;
+$display1-weight: 300 * 1;
+$display2-weight: 300 * 2;
+$display3-weight: 300 * 3;
+$display4-weight: 300 * 4;
 $display-line-height: $headings-line-height;
 
 $lead-font-size: $font-size-base * 1.25;
