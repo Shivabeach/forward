@@ -15,7 +15,7 @@ class PagesModel extends CI_Model {
 	function singleFile()
 	{
 		$id = $this->uri->segment(3);
-		$this->db->select("date,content,id,tags,title,primeKeys");
+		$this->db->select("date,content,id,tags,title,primeKeys,words");
 		$this->db->where("id", $id);
 		$query = $this->db->get("blog");
 		return $query->result();

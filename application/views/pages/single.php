@@ -27,6 +27,7 @@
         <div class="card--inside">
 
           <div class="date fs-2 bold-7"><?php echo $final;?></div>
+          <div class="words fs2 bold7">Words: <?php echo $row->words;?> </div>
           <div class="blog-content">
             <?php echo auto_typography($row->content);?>
           </div>

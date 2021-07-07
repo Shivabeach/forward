@@ -6,9 +6,11 @@ export const properCase = (string) => {
 	return `${string[0].toUpperCase()}${string.slice(1).toLowerCase()}`;
 };
 
-// export const addUp = array.reduce((accumulator, current) => {
-// 	return current + accumulator;
-// }, 0);
+export const addUp = (array) => {
+	array.reduce((accumulator, current) => {
+		return current + accumulator;
+	}, 0);
+};
 
 export const addToArray = (array, data) => {
 	array.push(data);

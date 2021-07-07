@@ -1,21 +1,21 @@
 @use '../abstracts' as *
 
 #gridly header
-	width: 95%
+	width: 98%
 	height: 4rem
 	margin: 0 auto
 	+center(center, center)
 
 .parent
 	display: grid
-	grid-template-columns: 1fr repeat(5, 1fr)
+	grid-template-columns: .5fr repeat(5, 1fr)
 	grid-template-rows: repeat(9, 2fr)
 	grid-column-gap: 8px
 	grid-row-gap: 8px
 
 .parent
 	margin: 2rem auto
-	width: 95%
+	width: 98%
 
 
 .top
@@ -40,8 +40,34 @@
 			text-decoration: none
 .div-head
 	+center(center, center)
+	flex-direction: column
 
-//highlighting for negative values in the grid page
+//
+// For the grid footer
+//
+
+.footer
+	width: 97%
+	margin: 2rem auto
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	grid-template-rows: auto auto
+	grid-column-gap: 6px
+	grid-row-gap: 6px
+	background-color: #000
+
+.gridfoot
+	background-color: #fff
+	h3
+		+center(center, flex-start)
+		padding: 0
+		margin: 0
+
+
+
+// =======================================================================================
+// Highe and gen7 are for highlighting positive and negative values on the statistics page
+// ==========================================================================
 .highe:before
 	content: '('
 
@@ -52,4 +78,18 @@
 	color: $gen21
 
 .gen7
-	color: $gen7
+	color: $green
+	border: 1px solid black
+	border-radius: 50%
+	padding: 7px 9px 4px 8px
+
+.show
+	margin-left: 1rem
+
+.pos
+	padding: 0 3px
+	color: $gen19
+
+.neg
+	padding: 0 3px
+	color: $gen15

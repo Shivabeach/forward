@@ -1,4 +1,9 @@
 /** @format */
+//
+// Word counter for the textarea
+//
+const date1 = document.getElementById('distance');
+const dates = document.querySelector('.dates');
 
 document.querySelector('#content').addEventListener('keyup', function() {
 	let res = [];
@@ -9,9 +14,23 @@ document.querySelector('#content').addEventListener('keyup', function() {
 			res.push(trimStr);
 		}
 	});
-	document.querySelector('#counted').innerText = res.length;
+	document.querySelector('#counted').value = res.length;
 });
 
 blogger.addEventListener('click', (event) => {
 	blogger.innerHTML = 'Submitted';
 });
+
+// date1.addEventListener('focusout', function() {
+// 	if (date1.value === null || date1.value === '') {
+// 		console.log(date1.value);
+// 		//dates.innerHTML = 'Date must be entered';
+// 	}
+// });
+
+// let errors;
+// if (date1 === null || date1 === '') {
+// 	errors = true;
+// } else {
+// 	errors = false;
+// }

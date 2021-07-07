@@ -17,15 +17,13 @@ const error = document.getElementById('error');
 const three = document.getElementById('three');
 const copyr = document.querySelector('.copyr');
 const div30 = document.querySelector('.div30');
-const date1 = document.getElementById('date1');
 const distance = document.getElementById('distance');
 const place = document.getElementById('place');
 
-let errors;
-const rady = parseInt(Math.random() * 1501 + 1);
-if (div30 !== null) {
-	div30.innerHTML = `<p>${rady}</p>`;
-}
+// const rady = parseInt(Math.random() * 1501 + 1);
+// if (div30 !== null) {
+// 	div30.innerHTML = `<p>${rady}</p>`;
+// }
 
 const str = 'Home';
 const item11 = str.link('http://forward/');
@@ -46,6 +44,31 @@ item4.innerHTML = item44;
 const str4 = 'Grid';
 const item55 = str4.link('http://forward/pages/learn');
 item5.innerHTML = item55;
+
+// switch () {
+// 	case item1:
+// 		item1.classList.add('current');
+// 		break;
+// 	case str1:
+// 		item2.classList.add('current');
+// 		break;
+// 	case str2:
+// 		item3.classList.add('current');
+// 		break;
+// 	case str3:
+// 		item4.classList.add('current');
+// 		break;
+// 	case str4:
+// 		item5.classList.add('current');
+// 		break;
+// }
+
+for (let i = 0; i < document.links.length; i++) {
+	//this highlights the current active link
+	if (document.links[i].href == document.URL) {
+		document.links[i].className = 'current';
+	}
+}
 
 let keys = document.querySelector('.blog--keys');
 if (keys !== null) {
@@ -119,12 +142,6 @@ three.append(para);
 let yer = new Date();
 copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
 
-if (date1 === null || date1 === '') {
-	errors = true;
-} else {
-	errors = false;
-}
-
 function prints(parent) {
 	var printContents = document.querySelector('.parent').innerHTML;
 	var originalContents = document.body.innerHTML;
@@ -133,4 +150,18 @@ function prints(parent) {
 	document.body.innerHTML = originalContents;
 }
 
+// const pos = document.querySelectorAll('span.pos');
+
+// pos.forEach((posi) => {
+// 	let noder = Number(posi.innerHTML);
+// 	let arr = [];
+// 	arr.push(noder);
+// 	// 	let rip = [];
+// 	// 	let rips = rip.push(arr[0]);
+// 	// 	let final = rips.reduce(function(cur, cum) {
+// 	// 		cur + cum;
+// 	console.log(arr);
+// });
+
+// });
 //@prepros-append jquery.js

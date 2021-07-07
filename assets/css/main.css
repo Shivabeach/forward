@@ -18,6 +18,7 @@
 }
 
 /** @format */
+/** @format */
 html,
 body {
   box-sizing: border-box;
@@ -125,8 +126,21 @@ a:focus, a :active {
   padding-top: 0;
 }
 
+.current {
+  background: #e9967a;
+  color: #140fa9 !important;
+}
+
+output {
+  color: #0af820;
+}
+
 .input-small {
   width: 10%;
+}
+
+.input-date {
+  width: 15%;
 }
 
 .input-med {
@@ -147,52 +161,42 @@ a:focus, a :active {
 
 .fs-1 {
   font-size: 0.5vw;
-  /* Font weight mixin */
 }
 
 .fs-2 {
   font-size: 1vw;
-  /* Font weight mixin */
 }
 
 .fs-3 {
   font-size: 1.5vw;
-  /* Font weight mixin */
 }
 
 .fs-4 {
   font-size: 2vw;
-  /* Font weight mixin */
 }
 
 .fs-5 {
   font-size: 2.5vw;
-  /* Font weight mixin */
 }
 
 .fs-6 {
   font-size: 3vw;
-  /* Font weight mixin */
 }
 
 .fs-7 {
   font-size: 3.5vw;
-  /* Font weight mixin */
 }
 
 .fs-8 {
   font-size: 4vw;
-  /* Font weight mixin */
 }
 
 .fs-9 {
   font-size: 4.5vw;
-  /* Font weight mixin */
 }
 
 .fs-10 {
   font-size: 5vw;
-  /* Font weight mixin */
 }
 
 .bold-1 {
@@ -356,6 +360,10 @@ h6 {
   font-size: 16px;
 }
 
+.fz75 {
+  font-size: 0.75rem;
+}
+
 /*forms*/
 button[type=submit],
 button[type=reset] {
@@ -440,14 +448,14 @@ select {
   }
 
   .parent {
-    width: 99%;
+    width: 99.5%;
     margin: 0 auto;
     padding: 0;
     float: none;
   }
 
   @page {
-    margin: 2cm;
+    margin: 1cm;
     size: landscape;
   }
 }
@@ -488,11 +496,14 @@ ul {
 }
 
 .pb25 {
-  padding-bottom: 0.25rem;
+  padding: 0.25rem 0;
 }
 
 .summary {
   border: 1px solid #1313be;
+  border-radius: 10%;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Tables */
@@ -549,6 +560,7 @@ th {
   text-align: left;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+  color: #ffc0cb;
 }
 
 .box {
@@ -563,6 +575,10 @@ th {
   color: #fad590;
 }
 
+.words {
+  color: #d3f9d8;
+}
+
 /* Containers */
 .container {
   display: flex;
@@ -570,6 +586,7 @@ th {
   margin: 0 auto;
   flex-wrap: wrap;
   box-sizing: border-box;
+  gap: 1rem;
 }
 .container header {
   width: 100%;
@@ -596,7 +613,6 @@ th {
 .container main {
   flex: 2.5;
   box-sizing: inherit;
-  margin: 0 1rem;
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .container main {
@@ -647,6 +663,7 @@ th {
   text-shadow: 3px 2px 2px #ffcc33;
 }
 
+/** @format */
 footer {
   display: flex;
   justify-content: space-around;
@@ -655,7 +672,7 @@ footer {
 
 /* Main */
 #gridly header {
-  width: 95%;
+  width: 98%;
   height: 4rem;
   margin: 0 auto;
   display: flex;
@@ -665,7 +682,7 @@ footer {
 
 .parent {
   display: grid;
-  grid-template-columns: 1fr repeat(5, 1fr);
+  grid-template-columns: 0.5fr repeat(5, 1fr);
   grid-template-rows: repeat(9, 2fr);
   grid-column-gap: 8px;
   grid-row-gap: 8px;
@@ -673,7 +690,7 @@ footer {
 
 .parent {
   margin: 2rem auto;
-  width: 95%;
+  width: 98%;
 }
 
 .top {
@@ -707,6 +724,29 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  width: 97%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  background-color: #000;
+}
+
+.gridfoot {
+  background-color: #fff;
+}
+.gridfoot h3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .highe:before {
@@ -722,7 +762,24 @@ footer {
 }
 
 .gen7 {
-  color: #0af820;
+  color: #008000;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 7px 9px 4px 8px;
+}
+
+.show {
+  margin-left: 1rem;
+}
+
+.pos {
+  padding: 0 3px;
+  color: #261fcc;
+}
+
+.neg {
+  padding: 0 3px;
+  color: #e60832;
 }
 
 /** @format */
@@ -889,12 +946,12 @@ th {
 }
 
 #gridly {
-  background: #bf877a;
+  background: #f0ffff;
 }
 
 [class^=div] {
-  background-color: #8c353d;
-  color: #73cac2;
+  background-color: #ffebcd;
+  color: #001432;
   padding: 5px;
   border: 1px solid black;
   border-radius: 7px;
@@ -908,7 +965,7 @@ th {
 [class^=primer] {
   border: 1px solid black;
   padding: 5px;
-  background: #1313be;
+  background: #fffacd;
 }
 
 .top {
@@ -920,7 +977,7 @@ th {
 .div4,
 .div5,
 .div6 {
-  background: #050533;
+  background: #f0e68c;
 }
 
 .card--inside p {
@@ -931,10 +988,6 @@ th {
 }
 .card--inside li {
   color: #a5d8ff;
-}
-
-.headline {
-  color: #efebe9;
 }
 
 .box {

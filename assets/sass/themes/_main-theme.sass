@@ -12,11 +12,11 @@
   @extend #primary
 
 #gridly
-  background: map-get($vintage, "accent")
+  background: $azure
 
 [class^= "div"]
-  background-color: map-get($vintage, "dark")
-  color: $inver
+  background-color: $blanchedalmond
+  color: invert($blanchedalmond)
   padding: 5px
   border: 1px solid black
   @include round(7px)
@@ -29,7 +29,7 @@
 [class^= "primer"]
   border: 1px solid black
   padding: 5px
-  background: $some-color
+  background: $lemonchiffon
 //map-get($vintage, "lt-bg")
 //
 .top
@@ -41,4 +41,4 @@
 .div4,
 .div5,
 .div6
-  background: #050533
+  background: $khaki

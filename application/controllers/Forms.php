@@ -48,7 +48,8 @@ class Forms extends CI_Controller {
       'type'    => $this->input->post('type'),
 			'content' => $this->input->post('content'),
 			'tags'    => $this->input->post('tags'),
-			'primeKeys' => $this->input->post('primeKeys')
+			'primeKeys' => $this->input->post('primeKeys'),
+			'words' => $this->input->post('words')
 		];
 		$this->form_validation->set_rules('date', 'Date', 'required');
 
@@ -58,6 +59,7 @@ class Forms extends CI_Controller {
     $this->form_validation->set_rules('content', 'Content', 'required|trim');
     $this->form_validation->set_rules('tags', 'Tags', 'required|trim');
     $this->form_validation->set_rules('primeKeys', 'Prime Keys', 'trim');
+    $this->form_validation->set_rules('words', 'Words', 'required');
 
     if($this->form_validation->run() == false)
     {

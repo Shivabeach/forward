@@ -106,7 +106,7 @@ class Pages extends CI_Controller
 		$data['title'] = "Factoids";
 		$data["header"] = "Factoids";
 		$data["content"] = "pages/tables";
-		$this->load->view("template/template", $data);
+		$this->load->view("template/full", $data);
 	}
 
 	public function learn()
