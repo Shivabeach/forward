@@ -20,11 +20,6 @@ const div30 = document.querySelector('.div30');
 const distance = document.getElementById('distance');
 const place = document.getElementById('place');
 
-// const rady = parseInt(Math.random() * 1501 + 1);
-// if (div30 !== null) {
-// 	div30.innerHTML = `<p>${rady}</p>`;
-// }
-
 const str = 'Home';
 const item11 = str.link('http://forward/');
 item1.innerHTML = item11;
@@ -137,10 +132,10 @@ if (blogger != null) {
 const para = document.createElement('p');
 const textual = 'This is completely about my weight';
 para.append(textual);
-three.append(para);
+if (three != null) three.append(para);
 
 let yer = new Date();
-copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
+if (copyr != null) copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
 
 function prints(parent) {
 	var printContents = document.querySelector('.parent').innerHTML;
@@ -150,18 +145,11 @@ function prints(parent) {
 	document.body.innerHTML = originalContents;
 }
 
-// const pos = document.querySelectorAll('span.pos');
-
-// pos.forEach((posi) => {
-// 	let noder = Number(posi.innerHTML);
-// 	let arr = [];
-// 	arr.push(noder);
-// 	// 	let rip = [];
-// 	// 	let rips = rip.push(arr[0]);
-// 	// 	let final = rips.reduce(function(cur, cum) {
-// 	// 		cur + cum;
-// 	console.log(arr);
-// });
-
-// });
+// function createColor() {
+// 	const randl = Math.random().toString(16).substr(2, 6);
+// 	let randall = `#${randl}`;
+// 	colors.innerHTML = randall;
+// 	backg.style.backgroundColor = randall;
+// }
+// createColor();
 //@prepros-append jquery.js

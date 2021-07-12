@@ -6,7 +6,6 @@
       <li class="item-3 inline-list fs-3"></li>
       <li class="item-4 inline-list fs-3"></li>
       <li class="item-5 inline-list fs-3"></li>
-      <!-- <li><input type="button" onclick="prints('left')" value="Print Grid"></li> -->
     </ul>
   </menu>
   <div class="grid-container">

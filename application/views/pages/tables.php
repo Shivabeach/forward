@@ -156,12 +156,12 @@
     <div class="div20">
       <h5 class="date-range">July 4 - July 10</h5>
       <ul>
-        <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+        <li class="pb25">Steps: <strong>32,440</strong> <span class="steps show ">-4792 </span></li>
+        <li class="pb25">Miles: <strong>14</strong> <span class="miles show">-2</span></li>
+        <li class="pb25">Sleep: <strong>6hr 40min</strong> <span class="sleep show"> 25 </span></li>
+        <li class="pb25">Calories: <strong>17,525</strong> <span class="calorie show ">-728 </span></li>
+        <li class="pb25">Exercise: <strong>0</strong> <span class="exercise show "> -2</span></li>
+        <li class="summary pb25"><span class="pos">1</span>  <span class="neg">-4</span>  </li>
       </ul>
     </div>
     <div class="div21">
@@ -252,7 +252,12 @@
 
     </div>
     <div class="gridfoot"><h3>June</h3></div>
-    <div class="gridfoot"><h3>July</h3></div>
+    <div class="gridfoot"><h3>July</h3>
+      <ul>
+        <li>4th of July weekend ate like a pig. have gained the weight I lost due to new meds</li>
+        <li>Exercise performance was very poor the first week</li>
+      </ul>
+    </div>
     <div class="gridfoot"><h3>August</h3></div>
     <div class="gridfoot"><h3>Sept</h3></div>
     <div class="gridfoot">
@@ -262,3 +267,5 @@
     <div class="gridfoot"><h3>Nov</h3></div>
     <div class="gridfoot"><h3>Dec</h3></div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="<?php echo base_url('assets/js/script-dist.js');?>" defer></script>

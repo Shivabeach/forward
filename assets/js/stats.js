@@ -29,9 +29,9 @@ const fitMiles = {
 // 	arr.push(numm);
 // 	console.log(numm);
 // });
-const miiles = [19, 17, 17, 13, 14, 16, 15, 15, 16];
-const posit = [0, 3, 1, 3, 4, 2, 4, 4];
-const nega = [5, 2, 4, 2, 1, 3, 1, 1];
+const miiles = [19, 17, 17, 13, 14, 16, 15, 15, 16, 14];
+const posit = [0, 3, 1, 3, 4, 2, 4, 4, 1];
+const nega = [5, 2, 4, 2, 1, 3, 1, 1, 4];
 
 const walking = miiles.reduce((acc, cur) => acc + cur, 0);
 miliess.innerHTML = `${walking} Miles walked`;
