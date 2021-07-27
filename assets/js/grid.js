@@ -1,10 +1,5 @@
 /** @format */
 'use strict';
-
-//https://api.openweathermap.org/data/2.5/onecall?lat=36.1033333&lon=-84.1319444&units=imperial&exclude=minutely&appid=b8a9b43e6b2db287c12cd03bd327c021
-// b8a9b43e6b2db287c12cd03bd327c021
-//api.openweathermap.org/data/2.5/forecast/daily?zip=37716,us&units=imperial&appid=b8a9b43e6b2db287c12cd03bd327c021
-//
 //1.609344
 import { properCase, log, listen } from './utils.js';
 const timers = document.getElementById('timers');
