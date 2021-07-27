@@ -40,24 +40,6 @@ const str4 = 'Grid';
 const item55 = str4.link('http://forward/pages/learn');
 item5.innerHTML = item55;
 
-// switch () {
-// 	case item1:
-// 		item1.classList.add('current');
-// 		break;
-// 	case str1:
-// 		item2.classList.add('current');
-// 		break;
-// 	case str2:
-// 		item3.classList.add('current');
-// 		break;
-// 	case str3:
-// 		item4.classList.add('current');
-// 		break;
-// 	case str4:
-// 		item5.classList.add('current');
-// 		break;
-// }
-
 for (let i = 0; i < document.links.length; i++) {
 	//this highlights the current active link
 	if (document.links[i].href == document.URL) {

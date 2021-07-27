@@ -11,6 +11,12 @@
 	$rem: 1rem
 	@return $value / $base-font-size * $rem
 
+
+
+@function rem($pixels, $context: $base-font-size)
+	@return #{$pixels/$context} * 1rem
+
+
 //! map for input size
 
 @each $size, $wide in $map1

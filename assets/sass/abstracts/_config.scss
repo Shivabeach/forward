@@ -32,6 +32,8 @@ $font-stack-fu: 'Fugaz One', cursive;
 
 $font-stack-raleway: Raleway;
 
+$comfortaa: Comfortaa;
+
 @font-face {
 	font-family: MerriweatherSans;
 	src: url('../fonts/MerriweatherSans-VariableFont_wght.ttf') {
@@ -45,6 +47,17 @@ $font-stack-raleway: Raleway;
 	font-optical-sizing: auto;
 }
 
+@font-face {
+	font-family: Comfortaa;
+	src: url('../fonts/Comfortaa-VariableFont_wght.ttf') {
+		format: ('tff supports variations');
+	}
+	src: url('../fonts/Comfortaa-VariableFont_wght.ttf') {
+		format: ('tff-variations');
+	}
+	font-weight: 300 700;
+}
+
 *::before,
 *::after {
 	box-sizing: inherit;
@@ -55,7 +68,7 @@ $base-duration: 350ms;
 $base-timing: ease;
 
 //constants
-$base-font-size: calc(18px + 0.05vw);
+//font-size-base: calc(16px + 0.05vw);
 
 $heading-font-family: $font-stack-georgia;
 
@@ -91,7 +104,7 @@ $h6-font-size: $font-size-base;
 
 $headings-margin-bottom: $base-spacing / 2;
 $headings-font-family: $font-stack-fu;
-$headings-font-weight: 500;
+$headings-font-weight: 700;
 $headings-line-height: 1.2;
 $headings-color: null;
 

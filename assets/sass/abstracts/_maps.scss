@@ -117,18 +117,18 @@ $theme: (
 
 $greenie: (
 	prime: hsl(120, 99%, 27%),
-	secondary: #75d501,
-	accent: #01d27f,
-	text: #aeff00,
-	color: #01ff83
+	secondary: hsl(87.17, 99.07%, 41.96%),
+	accent: hsl(156.17, 99.05%, 41.37%),
+	text: hsl(79.06, 100%, 50%),
+	color: hsl(150.71, 100%, 50.2%)
 );
 
 $brownish: (
-	dark: #430d27,
-	med-dark: #582233,
-	lt-dark: #713045,
-	hi-light: #c94e4e,
-	real: #88540b
+	dark: hsla(331.11, 67.5%, 15.69%, 0.9),
+	med-dark: hsl(341.11, 44.26%, 23.92%),
+	lt-dark: hsl(340.62, 40.37%, 31.57%),
+	hi-light: hsl(0, 53.25%, 54.71%),
+	real: hsl(35.04, 85.03%, 28.82%)
 );
 
 $weight: (

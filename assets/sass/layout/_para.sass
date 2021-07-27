@@ -1,5 +1,5 @@
 @use '../abstracts' as *
-
+//for future grid use: grid-template-columns: repeat(autofil, minmax(20rem, 1fr))
 #gridly header
 	width: 98%
 	height: 4rem
@@ -8,7 +8,7 @@
 
 .parent
 	display: grid
-	grid-template-columns: .5fr repeat(5, 1fr)
+	grid-template-columns: .75fr repeat(5, 1fr)
 	grid-template-rows: repeat(9, 2fr)
 	grid-column-gap: 8px
 	grid-row-gap: 8px
@@ -35,9 +35,10 @@
 			text-shadow: none
 			text-decoration: none
 		&:hover
-			color: map-get($colors, "text6")
+			color: invert($gen19)
 			text-shadow: none
 			text-decoration: none
+			text-shadow: 1px 1px 2px $black
 .div-head
 	+center(center, center)
 	flex-direction: column
@@ -75,7 +76,8 @@
 	content: ')'
 
 .highe
-	color: $gen21
+	color: $gen19
+	background-color: $madeup
 
 .gen7
 	color: $green
@@ -93,3 +95,10 @@
 .neg
 	padding: 0 3px
 	color: $gen15
+
+#mayMiles,
+#juneMiles
+	padding-top: 12px
+
+.summary
+	@include angle-grad(90deg, $gen7, $gen8)

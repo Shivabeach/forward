@@ -12,9 +12,25 @@
   font-weight: 300 800;
   font-optical-sizing: auto;
 }
+@font-face {
+  font-family: Comfortaa;
+  src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
+  src-format: "tff supports variations";
+  src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
+  src-format: "tff-variations";
+  font-weight: 300 700;
+}
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+:root {
+  --yellow-hue: 60;
+  --green-hue: 120;
+  --cyan-hue: 160;
+  --blue-hue: 240;
+  --magenta-hue: 300;
 }
 
 /** @format */
@@ -24,7 +40,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: calc(18px + 0.05vw);
+  font-size: 16px;
 }
 
 body {
@@ -62,15 +78,15 @@ a {
   color: #ffe8cc;
   text-decoration: none;
   transition: color 350ms ease;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif;
+  font-family: Comfortaa;
+  font-weight: 600;
 }
 a:visited {
   color: #e1bee7;
   text-decoration: overline;
-  font-family: "Garamond", "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 a:hover {
-  color: #d7ccc8;
+  color: #a5d8ff;
   text-decoration: underline;
 }
 a:focus, a :active {
@@ -334,30 +350,36 @@ code {
 
 h1 {
   font-size: 40px;
-  counter-reset: subsection;
+  margin-bottom: 0.75rem;
 }
 
 h2 {
   font-size: 32px;
   font-family: MerriweatherSans;
+  margin-bottom: 0.75rem;
 }
 
 h3 {
   font-size: 28px;
   font-family: MerriweatherSans;
+  margin-bottom: 0.75rem;
 }
 
 h4 {
   font-size: 24px;
   font-family: MerriweatherSans;
+  margin-bottom: 0.75rem;
 }
 
 h5 {
   font-size: 20px;
+  font-family: MerriweatherSans;
+  margin-bottom: 0.75rem;
 }
 
 h6 {
   font-size: 16px;
+  margin-bottom: 0.75rem;
 }
 
 .fz75 {
@@ -682,7 +704,7 @@ footer {
 
 .parent {
   display: grid;
-  grid-template-columns: 0.5fr repeat(5, 1fr);
+  grid-template-columns: 0.75fr repeat(5, 1fr);
   grid-template-rows: repeat(9, 2fr);
   grid-column-gap: 8px;
   grid-row-gap: 8px;
@@ -715,9 +737,10 @@ footer {
   text-decoration: none;
 }
 .top a:hover {
-  color: #efebe9;
+  color: #d9e033;
   text-shadow: none;
   text-decoration: none;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .div-head {
@@ -758,7 +781,8 @@ footer {
 }
 
 .highe {
-  color: #3209d0;
+  color: #261fcc;
+  background-color: hsl(var(--cyan-hue), 50%, 50%);
 }
 
 .gen7 {
@@ -779,44 +803,19 @@ footer {
 
 .neg {
   padding: 0 3px;
-  color: #e60832;
+  color: #E60832;
+}
+
+#mayMiles,
+#juneMiles {
+  padding-top: 12px;
+}
+
+.summary {
+  background: linear-gradient(90deg, #0af820, #f9c59b);
 }
 
 /** @format */
-.grid-container {
-  width: 90%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 200px auto 100px;
-  grid-template-rows: repeat(2, 75px);
-  grid-gap: 1rem;
-}
-
-.example {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 1rem;
-  min-height: 100px;
-  background-color: #d8cdd3;
-  width: 90%;
-  margin: 2rem auto;
-}
-
-[class^=example-item] {
-  background-color: rgba(50, 9, 208, 0.35);
-  padding: 1rem;
-}
-
-.tuts2,
-.tuts5 {
-  background: #f9c59b;
-}
-
-[class^=tuts] {
-  border: 1px solid black;
-  padding: 0.25rem;
-}
-
 .filer {
   height: auto;
   width: 90%;
@@ -833,10 +832,20 @@ footer {
   -ms-grid-column: 5;
   -ms-grid-column-span: 5;
   grid-area: topper;
+  background-image: url(../images/blue-bg.png);
+  background-repeat: repeat;
   border: 1px solid black;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  padding: 1rem;
+  column-count: 3;
+  column-gap: 1.5rem;
+  column-rule: 3px solid #140fa9;
+  font-family: Comfortaa;
+}
+
+#named1 li {
+  padding: 8px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-family: Comfortaa;
 }
 
 #named2 {
@@ -945,10 +954,6 @@ th {
   background-color: #02042a;
 }
 
-#gridly {
-  background: #f0ffff;
-}
-
 [class^=div] {
   background-color: #ffebcd;
   color: #001432;
@@ -999,14 +1004,15 @@ fieldset {
 }
 
 #forms {
-  background-color: #430d27;
+  background-color: rgba(67, 13, 39, 0.9);
 }
 #forms h1 {
   color: #88540b;
+  text-shadow: 1px 2px 3px black, -3px -2px 1px #f1f1d5;
 }
 #forms h4 {
   color: #f99f00;
-  text-shadow: 1px 1px #88540b;
+  text-shadow: 1px 1px 3px black, -1px -1px 2px #f1f1d5;
 }
 
 /** @format */

@@ -25,7 +25,7 @@ $desktop1: 1024px
 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
 		@content
 
-=border($pixel, $type, $color, $rad)
+@mixin border($pixel, $type, $color, $rad)
 	border-width: $pixel
 	border-style: $type
 	border-color: $color
@@ -43,10 +43,10 @@ $desktop1: 1024px
 =simple-grad($color1, $color2)
 	background: linear-gradient($color1, $color2)
 
-=angle-grad($angle, $color, $color1)
+@mixin angle-grad($angle, $color, $color1)
 	background: linear-gradient($angle, $color, $color1)
 
-=bodys
+@mixin bodys
 	min-height: 100vh
 	scroll-behavior: smooth
 	-moz-osx-font-smoothing: grayscale
@@ -54,6 +54,12 @@ $desktop1: 1024px
 
 =height1($size)
 	height: $size
+
+@function set-text-color($color)
+	@if(lightness($color) > 50)
+		@return $gen26
+	@else
+		@return $gen22
 
 =set-background($color)
 	background-color: $color
