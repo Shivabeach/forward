@@ -14,10 +14,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css" media="all"
     onload="this.media='all'">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"> -->
 <!--   <base target="_blank"> -->
   <script>
   let FF_FOUC_FIX;

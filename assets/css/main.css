@@ -508,7 +508,6 @@ dt {
 li {
   height: auto;
   width: 100%;
-  padding-bottom: 0.5rem;
 }
 
 ul {
@@ -716,7 +715,7 @@ footer {
 }
 
 .top {
-  height: 3rem;
+  height: 4rem;
   display: flex;
   display: flex;
   justify-content: end;
@@ -741,6 +740,9 @@ footer {
   text-shadow: none;
   text-decoration: none;
   text-shadow: 1px 1px 2px #000000;
+}
+.top .upper {
+  margin-right: 1rem;
 }
 
 .div-head {
@@ -807,8 +809,10 @@ footer {
 }
 
 #mayMiles,
-#juneMiles {
+#juneMiles,
+#julyMiles {
   padding-top: 12px;
+  border-bottom: 2px solid #E60832;
 }
 
 .summary {
@@ -816,6 +820,11 @@ footer {
 }
 
 /** @format */
+#grid-page {
+  background-image: url(../images/light.png);
+  background-repeat: repeat;
+}
+
 .filer {
   height: auto;
   width: 90%;
@@ -983,6 +992,10 @@ th {
 .div5,
 .div6 {
   background: #f0e68c;
+}
+
+#demo12 {
+  margin-right: 10px;
 }
 
 .card--inside p {

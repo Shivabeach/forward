@@ -19,6 +19,13 @@ const copyr = document.querySelector('.copyr');
 const div30 = document.querySelector('.div30');
 const distance = document.getElementById('distance');
 const place = document.getElementById('place');
+const demo = document.getElementById('demo12');
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+	var d = new Date();
+	demo.innerHTML = d.toLocaleTimeString();
+}
 
 const str = 'Home';
 const item11 = str.link('http://forward/');

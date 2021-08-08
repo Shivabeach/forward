@@ -7,6 +7,7 @@ const gridpage = document.getElementById('grid-page');
 const box = document.querySelectorAll('.box');
 const gridly = document.getElementById('gridly');
 const dogs = document.querySelector('.dogs');
+const age = document.querySelector('.age');
 
 const date = new Date();
 timers.innerHTML = date.toString();
@@ -16,22 +17,35 @@ box.forEach(function(boxes) {
 		boxes.style.color = '#521B29';
 	}
 });
-//get dog breeds
-async function start() {
-	const response = await fetch('https://dog.ceo/api/breeds/list/all');
-	const data = await response.json();
-	createBreedList(data.message);
-}
-start();
 
-function createBreedList(breedList) {
-	dogs.innerHTML = `
-	<ul>
-	${Object.keys(breedList)
-		.map(function(breed) {
-			return `<li>${breed}</li>`;
-		})
-		.join('')}
-	</ul>
-`;
-}
+const getAge = () => {
+	const date = new Date();
+	const currentYear = date.getFullYear();
+	const birthYear = 1950;
+	const currentAge = currentYear - birthYear;
+	age.innerHTML = currentAge;
+};
+
+addEventListener('DOMContentLoaded', () => {
+	getAge();
+});
+
+// async function user() {
+// 	const response = await fetch('https://jsonplaceholder.typicode.com/users/');
+// 	const data = await response.json();
+// 	console.log(data);
+// 	createUsers(data);
+// }
+// user();
+
+// function createUsers(users) {
+// 	dogs.innerHTML = `
+// 		<ul>
+// 		${Object.keys(users)
+// 			.map(function(name) {
+// 				return `<li> ${name.company} </li>`;
+// 			})
+// 			.join('')}
+// 		</ul>
+// 	`;
+// }

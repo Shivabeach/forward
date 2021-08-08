@@ -16,6 +16,7 @@ const miles1 = document.querySelectorAll('.miles1');
 const may = document.querySelectorAll('.may');
 const june = document.querySelectorAll('.june');
 const july = document.querySelectorAll('.july');
+const ex = document.querySelectorAll('.ex');
 
 const posi = document.getElementById('posi');
 const neggy = document.getElementById('neggy');
@@ -27,6 +28,10 @@ const juneMiles = document.getElementById('juneMiles');
 const colorDisplay = document.getElementById('colorDisplay');
 const julyMiles = document.getElementById('julyMiles');
 const pos = document.querySelectorAll('.pos');
+const exer = document.getElementById('exer');
+const xe = document.querySelector('.ex');
+const item5 = document.querySelector('.inline-list');
+//console.log(xe.firstElementChild.firstChild.nodeValue);
 
 //var commas = num.toLocaleString("en-US");
 //arrays
@@ -38,6 +43,7 @@ let monthJune = [];
 let h, s, l;
 let happy = [];
 let negg = [];
+let burnie = [];
 
 //functions
 //add up the positive numbers
@@ -62,6 +68,17 @@ function negativeNum() {
 	const results = numb.toLocaleString('en-US');
 	neggy.innerHTML = `${results} Negative`;
 }
+//exercise
+function exerc() {
+	ex.forEach((times) => {
+		let burn = times.firstElementChild.firstChild.nodeValue;
+		burnie.push(burn);
+	});
+	const toNumbers = burnie.map(Number);
+	const freshAir = toNumbers.reduce((acc, cum) => acc + cum, 0);
+	const results = freshAir.toLocaleString('en-US');
+	exer.innerHTML = `${results} days exercising`;
+}
 
 //steps
 function steppers() {
@@ -79,7 +96,7 @@ function steppers() {
 
 //Calories burned
 function calBurn() {
-	cals.forEach(function(burny) {
+	cals.forEach((burny) => {
 		let burnCal = burny.firstElementChild.firstChild.nodeValue;
 		calArray.push(burnCal);
 	});
@@ -90,7 +107,7 @@ function calBurn() {
 }
 //Miles
 function distance() {
-	miles1.forEach(function(dist) {
+	miles1.forEach((dist) => {
 		let milesWalk = dist.firstElementChild.firstChild.nodeValue;
 		miles2.push(milesWalk);
 	});
@@ -100,7 +117,7 @@ function distance() {
 }
 //May Miles
 function may21() {
-	may.forEach(function(may4) {
+	may.forEach((may4) => {
 		let mayMonth = may4.firstElementChild.firstChild.nodeValue;
 		monthMay.push(mayMonth);
 	});
@@ -110,7 +127,7 @@ function may21() {
 }
 //June miles
 function june21() {
-	june.forEach(function(june6) {
+	june.forEach((june6) => {
 		let juneMonth = june6.firstElementChild.firstChild.nodeValue;
 		monthJune.push(juneMonth);
 	});
@@ -121,7 +138,7 @@ function june21() {
 
 function july21() {
 	let monthJuly = [];
-	july.forEach(function(july7) {
+	july.forEach((july7) => {
 		let julyMonth = july7.firstElementChild.firstChild.nodeValue;
 		monthJuly.push(julyMonth);
 	});
@@ -146,7 +163,7 @@ miles.forEach(function(mile) {
 	}
 });
 
-sleep.forEach(function(sleeps) {
+sleep.forEach((sleeps) => {
 	if (sleeps.textContent < 0) {
 		sleeps.classList.add('highe');
 	} else {
@@ -177,12 +194,14 @@ function createColor() {
 	let col = `hsl(${h}, ${s}%, ${l}%)`;
 	document.body.style.backgroundColor = col;
 	colorDisplay.innerHTML = col;
+	item5.style.backgroundColor = col;
 }
 
 addEventListener('DOMContentLoaded', () => {
 	steppers();
 	calBurn();
 	distance();
+	exerc();
 	may21();
 	june21();
 	createColor();

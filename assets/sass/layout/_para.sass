@@ -19,7 +19,7 @@
 
 
 .top
-	height: 3rem
+	height: 4rem
 	display: flex
 	+center(end, center)
 	margin-left: auto
@@ -39,6 +39,8 @@
 			text-shadow: none
 			text-decoration: none
 			text-shadow: 1px 1px 2px $black
+	.upper
+		margin-right: 1rem
 .div-head
 	+center(center, center)
 	flex-direction: column
@@ -97,8 +99,10 @@
 	color: $gen15
 
 #mayMiles,
-#juneMiles
+#juneMiles,
+#julyMiles
 	padding-top: 12px
+	border-bottom: 2px solid $gen15
 
 .summary
 	@include angle-grad(90deg, $gen7, $gen8)

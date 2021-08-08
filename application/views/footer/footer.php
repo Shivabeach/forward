@@ -14,6 +14,8 @@
           echo "<p>I have walked " . $distance . " miles from August 2020 to June 2021 </p>";
         elseif($date == "07-2021"):
           echo "<p>I have walked " . $distance . " miles from August 2020 to July 2021 </p>";
+        elseif($date == "08-2021"):
+          echo "<p>I have walked " . $distance . " miles from August 2020 to Aug 2021 </p>";
         else:
 					echo "No Date";
 				endif;

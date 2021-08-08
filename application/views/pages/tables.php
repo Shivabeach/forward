@@ -1,7 +1,8 @@
 <body id="gridly">
   <menu class="top">
+    <h2 class="upper">Statistical Data</h2 class="upper">
   <ul role="list" class="inline-list">
-    <!-- <li><input type="button" onclick="prints('left')" value="Print Grid"></li> -->
+    <li class="inline-list fs-3" id="demo12"></li>
     <li class="item-1 inline-list fs-3"></li>
     <li class="item-2 inline-list fs-3"></li>
     <li class="item-3 inline-list fs-3"></li>
@@ -23,6 +24,7 @@
       <span id="milies"></span>
       <span id="steppen"></span>
       <span id="burned"></span>
+      <span id="exer"></span>
       <span id="colorDisplay"></span>
     </div>
     <div class="div2 div-head">
@@ -52,7 +54,7 @@
         <li class="pb25 miles1 may">Miles: <strong>19</strong></li>
         <li class="pb25">Sleep: <strong>6hrs 14min</strong></li>
         <li class="pb25 cal">Calories: <strong>17822</strong></li>
-        <li class="pb25">Exercise: <strong>4 days</strong></li>
+        <li class="pb25 ex">Exercise: <strong>4</strong></li>
       </ul>
     </div>
     <div class="div9">
@@ -62,7 +64,7 @@
         <li class="pb25 miles1 may">Miles: <strong>17 <span data-miles class="miles show"> -2</span></strong></li>
         <li class="pb25">Sleep: <strong>6 hr 7 min <span class="sleep show "> -7</span></strong></li>
         <li class="pb25 cal">Calories: <strong>17718 <span class="calorie show "> -104</span></strong></li>
-        <li class="pb25">Exercise: <strong>2 days <span class="exercise show "> -2</span></strong></li>
+        <li class="pb25 ex">Exercise: <strong>2 <span class="exercise show "> -2</span></strong></li>
         <li class="summary pb25"><span class="pos"> 0</span> <span class="neg">-5</span></li>
       </ul>
     </div>
@@ -73,7 +75,7 @@
         <li class="pb25 miles1 may">Miles: <strong>17 <span class="miles show "> 0</span></strong></li>
         <li class="pb25">Sleep: <strong>5 hrs 49 min <span class="sleep show "> -17</span></strong></li>
         <li class="pb25 cal">Calories: <strong>17559 <span class="calorie show "> -159</span></strong></li>
-        <li class="pb25">Exercise: <strong>4 <span class="exercise show "> 2</span></strong></li>
+        <li class="pb25 ex">Exercise: <strong>4 <span class="exercise show "> 2</span></strong></li>
         <li class="summary pb25"><span class="pos"> 3</span> <span class="neg"> -2</span></li>
       </ul>
     </div>
@@ -84,7 +86,7 @@
         <li class="pb25 miles1 may">Miles: <strong>13 <span class="miles show ">-4</span> </strong></li>
         <li class="pb25">Sleep: <strong>6 hrs 9 min <span class="sleep show ">19</span> </strong></li>
         <li class="pb25 cal">Calories: <strong>16343 <span class="calorie show ">-216</span> </strong></li>
-        <li class="pb25">Exercise: <strong>2 <span class="exercise show ">-2</span> </strong></li>
+        <li class="pb25 ex">Exercise: <strong>2 <span class="exercise show ">-2</span> </strong></li>
         <li class="summary pb25"><span class="pos"> 1</span> <span class="neg">-4</span></li>
       </ul>
     </div>
@@ -106,7 +108,7 @@
         <li class="pb25 miles1 june">Miles: <strong>14</strong> <span class="miles show"> 1</span> </li>
         <li class="pb25">Sleep: <strong>6 hrs 7 min</strong> <span class="sleep show"> -2 </span></li>
         <li class="pb25 cal">Calories: <strong>17188</strong> <span class="calorie show "> 845 </span></li>
-        <li class="pb25">Exercise: <strong>0</strong> <span class="exercise show "> -2</span> </li>
+        <li class="pb25 ex">Exercise: <strong>0</strong> <span class="exercise show "> -2</span> </li>
         <li class="summary pb25"><span class="pos"> 3</span> <span class="neg">-2</span></li>
       </ul>
     </div>
@@ -117,7 +119,7 @@
         <li class="pb25 miles1 june">Miles: <strong>16</strong><span class="miles show">2</span> </li>
         <li class="pb25">Sleep: <strong>6 Hrs 6 Min</strong> <span class="sleep show"> -1</span></li>
         <li class="pb25 cal">Calories: <strong>17498</strong><span class="calorie show "> 310 </span></li>
-        <li class="pb25">Exercise: <strong>3</strong><span class="exercise show ">3</span></li>
+        <li class="pb25 ex">Exercise: <strong>3</strong><span class="exercise show ">3</span></li>
         <li class="summary pb25"><span class="pos"> 4</span> <span class="neg">-1</span> </li>
       </ul>
     </div>
@@ -128,7 +130,7 @@
         <li class="pb25 miles1 june">Miles: <strong>15</strong> <span class="miles show">-1</span></li>
         <li class="pb25">Sleep: <strong>6 hrs 10 min</strong> <span class="sleep show"> 4</span></li>
         <li class="pb25 cal">Calories: <strong>17478</strong> <span class="calorie show "> -20 </span></li>
-        <li class="pb25">Exercise: <strong>3</strong> <span class="exercise show ">0</span></li>
+        <li class="pb25 ex">Exercise: <strong>3</strong> <span class="exercise show ">0</span></li>
         <li class="summary pb25"><span class="pos"> 2</span>  <span class="neg">-3</span> </li>
       </ul>
     </div>
@@ -139,7 +141,7 @@
         <li class="pb25 miles1 june">Miles: <strong>15</strong> <span class="miles show">0</span></li>
         <li class="pb25">Sleep: <strong>6 hrs 31 min</strong><span class="sleep show"> 21</span></li>
         <li class="pb25 cal">Calories: <strong>18014</strong><span class="calorie show "> 536 </span></li>
-        <li class="pb25">Exercise: <strong>2</strong> <span class="exercise show ">-1</span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show ">-1</span></li>
         <li class="summary pb25"><span class="pos"> 4</span>  <span class="neg">-1</span> </li>
       </ul>
     </div>
@@ -150,7 +152,7 @@
         <li class="pb25 miles1 june">Miles: <strong>16</strong> <span class="miles show">1</span></li>
         <li class="pb25">Sleep: <strong>6 hr 14 min</strong> <span class="sleep show"> -17</span></li>
         <li class="pb25 cal">Calories: <strong>18253</strong> <span class="calorie show ">239 </span></li>
-        <li class="pb25">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
         <li class="summary pb25"><span class="pos">4</span>  <span class="neg">-1</span>  </li>
       </ul>
     </div>
@@ -166,7 +168,7 @@
         <li class="pb25 miles1 july">Miles: <strong>14</strong> <span class="miles show">-2</span></li>
         <li class="pb25">Sleep: <strong>6hr 40min</strong> <span class="sleep show"> 25 </span></li>
         <li class="pb25 cal">Calories: <strong>17525</strong> <span class="calorie show ">-728 </span></li>
-        <li class="pb25">Exercise: <strong>0</strong> <span class="exercise show "> -2</span></li>
+        <li class="pb25 ex">Exercise: <strong>0</strong> <span class="exercise show "> -2</span></li>
         <li class="summary pb25"><span class="pos">1</span>  <span class="neg">-4</span>  </li>
       </ul>
     </div>
@@ -177,7 +179,7 @@
         <li class="pb25 miles1 july">Miles: <strong>14</strong> <span class="miles show">0</span></li>
         <li class="pb25">Sleep: <strong>5 hr 41 min</strong> <span class="sleep show"> -60</span></li>
         <li class="pb25 cal">Calories: <strong>17383</strong> <span class="calorie show ">-142 </span></li>
-        <li class="pb25">Exercise: <strong>2</strong> <span class="exercise show">2</span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show">2</span></li>
         <li class="summary pb25"><span class="pos">2</span>  <span class="neg">-3</span>  </li>
       </ul>
     </div>
@@ -188,22 +190,24 @@
         <li class="pb25 miles1 july">Miles: <strong>16</strong> <span class="miles show">2</span></li>
         <li class="pb25">Sleep: <strong>6 hr 11 min</strong> <span class="sleep show">31 </span></li>
         <li class="pb25 cal">Calories: <strong>17597</strong> <span class="calorie show ">214 </span></li>
-        <li class="pb25">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
         <li class="summary pb25"><span class="pos">5</span>  <span class="neg">0</span>  </li>
       </ul>
     </div>
     <div class="div23">
       <h5 class="date-range">July 25- July 31</h5>
       <ul>
-        <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+        <li class="pb25 step">Steps: <strong>28204</strong> <span class="steps show"> -8466</span></li>
+        <li class="pb25 miles1 july">Miles: <strong>12</strong> <span class="miles show">-4</span></li>
+        <li class="pb25">Sleep: <strong>6hr 2 min</strong> <span class="sleep show">-9 </span></li>
+        <li class="pb25 cal">Calories: <strong>16637</strong> <span class="calorie show ">-960 </span></li>
+        <li class="pb25 ex">Exercise: <strong>3</strong> <span class="exercise show ">1</span></li>
+        <li class="summary pb25"><span class="pos">1</span>  <span class="neg">-4</span>  </li>
       </ul>
     </div>
-    <div class="div24"></div>
+    <div class="div24">
+      <p>Started back to the gym 7/27 and 28. This will affect the miles and steps numbers</p>
+    </div>
     <!-- row 5 -->
     <div class="primer div19 div-head">
       <h4><mark class="mid-head r">Aug 2021</mark></h4>
@@ -212,10 +216,10 @@
       <h5 class="date-range">Aug 1- Aug 7</h5>
       <ul>
         <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25 aug">Miles: <strong></strong> <span class="miles show"></span></li>
         <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
         <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show "></span></li>
         <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
       </ul>
     </div>
@@ -248,7 +252,7 @@
         <li class="pb25">Miles: <strong></strong> <span class="miles show"></span></li>
         <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
         <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="pb25 ">Exercise: <strong></strong> <span class="exercise show "></span></li>
         <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
       </ul>
     </div>

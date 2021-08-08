@@ -1,6 +1,7 @@
 <body id="grid-page">
    <menu class="top">
     <ul role="list" class="inline-list">
+      <li class="inline-list fs-3" id="demo12"></li>
       <li class="item-1 inline-list fs-3"></li>
       <li class="item-2 inline-list fs-3"></li>
       <li class="item-3 inline-list fs-3"></li>
@@ -49,9 +50,15 @@
     </div>
   	<div id="named2" class="names2">
     Sidebar <span>named 2</span>
+    <h3>Date Routines</h3>
+    <p>
+      const date = new Date();<br>
+      timers.innerHTML = date.toString();
+    </p>
     <p id="timers"></p>
+    <p>What is my age? <span class="age"> </span></p>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores consequatur, unde eius culpa at dolorum voluptas debitis? Voluptatem molestias doloremque accusantium minus voluptatum, ipsum corporis, ex explicabo nobis deleniti sit veritatis vitae impedit blanditiis deserunt facilis voluptas sed, magni maxime suscipit nihil libero dolorem! Doloribus sapiente consequuntur eum odit fuga?</p>
+
   </div>
   	<div id="named3" class="names3 multi">
       <span>named 3</span>
@@ -65,8 +72,9 @@
     </div>
   	<div id="named5" class="names5">
     <span>named 5</span>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga voluptatibus blanditiis obcaecati molestias et. Soluta iusto delectus repudiandae iste laborum ullam explicabo quia atque facilis tempore facere laboriosam debitis, maiores architecto doloribus tempora molestias excepturi, non omnis dolorem ducimus itaque modi nostrum. Voluptate, rerum saepe soluta eaque beatae ipsum.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga voluptatibus blanditiis obcaecati molestias et. Soluta iusto delectus repudiandae iste laborum ullam explicabo quia atque facilis tempore facere laboriosam debitis, maiores architecto doloribus tempora molestias excepturi, non omnis dolorem ducimus itaque modi nostrum. Voluptate, rerum saepe soluta eaque beatae ipsum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores consequatur, unde eius culpa at dolorum voluptas debitis? Voluptatem molestias doloremque accusantium minus voluptatum, ipsum corporis, ex explicabo nobis deleniti sit veritatis vitae impedit blanditiis deserunt facilis voluptas sed, magni maxime suscipit nihil libero dolorem! Doloribus sapiente consequuntur eum odit fuga?</p>
+
   </div>
 	</div>
 
