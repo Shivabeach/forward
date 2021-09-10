@@ -7,6 +7,7 @@ const item2 = document.querySelector('.item-2');
 const item3 = document.querySelector('.item-3');
 const item4 = document.querySelector('.item-4');
 const item5 = document.querySelector('.item-5');
+const item6 = document.querySelector('.item-6');
 const date = document.getElementById('date');
 const title = document.getElementById('title');
 const content = document.getElementById('content');
@@ -46,6 +47,10 @@ item4.innerHTML = item44;
 const str4 = 'Grid';
 const item55 = str4.link('http://forward/pages/learn');
 item5.innerHTML = item55;
+
+const str5 = 'Taxonomy';
+const item66 = str5.link('http://forward/pages/taxes');
+item6.innerHTML = item66;
 
 for (let i = 0; i < document.links.length; i++) {
 	//this highlights the current active link

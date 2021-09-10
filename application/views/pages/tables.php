@@ -8,6 +8,7 @@
     <li class="item-3 inline-list fs-3"></li>
     <li class="item-4 inline-list fs-3"></li>
     <li class="item-5 inline-list fs-3"></li>
+    <li class="item-6 inline-list fs-3"></li>
 
   </ul>
   </menu>
@@ -60,7 +61,7 @@
     <div class="div9">
       <h5 class="date-range">May 9-15</h5>
       <ul class="ops">
-        <li class="pb25 step">Steps: <strong>38405 <span class="steps show "> -5592</span></strong></li>
+        <li  class="pb25 step">Steps: <strong>38405 <span class="steps show "> -5592</span></strong></li>
         <li class="pb25 miles1 may">Miles: <strong>17 <span data-miles class="miles show"> -2</span></strong></li>
         <li class="pb25">Sleep: <strong>6 hr 7 min <span class="sleep show "> -7</span></strong></li>
         <li class="pb25 cal">Calories: <strong>17718 <span class="calorie show "> -104</span></strong></li>
@@ -100,6 +101,7 @@
     <div class="primer div13 div-head">
       <h4><mark class="mid-head r">June 2021</mark></h4>
       <span id="juneMiles"></span>
+      <span id="juneAv"></span>
     </div>
     <div class="div14">
       <h5 class="date-range">May 30-June 5</h5>
@@ -160,6 +162,7 @@
     <div class="primer div19 div-head">
       <h4><mark class="mid-head r">July 2021</mark></h4>
       <span id="julyMiles"></span>
+      <span id="julyAverage"></span>
     </div>
     <div class="div20">
       <h5 class="date-range">July 4 - July 10</h5>
@@ -211,71 +214,117 @@
     <!-- row 5 -->
     <div class="primer div19 div-head">
       <h4><mark class="mid-head r">Aug 2021</mark></h4>
+      <span id="augMiles"></span>
+      <span id="augAverage"></span>
     </div>
     <div class="div20">
       <h5 class="date-range">Aug 1- Aug 7</h5>
       <ul>
-        <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25 aug">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+        <li class="pb25 step">Steps: <strong>32769</strong> <span class="steps show ">4565 </span></li>
+        <li class="pb25 miles1 aug">Miles: <strong>14</strong> <span class="miles show">2</span></li>
+        <li class="pb25">Sleep: <strong>6hr 7min</strong> <span class="sleep show">5 </span></li>
+        <li class="pb25 cal">Calories: <strong>16882</strong> <span class="calorie show ">245 </span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show ">-1</span></li>
+        <li class="summary pb25"><span class="pos">4</span>  <span class="neg">-1</span>  </li>
       </ul>
     </div>
     <div class="div21">
       <h5 class="date-range">Aug 8 - Aug 14</h5>
       <ul>
-        <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+        <li class="pb25 step">Steps: <strong>30421</strong> <span class="steps show "> -2348</span></li>
+        <li class="pb25 miles1 aug">Miles: <strong>13</strong> <span class="miles show">-1</span></li>
+        <li class="pb25">Sleep: <strong>6hr 16min</strong> <span class="sleep show">9 </span></li>
+        <li class="pb25 cal">Calories: <strong>17259</strong> <span class="calorie show ">377 </span></li>
+        <li class="pb25 ex">Exercise: <strong>3</strong> <span class="exercise show ">1</span></li>
+        <li class="summary pb25"><span class="pos">3</span>  <span class="neg">-2</span>  </li>
       </ul>
     </div>
     <div class="div22">
       <h5 class="date-range">Aug 15 - Aug 21</h5>
       <ul>
-        <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+        <li class="pb25 step">Steps: <strong>32704</strong> <span class="steps show ">2283 </span></li>
+        <li class="pb25 miles1 aug">Miles: <strong>14</strong> <span class="miles show">1</span></li>
+        <li class="pb25">Sleep: <strong>6hr 33min</strong> <span class="sleep show"> 17</span></li>
+        <li class="pb25 cal">Calories: <strong>17379</strong> <span class="calorie show ">120 </span></li>
+        <li class="pb25 ex">Exercise: <strong>3</strong> <span class="exercise show ">0</span></li>
+        <li class="summary pb25"><span class="pos">5</span>  <span class="neg">0</span>  </li>
       </ul>
     </div>
     <div class="div23">
       <h5 class="date-range">Aug 22 - Aug 28</h5>
       <ul>
+        <li class="pb25 step">Steps: <strong>39127</strong> <span class="steps show ">6423 </span></li>
+        <li class="pb25 miles1 aug">Miles: <strong>17</strong> <span class="miles show">3</span></li>
+        <li class="pb25">Sleep: <strong>5hr 53min</strong> <span class="sleep show">-39 </span></li>
+        <li class="pb25 cal">Calories: <strong>18928</strong> <span class="calorie show ">1549 </span></li>
+        <li class="pb25 ex">Exercise: <strong>3</strong> <span class="exercise show ">0</span></li>
+        <li class="summary pb25"><span class="pos">4</span>  <span class="neg">-1</span>  </li>
+      </ul>
+    </div>
+    <div class="div24">
+      <h5 class="date-range">Aug 29 - Sept 4</h5>
+      <ul>
+        <li class="pb25 step">Steps: <strong>41242</strong> <span class="steps show "> 2115</span></li>
+        <li class="pb25 miles1 aug">Miles: <strong>18</strong> <span class="miles show">1</span></li>
+        <li class="pb25">Sleep: <strong>6hr 9min</strong> <span class="sleep show"> 16</span></li>
+        <li class="pb25 cal">Calories: <strong>19547</strong> <span class="calorie show "> 619</span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show ">-1</span></li>
+        <li class="summary pb25"><span class="pos">4</span>  <span class="neg">-1</span>  </li>
+      </ul>
+    </div>
+    <!-- row 7 -->
+    <div class="primer div25 div-head">
+      <h4><mark class="mid-head r">Sept 2021</mark></h4>
+      <span id="septMiles"></span>
+      <span id="septAverage"></span>
+    </div>
+    <div class="div26">
+      <h5 class="date-range">Sept 5 - Sept 11</h5>
+      <ul>
+        <li class="pb25 step">Steps: <strong>19723</strong> <span class="steps show "> </span></li>
+        <li class="pb25 miles1 septem">Miles: <strong>8</strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25 cal">Calories: <strong>11430</strong> <span class="calorie show "> </span></li>
+        <li class="pb25 ">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
+    </div>
+    <div class="div27">
+      <h5 class="date-range">Sept 12 - Sept 18</h5>
+      <ul>
         <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
         <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
         <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
         <li class="pb25 ">Exercise: <strong></strong> <span class="exercise show "></span></li>
         <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
       </ul>
     </div>
-    <div class="div24">
-      <h5 class="date-range">Aug 29 - Sept 4</h5>
+    <div class="div28">
+      <h5 class="date-range">Sept 19 - Sept 25</h5>
       <ul>
         <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
         <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
         <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="pb25 ">Exercise: <strong></strong> <span class="exercise show "></span></li>
         <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
       </ul>
     </div>
-    <!-- row 7 -->
-    <div class="primer div25 div-head">
-      <h4><mark class="mid-head r">Sept 2021</mark></h4>
+    <div class="div29">
+      <h5 class="date-range">Sept 26 - Oct 2</h5>
+      <ul>
+        <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25 ">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
     </div>
-    <div class="div26"></div>
-    <div class="div27"></div>
-    <div class="div28"></div>
-    <div class="div29"></div>
-    <div class="div30"></div>
+    <div class="div30">
+
+    </div>
     <!-- row 8 -->
     <div class="primer div25 div-head">
       <h4><mark class="mid-head r">Oct 2021</mark></h4>
@@ -317,9 +366,17 @@
         <li>4th of July weekend ate like a pig. have gained the weight I lost due to new meds</li>
         <li>Exercise performance was very poor the first week</li>
         <li>1st two weeks in and I am well behind in summary</li>
+        <li>Started back to the gym.</li>
       </ul>
     </div>
-    <div class="gridfoot"><h3>August</h3></div>
+    <div class="gridfoot"><h3>August</h3>
+      <ul>
+        <li>Working out at the gym. Having a good time</li>
+        <li></li>
+        <li></li>
+      </ul>
+
+    </div>
     <div class="gridfoot"><h3>Sept</h3></div>
     <div class="gridfoot">
       <h3>Oct</h3>
@@ -330,4 +387,4 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
-  <script type="module" src="<?php echo base_url('assets/js/stats-dist.js');?>"></script>
+  <script type="module" src="<?php echo base_url('assets/js/stats.js');?>"></script>

@@ -7,6 +7,7 @@
       <li class="item-3 inline-list fs-3"></li>
       <li class="item-4 inline-list fs-3"></li>
       <li class="item-5 inline-list fs-3"></li>
+      <li class="item-6 inline-list fs-3"></li>
     </ul>
   </menu>
   <!-- <div class="grid-container">
@@ -29,10 +30,7 @@
   <div class="filer">
   	<div id="named1" class="names1">
       <ul>
-        <li>Cafe Del Mar</li>
-        <li>Cafe Del Mar Dreams</li>
-        <li>Cafe Del Mar Aria</li>
-        <li>Cafe Del Mar Classic</li>
+        <li>Fragile State</li>
         <li>SupperClub</li>
         <li>Supperclub Addiction</li>
         <li>SupperClub One World</li>
@@ -40,9 +38,9 @@
         <li>SupperClub The End</li>
         <li>SupperClub 15 Years</li>
         <li>Siddharta Spirit of Buddha</li>
-        <li>Buddha Bar</li>
-        <li>Buddha World Bar</li>
-        <li>Buddha Lounge</li>
+        <li>Om Lounge</li>
+        <li>Banco De Gaia</li>
+        <li>Baka Beyond</li>
         <li>Dmitri From Paris</li>
         <li>Nacho Sotomayer</li>
         <li></li>
@@ -50,6 +48,7 @@
     </div>
   	<div id="named2" class="names2">
     Sidebar <span>named 2</span>
+    <p class="topColor"></p>
     <h3>Date Routines</h3>
     <p>
       const date = new Date();<br>
@@ -57,24 +56,36 @@
     </p>
     <p id="timers"></p>
     <p>What is my age? <span class="age"> </span></p>
-
+    <p>Below shows duplicates removed in an array (1, 1, 3, 4, 1, 6, 5, 7, 6)</p>
+    <p id="newArr"></p>
 
   </div>
   	<div id="named3" class="names3 multi">
-      <span>named 3</span>
-  		<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Earum, consectetur nulla unde quas fugit esse dolorem reiciendis. Earum esse libero iure quos exercitationem repellendus eaque deleniti, iusto eos numquam adipisci natus nihil in et, veritatis possimus aliquam hic tempore? Iusto repudiandae iste veniam assumenda inventore minus porro doloremque tempora ipsum.</p>
-  		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus non fugiat corrupti fugit dolorem perferendis</p>
-  		<p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Aperiam deserunt numquam adipisci! Voluptatum quia esse repellat vel, maiores enim voluptas nemo totam, ut officia at.</p>
+      <p id="colorDisplay"></p>
+      <p id="showLength"></p>
+      <ul id="showMe"></ul>
+
+
   	</div>
   	<div id="named4" class="names4"><span>named 4</span>
       <p>Dog Breeds</p>
       <div class="dogs"></div>
     </div>
+
   	<div id="named5" class="names5">
     <span>named 5</span>
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores consequatur, unde eius culpa at dolorum voluptas debitis? Voluptatem molestias doloremque accusantium minus voluptatum, ipsum corporis, ex explicabo nobis deleniti sit veritatis vitae impedit blanditiis deserunt facilis voluptas sed, magni maxime suscipit nihil libero dolorem! Doloribus sapiente consequuntur eum odit fuga?</p>
-
+    <p>Convert Miles to Kilometers</p>
+    <form id="conv">
+      <input type="text" id="milesToKilo">
+      <button>Convert</button>
+    </form>
+    <p>Convert Kilos to Miles</p>
+    <form id="kilos">
+      <input type="text" id="kiloToMiles">
+      <button>Convert</button>
+    </form>
+    <p id="convertedMiles"></p>
+    <p id="showMiles"></p>
   </div>
 	</div>
 

@@ -1,0 +1,60 @@
+/** @format */
+
+@use '../abstracts' as *;
+#tax-container {
+	display: grid;
+	width: 85%;
+	margin: 0 auto;
+	grid-template-columns: repeat (6, 1fr);
+	grid-template-rows: 0.75fr repeat(4, 1fr);
+	grid-gap: 1rem;
+	grid-template-areas:
+		'top-menu top-menu top-menu top-menu top-menu top-menu'
+		'discuss word word word word sides'
+		'regex word word word word sides'
+		'regex word word word word sides'
+		'footy footy footy footy footy sides';
+}
+#tax-menu {
+	grid-area: top-menu;
+	border: 1px solid $gridGen;
+	@include center(flex-end, baseline);
+	padding-left: 2rem;
+}
+#tax-menu li {
+	padding: 0 1rem;
+	font-family: $comfortaa;
+}
+.discuss {
+	grid-area: discuss;
+	border: 1px solid $gridGen;
+}
+.word {
+	grid-area: word;
+	border: 1px solid $gridGen;
+	.top-title {
+		@include center(center, flex-start);
+		padding-top: 2px;
+	}
+}
+.regex {
+	grid-area: regex;
+	border: 1px solid $gridGen;
+}
+.footy {
+	grid-area: footy;
+	border: 1px solid $gridGen;
+}
+.sides {
+	grid-area: sides;
+	border: 1px solid $gridGen;
+}
+#tax-menu,
+.discuss,
+.word,
+.regex,
+.footy,
+.sides {
+	background: $gen4;
+	padding: 1px 10px;
+}

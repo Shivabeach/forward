@@ -1,5 +1,6 @@
 .DS_Store
-
+# codeigniter
+#---------------------
 application/libraries/*
 !application/libraries/ip2location/IP2LOCATION-LITE-DB11.BIN
 

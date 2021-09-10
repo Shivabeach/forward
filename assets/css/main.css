@@ -40,7 +40,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: calc(60% + 0.8vmin);
 }
 
 body {
@@ -54,7 +54,6 @@ body {
 /* Elements */
 p {
   padding-bottom: 5px;
-  font-size: 18.4px;
   padding: 0 1rem 0.75rem 1rem;
 }
 
@@ -387,6 +386,10 @@ h6 {
 }
 
 /*forms*/
+input {
+  font-size: 1rem;
+}
+
 button[type=submit],
 button[type=reset] {
   border-radius: 6px;
@@ -810,7 +813,8 @@ footer {
 
 #mayMiles,
 #juneMiles,
-#julyMiles {
+#julyMiles,
+#augMiles {
   padding-top: 12px;
   border-bottom: 2px solid #E60832;
 }
@@ -827,10 +831,10 @@ footer {
 
 .filer {
   height: auto;
-  width: 90%;
+  width: 98%;
   margin: 0.5rem auto;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 0.75fr repeat(4, 1fr);
   grid-template-areas: "side side topper topper topper slider" "side side boxer boxer boxer slider" "side side boxer boxer boxer slider" "boxy boxy boxer boxer boxer slider" "boxy boxy boxer boxer boxer slider";
@@ -841,19 +845,15 @@ footer {
   -ms-grid-column: 5;
   -ms-grid-column-span: 5;
   grid-area: topper;
-  background-image: url(../images/blue-bg.png);
-  background-repeat: repeat;
   border: 1px solid black;
   padding: 1rem;
   column-count: 3;
   column-gap: 1.5rem;
-  column-rule: 3px solid #140fa9;
   font-family: Comfortaa;
 }
 
 #named1 li {
   padding: 8px 0;
-  background-color: rgba(255, 255, 255, 0.3);
   font-family: Comfortaa;
 }
 
@@ -893,13 +893,102 @@ footer {
 }
 
 .multi {
-  column-count: 2;
-  column-gap: 2rem;
+  column-count: 5;
+  column-gap: 0.5rem;
+  column-rule: 3px solid #140fa9;
 }
 
 .attempt1 {
   width: 95%;
   margin: 0.5rem auto;
+}
+
+#showMe {
+  height: 100%;
+}
+
+/** @format */
+#tax-container {
+  display: grid;
+  width: 85%;
+  margin: 0 auto;
+  grid-template-columns: repeat 6, 1fr;
+  grid-template-rows: 0.75fr repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-template-areas: "top-menu top-menu top-menu top-menu top-menu top-menu" "discuss word word word word sides" "regex word word word word sides" "regex word word word word sides" "footy footy footy footy footy sides";
+}
+
+#tax-menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
+  grid-area: top-menu;
+  border: 1px solid #111A57;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding-left: 2rem;
+}
+
+#tax-menu li {
+  padding: 0 1rem;
+  font-family: Comfortaa;
+}
+
+.discuss {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: discuss;
+  border: 1px solid #111A57;
+}
+
+.word {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-area: word;
+  border: 1px solid #111A57;
+}
+.word .top-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2px;
+}
+
+.regex {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: regex;
+  border: 1px solid #111A57;
+}
+
+.footy {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-area: footy;
+  border: 1px solid #111A57;
+}
+
+.sides {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 7;
+  -ms-grid-column: 11;
+  grid-area: sides;
+  border: 1px solid #111A57;
+}
+
+#tax-menu,
+.discuss,
+.word,
+.regex,
+.footy,
+.sides {
+  background: #d8cdd3;
+  padding: 1px 10px;
 }
 
 /* Calendar if needed */
@@ -980,10 +1069,6 @@ th {
   border: 1px solid black;
   padding: 5px;
   background: #fffacd;
-}
-
-.top {
-  background: #d8cdd3;
 }
 
 .div2,

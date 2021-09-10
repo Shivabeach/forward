@@ -122,6 +122,13 @@ class Pages extends CI_Controller
 		$data["content"] = "pages/grid";
 		$this->load->view("template/template", $data);
 	}
-}
 
+public function taxes()
+{
+	$data['title'] = "Words";
+	$data["header"] = "Words and Definition";
+	$data["content"] = "pages/taxonmy";
+	$this->load->view("template/full", $data);
+}
+}
 /* End of file Pages.php */

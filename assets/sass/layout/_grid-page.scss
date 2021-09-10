@@ -43,10 +43,10 @@
 
 .filer {
 	height: auto;
-	width: 90%;
+	width: 98%;
 	margin: 0.5rem auto;
 	display: grid;
-	grid-gap: 1rem;
+	grid-gap: 0.5rem;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 0.75fr repeat(4, 1fr);
 	grid-template-areas:
@@ -58,18 +58,14 @@
 }
 #named1 {
 	grid-area: topper;
-	background-image: url(../images/blue-bg.png);
-	background-repeat: repeat;
 	border: 1px solid black;
 	padding: 1rem;
 	column-count: 3;
 	column-gap: 1.5rem;
-	column-rule: 3px solid $gen26;
 	font-family: Comfortaa;
 }
 #named1 li {
 	padding: 8px 0;
-	background-color: rgba(255, 255, 255, 0.3);
 	font-family: $comfortaa;
 }
 #named2 {
@@ -89,12 +85,17 @@
 	border: 1px solid black;
 }
 .multi {
-	column-count: 2;
-	column-gap: 2rem;
+	column-count: 5;
+	column-gap: 0.5rem;
+	column-rule: 3px solid $gen26;
 }
 //-------------------------------------------
 //Attempt 1
 .attempt1 {
 	width: 95%;
 	margin: 0.5rem auto;
+}
+
+#showMe {
+	height: 100%;
 }

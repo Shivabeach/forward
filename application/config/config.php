@@ -66,7 +66,7 @@ $config['cache_path'] = '';
 
 $config['cache_query_string'] = FALSE;
 
-$config['encryption_key'] = '';
+$config['encryption_key'] = hex2bin('2995cf7b36407b089d13a9170057c377');
 
 /*
 |--------------------------------------------------------------------------
@@ -142,7 +142,7 @@ $config['sess_regenerate_destroy'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix']	= '';
+$config['cookie_prefix']	= 'prefixed';
 $config['cookie_domain']	= '';
 $config['cookie_path']		= '/';
 $config['cookie_secure']	= FALSE;
@@ -167,9 +167,9 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_regenerate' = Regenerate token on every submission
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
-$config['csrf_protection'] = TRUE;
-$config['csrf_token_name'] = 'csrf_test_name';
-$config['csrf_cookie_name'] = 'csrf_cookie_name';
+$config['csrf_protection'] = false;
+$config['csrf_token_name'] = 'test';
+$config['csrf_cookie_name'] = 'name';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array("forms/walk", "forms/blogs");
