@@ -8,6 +8,8 @@ const item4 = document.querySelector('.item-4');
 const item5 = document.querySelector('.item-5');
 const item6 = document.querySelector('.item-6');
 const demo = document.getElementById('demo12');
+const reg = document.querySelector('.reg');
+const isItTrue = document.getElementById('isItTrue');
 
 function rgb() {
 	let r = Math.floor(Math.random() * 255).toString();
@@ -52,6 +54,32 @@ for (let i = 0; i < document.links.length; i++) {
 		document.links[i].className = 'current';
 	}
 }
+
+function regexe(e) {
+	const string = reg.value;
+	console.log(string);
+	const regex = /(\w){2,12}/g;
+	const exists = regex.test(string);
+	if (exists) {
+		isItTrue.innerText = exists;
+	} else {
+		isItTrue.innerText = exists;
+	}
+}
+
 addEventListener('DOMContentLoaded', () => {
 	rgb();
+});
+
+reg.addEventListener('input', (e) => {
+	const stringValue = e.target.value;
+	const regex = /(\w){4,}/g;
+	const exists = regex.test(stringValue);
+	if (!exists) {
+		isItTrue.innerText = exists;
+		reg.classList.remove('yes');
+	} else {
+		isItTrue.innerText = exists;
+		reg.classList.add('yes');
+	}
 });

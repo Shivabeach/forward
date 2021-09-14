@@ -1,11 +1,16 @@
 /** @format */
 
 @use '../abstracts' as *;
+#tax {
+	min-height: 100vh;
+}
+
 #tax-container {
 	display: grid;
 	width: 85%;
 	margin: 0 auto;
-	grid-template-columns: repeat (6, 1fr);
+	grid-template-columns: 30% 10% 20% 10% 10% 20%;
+
 	grid-template-rows: 0.75fr repeat(4, 1fr);
 	grid-gap: 1rem;
 	grid-template-areas:
@@ -13,7 +18,7 @@
 		'discuss word word word word sides'
 		'regex word word word word sides'
 		'regex word word word word sides'
-		'footy footy footy footy footy sides';
+		'regex footy footy footy footy sides';
 }
 #tax-menu {
 	grid-area: top-menu;
@@ -24,6 +29,7 @@
 #tax-menu li {
 	padding: 0 1rem;
 	font-family: $comfortaa;
+	background-color: map-get($scheme, 'primary');
 }
 .discuss {
 	grid-area: discuss;
@@ -57,4 +63,12 @@
 .sides {
 	background: $gen4;
 	padding: 1px 10px;
+}
+
+.yes {
+	color: white;
+	background-color: #000;
+}
+.no {
+	color: red;
 }
