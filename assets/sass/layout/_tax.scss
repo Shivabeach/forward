@@ -3,28 +3,59 @@
 @use '../abstracts' as *;
 #tax {
 	min-height: 100vh;
+	//width: 100vw;
 }
 
 #tax-container {
 	display: grid;
 	width: 85%;
 	margin: 0 auto;
-	grid-template-columns: 30% 10% 20% 10% 10% 20%;
-
+	grid-template-columns: 30% 50% 20%;
 	grid-template-rows: 0.75fr repeat(4, 1fr);
-	grid-gap: 1rem;
+	column-gap: 1rem;
+	row-gap: 1rem;
+	overflow: inherit;
 	grid-template-areas:
-		'top-menu top-menu top-menu top-menu top-menu top-menu'
-		'discuss word word word word sides'
-		'regex word word word word sides'
-		'regex word word word word sides'
-		'regex footy footy footy footy sides';
+		'top-menu top-menu top-menu'
+		'discuss word sides'
+		'regex word sides'
+		'regex word sides'
+		'regex footy sides';
+	@include tablet {
+		display: grid;
+		width: 95%;
+		//margin: 0 auto;
+		grid-template-columns: 100%;
+		grid-template-rows: 0.75fr repeat(5, 1fr);
+		//grid-gap: 1rem;
+		grid-template-areas:
+			'top-menu'
+			'discuss'
+			'regex'
+			'word'
+			'word'
+			'footy';
+
+		// #tax-menu,
+		// .discuss,
+		// .word,
+		// .regex,
+		// .sides {
+		// 	margin-bottom: 1rem;
+		// }
+	}
 }
 #tax-menu {
 	grid-area: top-menu;
-	border: 1px solid $gridGen;
+	//border: 1px solid $gridGen;
 	@include center(flex-end, baseline);
-	padding-left: 2rem;
+	//padding-left: 2rem;
+	@include tablet {
+		@include center(center, baseline);
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
 }
 #tax-menu li {
 	padding: 0 1rem;
@@ -34,6 +65,9 @@
 .discuss {
 	grid-area: discuss;
 	border: 1px solid $gridGen;
+	@include tablet {
+		width: 100%;
+	}
 }
 .word {
 	grid-area: word;
@@ -42,18 +76,33 @@
 		@include center(center, flex-start);
 		padding-top: 2px;
 	}
+	@include tablet {
+		width: 100%;
+	}
 }
 .regex {
 	grid-area: regex;
 	border: 1px solid $gridGen;
+	@include tablet {
+		width: 100%;
+		column-count: 2;
+		column-gap: 0.5rem;
+		column-rule: 3px solid $gen26;
+	}
 }
 .footy {
 	grid-area: footy;
 	border: 1px solid $gridGen;
+	@include tablet {
+		width: 100%;
+	}
 }
 .sides {
 	grid-area: sides;
 	border: 1px solid $gridGen;
+	@include tablet {
+		display: none;
+	}
 }
 #tax-menu,
 .discuss,
@@ -62,7 +111,6 @@
 .footy,
 .sides {
 	background: $gen4;
-	padding: 1px 10px;
 }
 
 .yes {
@@ -71,4 +119,11 @@
 }
 .no {
 	color: red;
+}
+.upper {
+	font-family: $hattori;
+}
+ul.regy,
+#taxColor {
+	padding-left: 1rem;
 }

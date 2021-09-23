@@ -33,6 +33,9 @@ $font-stack-fu: 'Fugaz One', cursive;
 $font-stack-raleway: Raleway;
 
 $comfortaa: Comfortaa;
+$latina: Latina;
+$hattori: hattori;
+$hattori-italic: hattori-italic;
 
 @font-face {
 	font-family: MerriweatherSans;
@@ -57,7 +60,22 @@ $comfortaa: Comfortaa;
 	}
 	font-weight: 300 700;
 }
+@font-face {
+	font-family: Latina;
+	src: url('../fonts/LatinaEssential-Light.otf');
+}
 
+@font-face {
+	font-family: hattori;
+	src: url('../fonts/hattori_light/Hattori_Hanzo-webfont.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: hattori-italic;
+	src: url('../fonts/hattori_lightitalic/Hattori_Hanzo_Italic.woff');
+}
 *::before,
 *::after {
 	box-sizing: inherit;

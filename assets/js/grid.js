@@ -1,6 +1,7 @@
 /** @format */
 'use strict';
 //1.609344
+//1 * 0.6213712 kph to mph
 import { properCase, log, listen, months } from './utils.js';
 const timers = document.getElementById('timers');
 const gridpage = document.getElementById('grid-page');

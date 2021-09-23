@@ -281,23 +281,23 @@
     <div class="div26">
       <h5 class="date-range">Sept 5 - Sept 11</h5>
       <ul>
-        <li class="pb25 step">Steps: <strong>19723</strong> <span class="steps show "> </span></li>
-        <li class="pb25 miles1 septem">Miles: <strong>8</strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25 cal">Calories: <strong>11430</strong> <span class="calorie show "> </span></li>
-        <li class="pb25 ">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+        <li class="pb25 step">Steps: <strong>26125</strong> <span class="steps show ">-15117</span></li>
+        <li class="pb25 miles1 septem">Miles: <strong>11</strong> <span class="miles show">-7</span></li>
+        <li class="pb25">Sleep: <strong>6hr 13min</strong> <span class="sleep show"> 4</span></li>
+        <li class="pb25 cal">Calories: <strong>16315</strong> <span class="calorie show ">-3232 </span></li>
+        <li class="pb25 ">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
+        <li class="summary pb25"><span class="pos">2</span>  <span class="neg">-3</span>  </li>
       </ul>
     </div>
     <div class="div27">
       <h5 class="date-range">Sept 12 - Sept 18</h5>
       <ul>
-        <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25 ">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+        <li class="pb25 step">Steps: <strong>26221</strong> <span class="steps show ">96</span></li>
+        <li class="pb25 miles1 septem">Miles: <strong>11</strong> <span class="miles show">0</span></li>
+        <li class="pb25">Sleep: <strong>6hr 27min</strong> <span class="sleep show"> 14</span></li>
+        <li class="pb25 cal">Calories: <strong>16457</strong> <span class="calorie show ">142 </span></li>
+        <li class="pb25 ">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
+        <li class="summary pb25"><span class="pos">5</span>  <span class="neg">0</span>  </li>
       </ul>
     </div>
     <div class="div28">

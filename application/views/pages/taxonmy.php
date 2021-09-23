@@ -15,6 +15,7 @@
     <div class="discuss">
       <p>This page is defined as containing words pertinet to weight, Ketosis, foods and any other items of interest to the goals</p>
       <div id="taxColor"></div>
+      <p id="location"></p>
     </div>
     <div class="word">
       <h5 class="top-title">Words, Definitions and Details</h5>
@@ -24,16 +25,16 @@
       </details>
     </div>
     <div class="regex">regex
-      <ul>
+      <ul class="regy">
         <li>Find a word ending in ing - /\w+(ing)/g</li>
         <li>IP Address - /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/g</li>
         <li>Find a word that starts with re - /(?:\bre)\w+\b/g</li>
         <li>Persons name Mr-Mrs-Ms - M(r|s|rs)\.?\s[A-Z]\w*</li>
       </ul>
-      <span>const string = ''<br>
+      <div>const string = 'Whatever string'<br>
         const regex = /pattern/<br>
         const exists = regex/test(string)
-      </span>
+      </div>
 
     </div>
     <div class="sides">
@@ -41,7 +42,9 @@
       <form action=""><input class="reg" type="text"><button type="submit">Submit</button></form>
       <div id="isItTrue"></div>
     </div>
-    <div class="footy">Footy</div>
+    <div class="footy">
+      <p>Do not use classes more than once when using them in Javascript</p>
+    </div>
 
   </div>
   <!-- <script src="<?php echo base_url('assets/js/script-dist.js');?>" defer></script> -->

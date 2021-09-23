@@ -10,6 +10,10 @@ const item6 = document.querySelector('.item-6');
 const demo = document.getElementById('demo12');
 const reg = document.querySelector('.reg');
 const isItTrue = document.getElementById('isItTrue');
+const locate = document.getElementById('location');
+
+const url = location.href;
+locate.innerHTML = url;
 
 function rgb() {
 	let r = Math.floor(Math.random() * 255).toString();
@@ -55,21 +59,23 @@ for (let i = 0; i < document.links.length; i++) {
 	}
 }
 
-function regexe(e) {
-	const string = reg.value;
-	console.log(string);
-	const regex = /(\w){2,12}/g;
-	const exists = regex.test(string);
-	if (exists) {
-		isItTrue.innerText = exists;
-	} else {
-		isItTrue.innerText = exists;
-	}
-}
+// function regexe(e) {
+// 	const string = reg.value;
+// 	console.log(string);
+// 	const regex = /(\w){2,12}/g;
+// 	const exists = regex.test(string);
+// 	if (exists) {
+// 		isItTrue.innerText = exists;
+// 	} else {
+// 		isItTrue.innerText = exists;
+// 	}
+// }
 
 addEventListener('DOMContentLoaded', () => {
 	rgb();
 });
+
+// detect input, determine if it meets a regex, add or remove a class depending on
 
 reg.addEventListener('input', (e) => {
 	const stringValue = e.target.value;
