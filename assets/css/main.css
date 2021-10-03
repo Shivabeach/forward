@@ -65,6 +65,27 @@ body {
   line-height: 1.5;
 }
 
+::-webkit-scrollbar {
+  width: 1.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: #fad590;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f8740b;
+  border-radius: 100vw;
+}
+
+@supports (scrollbar-color: #6724e1 #7073e2) {
+  * {
+    scrollbar-color: #6724e1 #7073e2;
+    scrollbar-width: auto;
+  }
+}
 /* Elements */
 p {
   padding-bottom: 5px;
@@ -85,6 +106,10 @@ mark {
   padding: 0.5rem 1rem;
   border-radius: 50%;
   color: #bf877a;
+}
+
+details {
+  padding-left: 2rem;
 }
 
 /* Links */
@@ -165,24 +190,28 @@ output {
   color: #0af820;
 }
 
+.white {
+  color: #fdf5ff;
+}
+
 .input-small {
   width: 10%;
 }
 
 .input-date {
-  width: 15%;
+  width: calc(100% / 6.4);
 }
 
 .input-med {
-  width: 30%;
+  width: calc(100% / 3);
 }
 
 .input-med-lg {
-  width: 50%;
+  width: calc(100% / 2);
 }
 
 .input-large {
-  width: 75%;
+  width: calc(100% / 1.32);
 }
 
 .input-full {
@@ -370,7 +399,6 @@ h1 {
 h2 {
   font-size: 32px;
   font-family: MerriweatherSans;
-  margin-bottom: 0.75rem;
 }
 
 h3 {
@@ -743,7 +771,7 @@ footer {
   width: 95%;
 }
 .top a {
-  color: #261fcc;
+  color: #0f060d;
   margin-right: 1rem;
   text-shadow: 1px 1px 1px #6724e1;
   text-decoration: none;
@@ -908,7 +936,7 @@ footer {
 }
 
 .multi {
-  column-count: 5;
+  column-count: 4;
   column-gap: 0.5rem;
   column-rule: 3px solid #140FA9;
 }
@@ -923,18 +951,13 @@ footer {
 }
 
 /** @format */
-#tax {
-  min-height: 100vh;
-}
-
 #tax-container {
   display: grid;
-  width: 85%;
+  width: calc(80% + 100px);
   margin: 0 auto;
   grid-template-columns: 30% 50% 20%;
-  grid-template-rows: 0.75fr repeat(4, 1fr);
+  grid-template-rows: 125px repeat(4, 1fr);
   column-gap: 1rem;
-  row-gap: 1rem;
   overflow: inherit;
   grid-template-areas: "top-menu top-menu top-menu" "discuss word sides" "regex word sides" "regex word sides" "regex footy sides";
 }
@@ -955,7 +978,7 @@ footer {
   grid-area: top-menu;
   display: flex;
   justify-content: flex-end;
-  align-items: baseline;
+  align-items: center;
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   #tax-menu {
@@ -968,17 +991,21 @@ footer {
   }
 }
 
+#tax-menu ul {
+  background: #720933;
+}
+
 #tax-menu li {
-  padding: 0 1rem;
+  padding-right: 1rem;
   font-family: Comfortaa;
-  background-color: #3f51b5;
 }
 
 .discuss {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: discuss;
   border: 1px solid #111A57;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .discuss {
@@ -987,11 +1014,12 @@ footer {
 }
 
 .word {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 3;
   grid-area: word;
   border: 1px solid #111A57;
+  margin-bottom: 1rem;
 }
 .word .top-title {
   display: flex;
@@ -1006,8 +1034,8 @@ footer {
 }
 
 .regex {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: regex;
   border: 1px solid #111A57;
@@ -1022,7 +1050,7 @@ footer {
 }
 
 .footy {
-  -ms-grid-row: 9;
+  -ms-grid-row: 5;
   -ms-grid-column: 3;
   grid-area: footy;
   border: 1px solid #111A57;
@@ -1034,8 +1062,8 @@ footer {
 }
 
 .sides {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 7;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
   -ms-grid-column: 5;
   grid-area: sides;
   border: 1px solid #111A57;
@@ -1092,6 +1120,7 @@ footer {
 
 .upper {
   font-family: hattori;
+  padding-right: 1rem;
 }
 
 ul.regy,

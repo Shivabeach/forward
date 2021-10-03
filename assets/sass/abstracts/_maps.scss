@@ -80,10 +80,10 @@ $senae: (
 //input sizes
 $map1: (
 	small: 10%,
-	date: 15%,
-	med: 30%,
-	med-lg: 50%,
-	large: 75%,
+	date: calc(100% / 6.4),
+	med: calc(100% / 3),
+	med-lg: calc(100% / 2),
+	large: calc(100% / 1.32),
 	full: 100%
 );
 

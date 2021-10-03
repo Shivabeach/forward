@@ -303,46 +303,130 @@
     <div class="div28">
       <h5 class="date-range">Sept 19 - Sept 25</h5>
       <ul>
-        <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25 ">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+        <li class="pb25 step">Steps: <strong>29413</strong> <span class="steps show ">3192</span></li>
+        <li class="pb25 miles1 septem">Miles: <strong>13</strong> <span class="miles show">2</span></li>
+        <li class="pb25">Sleep: <strong>6hr 17min</strong> <span class="sleep show"> -10</span></li>
+        <li class="pb25 cal">Calories: <strong>17559</strong> <span class="calorie show ">1102 </span></li>
+        <li class="pb25 ">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
+        <li class="summary pb25"><span class="pos">4</span>  <span class="neg">-1</span>  </li>
       </ul>
     </div>
     <div class="div29">
       <h5 class="date-range">Sept 26 - Oct 2</h5>
       <ul>
-        <li class="pb25">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 step">Steps: <strong>34852</strong> <span class="steps show ">5439 </span></li>
+        <li class="pb25 miles1 septem">Miles: <strong>15</strong> <span class="miles show">2</span></li>
+        <li class="pb25">Sleep: <strong>6hrs 35min</strong> <span class="sleep show">18 </span></li>
+        <li class="pb25 cal">Calories: <strong>18571</strong> <span class="calorie show ">1012 </span></li>
+        <li class="pb25">Exercise: <strong>3</strong> <span class="exercise show ">1</span></li>
+        <li class="summary pb25"><span class="pos">5</span>  <span class="neg">0</span>  </li>
+      </ul>
+    </div>
+    <div class="div30">
+      <p>Strange month. Did stress test, heart is fine</p>
+      <p>Blood pressure is through the roof</p>
+    </div>
+    <!-- row 8 -->
+    <div class="primer div25 div-head">
+      <h4><mark class="mid-head r">Oct 2021</mark></h4>
+    </div>
+    <div class="div26">
+      <h5 class="date-range">Oct 3 - Oct 9</h5>
+       <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
         <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
         <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25 ">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
+    </div>
+    <div class="div27">
+      <h5 class="date-range">Oct 10 - Oct 16</h5>
+      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
+    </div>
+    <div class="div28">
+      <h5 class="date-range">Oct 17 - Oct 23</h5>
+      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
+    </div>
+    <div class="div29">
+      <h5 class="date-range">Oct 24 - Oct 30</h5>
+      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
         <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
       </ul>
     </div>
     <div class="div30">
 
     </div>
-    <!-- row 8 -->
-    <div class="primer div25 div-head">
-      <h4><mark class="mid-head r">Oct 2021</mark></h4>
-    </div>
-    <div class="div26"></div>
-    <div class="div27"></div>
-    <div class="div28"></div>
-    <div class="div29"></div>
-    <div class="div30"></div>
     <!-- row 9 -->
     <div class="primer div25 div-head">
       <h4><mark class="mid-head r">Nov 2021</mark></h4>
     </div>
-    <div class="div26"></div>
-    <div class="div27"></div>
-    <div class="div28"></div>
-    <div class="div29"></div>
-    <div class="div30"></div>
+    <div class="div26">
+      <h5 class="date-range">Oct 31 - Nov 6</h5>
+      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
+    </div>
+    <div class="div27">
+      <h5 class="date-range">Nov 7 - Nov 13</h5>
+      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
+    </div>
+    <div class="div28">
+      <h5 class="date-range">Nov 14 - Nov 20</h5>
+      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
+    </div>
+    <div class="div29">
+      <h5 class="date-range">Nov 21 - Nov 27</h5>
+      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
+    </div>
+    <div class="div30">
+      <h5 class="date-range">Nov 28 - Dec 4</h5>
+      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
+        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
+        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      </ul>
+    </div>
     <!-- row10 -->
     <div class="primer div25 div-head">
       <h4><mark class="mid-head r">Dec 2021</mark></h4>
@@ -377,7 +461,9 @@
       </ul>
 
     </div>
-    <div class="gridfoot"><h3>Sept</h3></div>
+    <div class="gridfoot"><h3>Sept</h3>
+      <p>Seeing lots of doctorsa for blood pressure</p>
+    </div>
     <div class="gridfoot">
       <h3>Oct</h3>
       <p>Lorem ipsum dolor sit, amet consectetur similique praesentium? Rerum, ad.</p>

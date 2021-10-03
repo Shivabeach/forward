@@ -3,7 +3,7 @@
     <menu id="tax-menu">
       <h2 class="upper">Taxonomy</h2>
       <ul role="list" class="inline-list">
-        <li class="inline-list fs-3" id="demo12"></li>
+        <li class="inline-list fs-3 white" id="demo12"></li>
         <li class="item-1 inline-list fs-3 shadow"></li>
         <li class="item-2 inline-list fs-3 shadow"></li>
         <li class="item-3 inline-list fs-3 shadow"></li>
@@ -21,7 +21,11 @@
       <h5 class="top-title">Words, Definitions and Details</h5>
       <details>
         <summary>Ketosis</summary>
-        <p>Ketosis is a metabolic state characterized by elevated levels of ketone bodies in the blood or urine</p>
+          <p>Ketosis is a metabolic state characterized by elevated levels of ketone bodies in the blood or urine</p>
+      </details>
+      <details>
+        <summary>Fasting</summary>
+          <p>Fasting is the willful refrainment from eating and sometimes drinking. From a purely physiological context, "fasting" may refer to the metabolic status of a person who has not eaten overnight, or to the metabolic state achieved after complete digestion and absorption of a meal.</p>
       </details>
     </div>
     <div class="regex">regex
@@ -38,7 +42,10 @@
 
     </div>
     <div class="sides">
-      <p>there be whales here</p>
+      <p>There be whales here<br/>
+        A study of Regex in use<br/>
+        Upon reaching the 1st 4 alphanumeric characters, the regex is satisfied and becomes true
+      </p>
       <form action=""><input class="reg" type="text"><button type="submit">Submit</button></form>
       <div id="isItTrue"></div>
     </div>
