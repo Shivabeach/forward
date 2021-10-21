@@ -558,7 +558,7 @@ li {
 ul {
   display: list-item;
   list-style-type: none;
-  padding-left: 0.25rem;
+  padding-left: 1.25rem;
 }
 
 .pb25 {
@@ -959,7 +959,7 @@ footer {
   grid-template-rows: 125px repeat(4, 1fr);
   column-gap: 1rem;
   overflow: inherit;
-  grid-template-areas: "top-menu top-menu top-menu" "discuss word sides" "regex word sides" "regex word sides" "regex footy sides";
+  grid-template-areas: "top-menu top-menu top-menu" "discuss word sides" "regex word sides" "regex footy sides" "regex footy sides";
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   #tax-container {
@@ -1015,7 +1015,7 @@ footer {
 
 .word {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: word;
   border: 1px solid #111A57;
@@ -1050,7 +1050,8 @@ footer {
 }
 
 .footy {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: footy;
   border: 1px solid #111A57;
@@ -1091,6 +1092,7 @@ footer {
   }
   .footy {
     -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
     -ms-grid-column: 1;
   }
 }

@@ -1,5 +1,8 @@
-/** @format */
-// The stats JS page that calculates all values needed using querySelectorAll, arrays, toString and forEach.
+/**
+ *  @description The stats JS page that calculates all values needed using querySelectorAll, arrays, toString and forEach.
+ *  @format
+ */
+
 'use strict';
 import {
 	properCase,
@@ -26,6 +29,8 @@ const june = document.querySelectorAll('.june');
 const july = document.querySelectorAll('.july');
 const aug = document.querySelectorAll('.aug');
 const septem = document.querySelectorAll('.septem');
+const octob = document.querySelectorAll('.octob');
+const octoHeart = document.querySelectorAll('.octoHeart');
 // console.log(months.splice(2, 1, 'March'));
 // console.log(months);
 const ex = document.querySelectorAll('.ex');
@@ -41,6 +46,8 @@ const colorDisplay = document.getElementById('colorDisplay');
 const julyMiles = document.getElementById('julyMiles');
 const augMiles = document.getElementById('augMiles');
 const septMiles = document.getElementById('septMiles');
+const octMiles = document.getElementById('octMiles');
+const octRate = document.getElementById('octRate');
 
 const pos = document.querySelectorAll('.pos');
 const exer = document.getElementById('exer');
@@ -61,6 +68,7 @@ let monthMay = [];
 let monthJune = [];
 let h, s, l;
 let happy = [];
+let monthOct = [];
 
 //functions
 //add up the positive numbers and display in top corner
@@ -154,10 +162,8 @@ function june21() {
 	const toNum = monthJune.map(Number);
 	const juneMile = toNum.reduce((acc, cum) => acc + cum, 0);
 	juneMiles.innerHTML = `${juneMile} Miles walked`;
-	const juneAvg = juneMile / toNum.length;
-	document.getElementById(
-		'juneAv'
-	).innerHTML = `${juneAvg} average miles per month`;
+	const juneAvg = (juneMile / toNum.length).toFixed(2);
+	document.getElementById('juneAv').innerHTML = `${juneAvg} average miles`;
 }
 
 function july21() {
@@ -170,9 +176,7 @@ function july21() {
 	const julyMile = toNum.reduce((acc, cum) => acc + cum, 0);
 	const julyAv = julyMile / toNum.length;
 	julyMiles.innerHTML = `${julyMile} Miles walked`;
-	document.getElementById(
-		'julyAverage'
-	).innerHTML = `${julyAv} average miles per month`;
+	document.getElementById('julyAverage').innerHTML = `${julyAv} average miles`;
 }
 
 function aug21() {
@@ -184,10 +188,8 @@ function aug21() {
 	const toNum = monthAug.map(Number);
 	const augMile = toNum.reduce((acc, cum) => acc + cum, 0);
 	augMiles.innerHTML = `${augMile} Miles walked`;
-	const avg = Math.ceil(augMile / toNum.length);
-	document.getElementById(
-		'augAverage'
-	).innerHTML = `${avg} average miles per month`;
+	const avg = (augMile / toNum.length).toFixed(2);
+	document.getElementById('augAverage').innerHTML = `${avg} average miles`;
 }
 function sept21() {
 	let monthSept = [];
@@ -198,10 +200,33 @@ function sept21() {
 	const toNum = monthSept.map(Number);
 	const septemMile = toNum.reduce((acc, cum) => acc + cum, 0);
 	septMiles.innerHTML = `${septemMile} Miles walked`;
-	const avg = Math.ceil(septemMile / toNum.length);
-	document.getElementById(
-		'septAverage'
-	).innerHTML = `${avg} average miles per month`;
+	const avg = (septemMile / toNum.length).toFixed(2);
+	document.getElementById('septAverage').innerHTML = `${avg} average miles`;
+}
+
+function oct21() {
+	octob.forEach((oct) => {
+		let octMonth = oct.firstElementChild.firstChild.nodeValue;
+		monthOct.push(octMonth);
+	});
+	const toNum = monthOct.map(Number);
+	const octoMile = toNum.reduce((acc, cum) => acc + cum, 0);
+	octMiles.innerHTML = `${octoMile} Miles walked`;
+	const avg = (octoMile / toNum.length).toFixed(2);
+	document.getElementById('octAverage').innerHTML = `${avg} average miles`;
+}
+// Start heart rate
+function octBeat() {
+	let beats10 = [];
+	octoHeart.forEach((octbeat) => {
+		let octHeartRate = octbeat.firstElementChild.firstChild.nodeValue;
+		beats10.push(octHeartRate);
+	});
+	const toNum = beats10.map(Number);
+	const octoberBeats = toNum.reduce((acc, cum) => acc + cum, 0);
+
+	const avg = (octoberBeats / toNum.length).toFixed(2);
+	octRate.innerHTML = `${avg} Heart rate`;
 }
 
 steps.forEach(function(stepp) {
@@ -254,6 +279,12 @@ function createColor() {
 	item5.style.backgroundColor = col;
 }
 
+/**
+ *  @description When page is loaded, perform all functions listed
+ *  @param  {[type]} 'DOMContentLoaded' Page is loaded
+ *  @param  {[type]} (                  [description]
+ *  @return {[type]}                    [description]
+ */
 addEventListener('DOMContentLoaded', () => {
 	steppers();
 	calBurn();
@@ -267,4 +298,6 @@ addEventListener('DOMContentLoaded', () => {
 	july21();
 	aug21();
 	sept21();
+	oct21();
+	octBeat();
 });

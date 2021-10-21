@@ -1,4 +1,9 @@
-/** @format */
+/**
+ * @format
+ * @description js file for the taxonomy page
+ * @type {[type]}
+ */
+
 const tax = document.getElementById('tax');
 const taxColor = document.getElementById('taxColor');
 const item1 = document.querySelector('.item-1');
@@ -11,10 +16,19 @@ const demo = document.getElementById('demo12');
 const reg = document.querySelector('.reg');
 const isItTrue = document.getElementById('isItTrue');
 const locate = document.getElementById('location');
+const removal = document.getElementById('removal');
+const display = document.querySelector('.displayArray');
+const make = document.querySelector('.make');
+const take = document.querySelector('.take');
+const today = document.getElementById('today');
 
 const url = location.href;
 locate.innerHTML = url;
 
+/**
+ *  @description creates a random rgb color
+ *  @return {string} RGB color
+ */
 function rgb() {
 	let r = Math.floor(Math.random() * 255).toString();
 	let g = Math.floor(Math.random() * 255).toString();
@@ -70,13 +84,22 @@ for (let i = 0; i < document.links.length; i++) {
 // 		isItTrue.innerText = exists;
 // 	}
 // }
+let theArray = ['one', 'two', 'three', '56', '21', 'second'];
+function showArr() {
+	display.innerHTML = theArray;
+}
 
 addEventListener('DOMContentLoaded', () => {
 	rgb();
+	showArr();
 });
 
-// detect input, determine if it meets a regex, add or remove a class depending on
-
+/**
+ *  @description detect input, determine if it meets a regex, add or remove a class depending on
+ *  @param  {string} 'input' [description]
+ *  @param  {event} (e      [description]
+ *  @return {[type]}         [description]
+ */
 reg.addEventListener('input', (e) => {
 	const stringValue = e.target.value;
 	const regex = /(\w){4,}/g;
@@ -89,3 +112,26 @@ reg.addEventListener('input', (e) => {
 		reg.classList.add('yes');
 	}
 });
+
+function showIt(resp) {
+	display.innerHTML = resp;
+}
+// removal, display, make, take
+removal.addEventListener('submit', function(e) {
+	e.preventDefault();
+	let make = document.querySelector('.make').value;
+	theArray.push(make);
+	showIt(theArray);
+	document.querySelector('.make').value = '';
+});
+
+removal.addEventListener('submit', function(e) {
+	e.preventDefault();
+	let val = document.querySelector('.take').value;
+	theArray = theArray.filter((item) => item !== val);
+	showIt(theArray);
+	document.querySelector('.take').value = '';
+});
+
+let now = new Date();
+today.innerHTML = now.toDateString();

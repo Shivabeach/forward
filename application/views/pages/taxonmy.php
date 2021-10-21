@@ -13,6 +13,7 @@
       </ul>
     </menu>
     <div class="discuss">
+      <p id="today"></p>
       <p>This page is defined as containing words pertinet to weight, Ketosis, foods and any other items of interest to the goals</p>
       <div id="taxColor"></div>
       <p id="location"></p>
@@ -35,9 +36,29 @@
         <li>Find a word that starts with re - /(?:\bre)\w+\b/g</li>
         <li>Persons name Mr-Mrs-Ms - M(r|s|rs)\.?\s[A-Z]\w*</li>
       </ul>
-      <div>const string = 'Whatever string'<br>
+      <div>
+        const string = 'Whatever string'<br>
         const regex = /pattern/<br>
         const exists = regex/test(string)
+      </div>
+      <p>Below shows how to remove a particular value from an array. theArray = ['one', 'two', 'three'];</p>
+      <div class="arra">
+        <form action="" id="removal">
+          <p><input class="make" type="text" placeholder="make"></p>
+          <p><input class="take" type="text" placeholder="take"></p>
+          <button type="submit">Submit</button>
+        </form>
+        <p class="displayArray"></p>
+      </div>
+      <div>
+        <ul>
+          <li>Find</li>
+          <li>reduce</li>
+          <li>Every</li>
+          <li>Some</li>
+          <li>Filter</li>
+          <li>Map</li>
+        </ul>
       </div>
 
     </div>
@@ -46,11 +67,25 @@
         A study of Regex in use<br/>
         Upon reaching the 1st 4 alphanumeric characters, the regex is satisfied and becomes true
       </p>
+
       <form action=""><input class="reg" type="text"><button type="submit">Submit</button></form>
       <div id="isItTrue"></div>
     </div>
     <div class="footy">
       <p>Do not use classes more than once when using them in Javascript</p>
+      <code>
+        Removing item (ECMAScript 6 code)<br>
+
+        let value = 3<br>
+
+        let arr = [1, 2, 3, 4, 5, 3]<br/>
+
+        arr = arr.filter(item => item !== value)<br>
+
+        console.log(arr)<br>
+        [ 1, 2, 4, 5 ]
+
+      </code>
     </div>
 
   </div>

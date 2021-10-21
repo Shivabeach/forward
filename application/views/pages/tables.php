@@ -9,7 +9,6 @@
     <li class="item-4 inline-list fs-3"></li>
     <li class="item-5 inline-list fs-3"></li>
     <li class="item-6 inline-list fs-3"></li>
-
   </ul>
   </menu>
   <!-- <header>
@@ -285,7 +284,7 @@
         <li class="pb25 miles1 septem">Miles: <strong>11</strong> <span class="miles show">-7</span></li>
         <li class="pb25">Sleep: <strong>6hr 13min</strong> <span class="sleep show"> 4</span></li>
         <li class="pb25 cal">Calories: <strong>16315</strong> <span class="calorie show ">-3232 </span></li>
-        <li class="pb25 ">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
         <li class="summary pb25"><span class="pos">2</span>  <span class="neg">-3</span>  </li>
       </ul>
     </div>
@@ -296,7 +295,7 @@
         <li class="pb25 miles1 septem">Miles: <strong>11</strong> <span class="miles show">0</span></li>
         <li class="pb25">Sleep: <strong>6hr 27min</strong> <span class="sleep show"> 14</span></li>
         <li class="pb25 cal">Calories: <strong>16457</strong> <span class="calorie show ">142 </span></li>
-        <li class="pb25 ">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
         <li class="summary pb25"><span class="pos">5</span>  <span class="neg">0</span>  </li>
       </ul>
     </div>
@@ -307,7 +306,7 @@
         <li class="pb25 miles1 septem">Miles: <strong>13</strong> <span class="miles show">2</span></li>
         <li class="pb25">Sleep: <strong>6hr 17min</strong> <span class="sleep show"> -10</span></li>
         <li class="pb25 cal">Calories: <strong>17559</strong> <span class="calorie show ">1102 </span></li>
-        <li class="pb25 ">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show ">0</span></li>
         <li class="summary pb25"><span class="pos">4</span>  <span class="neg">-1</span>  </li>
       </ul>
     </div>
@@ -318,7 +317,7 @@
         <li class="pb25 miles1 septem">Miles: <strong>15</strong> <span class="miles show">2</span></li>
         <li class="pb25">Sleep: <strong>6hrs 35min</strong> <span class="sleep show">18 </span></li>
         <li class="pb25 cal">Calories: <strong>18571</strong> <span class="calorie show ">1012 </span></li>
-        <li class="pb25">Exercise: <strong>3</strong> <span class="exercise show ">1</span></li>
+        <li class="pb25 ex">Exercise: <strong>3</strong> <span class="exercise show ">1</span></li>
         <li class="summary pb25"><span class="pos">5</span>  <span class="neg">0</span>  </li>
       </ul>
     </div>
@@ -329,33 +328,39 @@
     <!-- row 8 -->
     <div class="primer div25 div-head">
       <h4><mark class="mid-head r">Oct 2021</mark></h4>
+      <span id="octMiles"></span>
+      <span id="octAverage"></span>
+      <span id="octRate"></span>
     </div>
     <div class="div26">
       <h5 class="date-range">Oct 3 - Oct 9</h5>
-       <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+       <ul>
+        <li class="pb25 step">Steps: <strong>28410</strong> <span class="steps show "> -6442</span></li>
+        <li class="pb25 miles1 octob">Miles: <strong>12</strong> <span class="miles show">-3</span></li>
+        <li class="pb25 octoHeart">HeartRate <strong>64</strong> <span class="sleep show"></span></li>
+        <li class="pb25 cal">Calories: <strong>17013</strong> <span class="calorie show ">-1558 </span></li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> <span class="exercise show ">-1</span></li>
+        <li class="summary pb25"><span class="pos">0</span>  <span class="neg">-5</span>  </li>
       </ul>
     </div>
     <div class="div27">
       <h5 class="date-range">Oct 10 - Oct 16</h5>
-      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
+      <ul>
+        <li class="pb25 step">Steps: <strong>31387</strong> <span class="steps show ">2977 </span></li>
+        <li class="pb25 miles1 octob">Miles: <strong>14</strong> <span class="miles show">2</span></li>
+        <li class="pb25 octoHeart">HeartRate: <strong>62</strong> <span class="sleep show"> </span></li>
+        <li class="pb25 cal">Calories: <strong>17639</strong> <span class="calorie show "> 626</span></li>
+        <li class="pb25 ex">Exercise: <strong>3</strong> <span class="exercise show ">1</span></li>
+        <li class="summary pb25"><span class="pos">4</span>  <span class="neg">0</span>  </li>
       </ul>
     </div>
     <div class="div28">
       <h5 class="date-range">Oct 17 - Oct 23</h5>
-      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
+      <ul>
+        <li class="pb25 step">Steps: <strong>14399</strong> <span class="steps show "> </span></li>
+        <li class="pb25 miles1 octob">Miles: <strong>6</strong> <span class="miles show"></span></li>
+        <li class="pb25 octoHeart">HeartRate: <strong>62.5</strong> <span class="sleep show"> </span></li>
+        <li class="pb25 cal">Calories: <strong>9356</strong> <span class="calorie show "> </span></li>
         <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
         <li class="summary pb25"><span class="pos"></span>  <span class="neg"></span>  </li>
       </ul>
@@ -379,7 +384,8 @@
     </div>
     <div class="div26">
       <h5 class="date-range">Oct 31 - Nov 6</h5>
-      <ul>      <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
+      <ul>
+        <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
         <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
         <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
         <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
@@ -456,21 +462,22 @@
     <div class="gridfoot"><h3>August</h3>
       <ul>
         <li>Working out at the gym. Having a good time</li>
-        <li></li>
-        <li></li>
       </ul>
 
     </div>
     <div class="gridfoot"><h3>Sept</h3>
-      <p>Seeing lots of doctorsa for blood pressure</p>
+      <p>Seeing lots of doctors for blood pressure</p>
     </div>
     <div class="gridfoot">
       <h3>Oct</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur similique praesentium? Rerum, ad.</p>
+      <ul>
+      <li>Had heart stress test, heart turns out ok.</li>
+      <li>Still having problems with the chest. Stomach? Lungs? Anxiety?</li>
+    </ul>
     </div>
     <div class="gridfoot"><h3>Nov</h3></div>
     <div class="gridfoot"><h3>Dec</h3></div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
-  <script type="module" src="<?php echo base_url('assets/js/stats.js');?>"></script>
+  <script type="module" src="<?php echo base_url('assets/js/stats-dist.js');?>"></script>

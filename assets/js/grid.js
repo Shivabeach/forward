@@ -3,6 +3,7 @@
 //1.609344
 //1 * 0.6213712 kph to mph
 import { properCase, log, listen, months } from './utils.js';
+
 const timers = document.getElementById('timers');
 const gridpage = document.getElementById('grid-page');
 const box = document.querySelectorAll('.box');
@@ -38,6 +39,11 @@ newArr.innerHTML = newArray;
 const date = new Date();
 timers.innerHTML = date.toString();
 
+/**
+ *  [description]
+ *  @param  {String} boxes) {	if         (gridpage) {		boxes.style.color [description]
+ *  @return {[type]}        [description]
+ */
 box.forEach(function(boxes) {
 	if (gridpage) {
 		boxes.style.color = '#521B29';
