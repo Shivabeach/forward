@@ -28,6 +28,28 @@
         <summary>Fasting</summary>
           <p>Fasting is the willful refrainment from eating and sometimes drinking. From a purely physiological context, "fasting" may refer to the metabolic status of a person who has not eaten overnight, or to the metabolic state achieved after complete digestion and absorption of a meal.</p>
       </details>
+      <details>
+        <summary>Map</summary>
+          <code>const HeroName = characters.map((character) => character.name);
+            m1.innerHTML = heroName.toString();</code>
+      </details>
+      <details>
+        <summary>Reduce</summary>
+        <code>const totalMass = characters.reduce((acc, cur) => acc + cur.mass, 0);
+          r1.innerHTML = `The total mass is ${totalMass}`;</code>
+      </details>
+      <details>
+        <summary>Every</summary>
+        <code>const allBlueEyes = characters.every((character) => character.eye_color === 'blue');
+          e1.innerText = allBlueEyes;</code>
+      </details>
+      <details>
+        <summary>Filter</summary>
+        <code>const charactersByMass = characters.filter((character) => character.mass > 100);
+        f1.innerHTML = JSON.stringify(charactersByMass);
+        //Get characters with height less than 200</code>
+      </details>
+      <p>See grid generated page</p>
     </div>
     <div class="regex">regex
       <ul class="regy">

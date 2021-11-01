@@ -22,6 +22,18 @@ const make = document.querySelector('.make');
 const take = document.querySelector('.take');
 const today = document.getElementById('today');
 
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// 	.then((response) => response.json())
+// 	.then((json) => console.log(json));
+
+// const LoadData = async () => {
+// 	const url = 'https://jsonplaceholder.typicode.com/users';
+// 	const res = await fetch(url);
+// 	const data = await res.json();
+// 	console.log(data);
+// };
+// LoadData();
+
 const url = location.href;
 locate.innerHTML = url;
 

@@ -71,6 +71,12 @@
 #named2 {
 	grid-area: side;
 	border: 1px solid black;
+	p {
+		color: $deep-brown;
+	}
+	h3 {
+		color: $vintage-red;
+	}
 }
 #named3 {
 	grid-area: boxer;
@@ -98,4 +104,8 @@
 
 #showMe {
 	height: 100%;
+}
+#convertedMiles,
+#showMiles {
+	color: $vintage-brown;
 }

@@ -908,6 +908,12 @@ footer {
   grid-area: side;
   border: 1px solid black;
 }
+#named2 p {
+  color: #2a040d;
+}
+#named2 h3 {
+  color: #720933;
+}
 
 #named3 {
   -ms-grid-row: 3;
@@ -948,6 +954,11 @@ footer {
 
 #showMe {
   height: 100%;
+}
+
+#convertedMiles,
+#showMiles {
+  color: #702e19;
 }
 
 /** @format */
