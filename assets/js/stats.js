@@ -31,6 +31,7 @@ const aug = document.querySelectorAll('.aug');
 const septem = document.querySelectorAll('.septem');
 const octob = document.querySelectorAll('.octob');
 const octoHeart = document.querySelectorAll('.octoHeart');
+const novob = document.querySelectorAll('.novob');
 // console.log(months.splice(2, 1, 'March'));
 // console.log(months);
 const ex = document.querySelectorAll('.ex');
@@ -48,6 +49,9 @@ const augMiles = document.getElementById('augMiles');
 const septMiles = document.getElementById('septMiles');
 const octMiles = document.getElementById('octMiles');
 const octRate = document.getElementById('octRate');
+const novMiles = document.getElementById("novMiles")
+const novAverage = document.getElementById("novAverage")
+const novRate = document.getElementById("novRate")
 
 const pos = document.querySelectorAll('.pos');
 const exer = document.getElementById('exer');
@@ -73,7 +77,7 @@ let monthOct = [];
 //functions
 //add up the positive numbers and display in top corner
 function positiveNum() {
-	pos.forEach(function(positives) {
+	pos.forEach(function (positives) {
 		let positi = positives.textContent;
 		happy.push(positi);
 	});
@@ -85,7 +89,7 @@ function positiveNum() {
 //add up the negative numbers and display in top corner
 function negativeNum() {
 	let negg = [];
-	neg.forEach(function(negatives) {
+	neg.forEach(function (negatives) {
 		let nega = negatives.textContent;
 		negg.push(nega);
 	});
@@ -110,7 +114,7 @@ function exerc() {
 //steps
 function steppers() {
 	//all classes of step
-	mstep.forEach(function(many) {
+	mstep.forEach(function (many) {
 		let numm = many.firstElementChild.firstChild.nodeValue;
 		arr.push(numm);
 	});
@@ -191,6 +195,7 @@ function aug21() {
 	const avg = (augMile / toNum.length).toFixed(2);
 	document.getElementById('augAverage').innerHTML = `${avg} average miles`;
 }
+
 function sept21() {
 	let monthSept = [];
 	septem.forEach((sept) => {
@@ -229,7 +234,20 @@ function octBeat() {
 	octRate.innerHTML = `${avg} Heart rate`;
 }
 
-steps.forEach(function(stepp) {
+function nov21() {
+	let monthNov = []
+	novob.forEach((nov) => {
+		let novMonth = nov.firstElementChild.firstChild.nodeValue;
+		monthNov.push(novMonth);
+	});
+	const toNum = monthNov.map(Number);
+	const novemMile = toNum.reduce((acc, cum) => acc + cum, 0);
+	novMiles.innerHTML = `${novemMile} Miles walked`;
+	const avg = (novemMile / toNum.length).toFixed(2);
+	document.getElementById('novAverage').innerHTML = `${avg} average miles`;
+}
+
+steps.forEach(function (stepp) {
 	if (stepp.textContent < 0) {
 		stepp.classList.add('highe');
 	} else {
@@ -237,7 +255,7 @@ steps.forEach(function(stepp) {
 	}
 });
 
-miles.forEach(function(mile) {
+miles.forEach(function (mile) {
 	if (mile.textContent < 0) {
 		mile.classList.add('highe');
 	} else {
@@ -253,15 +271,15 @@ sleep.forEach((sleeps) => {
 	}
 });
 
-calories.forEach(function(calorie) {
+calories.forEach(function (calorie) {
 	if (calorie.textContent < 0) {
 		calorie.classList.add('highe');
 	} else {
-		calorie.classList.add('gen7');
+		calorie.classList.add("gen7");
 	}
 });
 
-exercise.forEach(function(exer) {
+exercise.forEach(function (exer) {
 	if (exer.textContent < 0) {
 		exer.classList.add('highe');
 	} else {
@@ -300,4 +318,5 @@ addEventListener('DOMContentLoaded', () => {
 	sept21();
 	oct21();
 	octBeat();
+	nov21();
 });

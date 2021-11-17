@@ -1,5 +1,5 @@
 <body id="tax">
-	<div id="tax-container">
+  <div id="tax-container">
     <menu id="tax-menu">
       <h2 class="upper">Taxonomy</h2>
       <ul role="list" class="inline-list">
@@ -14,7 +14,8 @@
     </menu>
     <div class="discuss">
       <p id="today"></p>
-      <p>This page is defined as containing words pertinet to weight, Ketosis, foods and any other items of interest to the goals</p>
+      <p>This page is defined as containing words pertinet to weight, Ketosis, foods and any other items of interest to
+        the goals</p>
       <div id="taxColor"></div>
       <p id="location"></p>
     </div>
@@ -22,15 +23,17 @@
       <h5 class="top-title">Words, Definitions and Details</h5>
       <details>
         <summary>Ketosis</summary>
-          <p>Ketosis is a metabolic state characterized by elevated levels of ketone bodies in the blood or urine</p>
+        <p>Ketosis is a metabolic state characterized by elevated levels of ketone bodies in the blood or urine</p>
       </details>
       <details>
         <summary>Fasting</summary>
-          <p>Fasting is the willful refrainment from eating and sometimes drinking. From a purely physiological context, "fasting" may refer to the metabolic status of a person who has not eaten overnight, or to the metabolic state achieved after complete digestion and absorption of a meal.</p>
+        <p>Fasting is the willful refrainment from eating and sometimes drinking. From a purely physiological context,
+          "fasting" may refer to the metabolic status of a person who has not eaten overnight, or to the metabolic state
+          achieved after complete digestion and absorption of a meal.</p>
       </details>
       <details>
         <summary>Map</summary>
-          <code>const HeroName = characters.map((character) => character.name);
+        <code>const HeroName = characters.map((character) => character.name);
             m1.innerHTML = heroName.toString();</code>
       </details>
       <details>
@@ -49,7 +52,27 @@
         f1.innerHTML = JSON.stringify(charactersByMass);
         //Get characters with height less than 200</code>
       </details>
-      <p>See grid generated page</p>
+      <details>
+        <summary>Page URL</summary>
+        <code>const url = location.href;<br/>
+            locate.innerHTML = url;</code>
+      </details>
+      <details>
+        <summary>Calories: <strong>16864</strong></summary>
+        <code>
+          function exerc() {
+            let burnie = [];
+            ex.forEach((times) => {
+              let burn = times.firstElementChild.firstChild.nodeValue;
+              burnie.push(burn);
+            });
+            const toNumbers = burnie.map(Number);
+            const freshAir = toNumbers.reduce((acc, cum) => acc + cum, 0);
+            const results = freshAir.toLocaleString('en-US');<br>
+            exer.innerHTML = `${results} days exercising`;
+}
+        </code>
+      </details>
     </div>
     <div class="regex">regex
       <ul class="regy">
@@ -85,8 +108,8 @@
 
     </div>
     <div class="sides">
-      <p>There be whales here<br/>
-        A study of Regex in use<br/>
+      <p>There be whales here<br />
+        A study of Regex in use<br />
         Upon reaching the 1st 4 alphanumeric characters, the regex is satisfied and becomes true
       </p>
 
