@@ -31,7 +31,7 @@ function pusher(added) {
 
 function displayArr(mov) {
 	alphaSort(colors).reverse();
-	colors.forEach(function(mov, i) {
+	colors.forEach(function (mov, i) {
 		const html = `<li>${mov}</li>`;
 		showMe.insertAdjacentHTML('afterbegin', html);
 	});

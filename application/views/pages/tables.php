@@ -402,7 +402,7 @@
       <ul>
         <li class="pb25 step">Steps: <strong>21979</strong> <span class="steps show ">-2603 </span></li>
         <li class="pb25 miles1 novob">Miles: <strong>10</strong> <span class="miles show">-1</span></li>
-        <li class="pb25">HeartRate: <strong>70.71</strong> <span class="sleep show"> </span></li>
+        <li class="pb25 novHeart">HeartRate: <strong>70.71</strong> <span class="sleep show"> </span></li>
         <li class="pb25 cal">Calories: <strong>16330</strong> <span class="calorie show ">-138 </span></li>
         <li class="pb25 ex">Exercise: <strong>0</strong> <span class="exercise show ">-1</span></li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">-4</span> </li>
@@ -411,11 +411,11 @@
     <div class="div28">
       <h5 class="date-range">Nov 14 - Nov 20</h5>
       <ul>
-        <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
-        <li class="pb25">Sleep: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="pb25 step">Steps: <strong>22045</strong> <span class="steps show "> </span></li>
+        <li class="pb25 miles1 novob">Miles: <strong>10</strong> <span class="miles show"></span></li>
+        <li class="pb25 novHeart">HeartRate: <strong>66.83</strong> <span class="sleep show"> </span></li>
+        <li class="pb25 ">Calories: <strong>13829</strong> <span class="calorie show "> </span></li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> <span class="exercise show "></span></li>
         <li class="summary pb25"><span class="pos"></span> <span class="neg"></span> </li>
       </ul>
     </div>
@@ -494,7 +494,7 @@
       <h3>Nov</h3>
       <ul>
         <li>Sick with taking trulicity</li>
-        <li></li>
+        <li>Need to start walking or Gym</li>
       </ul>
     </div>
     <div class="gridfoot">

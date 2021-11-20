@@ -1,7 +1,6 @@
 /** @format */
 
-'use strict';
-//links
+// links
 const item1 = document.querySelector('.item-1');
 const item2 = document.querySelector('.item-2');
 const item3 = document.querySelector('.item-3');
@@ -11,7 +10,7 @@ const item6 = document.querySelector('.item-6');
 const date = document.getElementById('date');
 const title = document.getElementById('title');
 const content = document.getElementById('content');
-const tag = document.getElementById('tags');
+// const tag = document.getElementById('tags');
 const blogger = document.getElementById('blogger');
 const prime = document.getElementById('primeKeys');
 const error = document.getElementById('error');
@@ -21,10 +20,9 @@ const div30 = document.querySelector('.div30');
 const distance = document.getElementById('distance');
 const place = document.getElementById('place');
 const demo = document.getElementById('demo12');
-var myVar = setInterval(myTimer, 1000);
-
+const myVar = setInterval(myTimer, 1000);
 function myTimer() {
-	var d = new Date();
+	const d = new Date();
 	demo.innerHTML = d.toLocaleTimeString();
 }
 
@@ -53,24 +51,24 @@ const item66 = str5.link('http://forward/pages/taxes');
 item6.innerHTML = item66;
 
 for (let i = 0; i < document.links.length; i++) {
-	//this highlights the current active link
-	if (document.links[i].href == document.URL) {
+	// this highlights the current active link
+	if (document.links[i].href === document.URL) {
 		document.links[i].className = 'current';
 	}
 }
 
-let keys = document.querySelector('.blog--keys');
+const keys = document.querySelector('.blog--keys');
 if (keys !== null) {
 	const splitter = keys.textContent.split(',');
-	splitter.forEach(function(suc) {
+	splitter.forEach((suc) => {
 		const html = `<p class="ital">${suc}</p>`;
 		keys.insertAdjacentHTML('afterbegin', html);
 	});
 }
 
-//colors the positive/negative tags
+// colors the positive/negative tags
 const tags = document.querySelectorAll('.tags');
-tags.forEach(function(tag) {
+tags.forEach((tag) => {
 	if (tag.textContent === 'Positive') {
 		tag.style.backgroundColor = '#ffff00';
 		tag.style.color = '#000';
@@ -81,7 +79,7 @@ tags.forEach(function(tag) {
 });
 
 const tagg = document.querySelectorAll('.tags');
-tagg.forEach(function(tag1) {
+tagg.forEach((tag1) => {
 	if (tag1.textContent === 'Positive') {
 		tag1.style.backgroundColor = '#ffff00';
 		tag1.style.color = '#000';
@@ -93,7 +91,7 @@ tagg.forEach(function(tag1) {
 // form validation with an array
 if (blogger != null) {
 	blogger.addEventListener('click', (e) => {
-		let messages = [];
+		const messages = [];
 		if (date.value === '' || date.value === null) {
 			messages.push('Date cannot be empty');
 			date.style.border = '3px solid #ff0000';
@@ -128,12 +126,12 @@ const textual = 'This is completely about my weight';
 para.append(textual);
 if (three != null) three.append(para);
 
-let yer = new Date();
-if (copyr != null) copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
+const yer = new Date();
+if (copyr != null) copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; // copywright
 
 function prints(parent) {
-	var printContents = document.querySelector('.parent').innerHTML;
-	var originalContents = document.body.innerHTML;
+	const printContents = document.querySelector('.parent').innerHTML;
+	const originalContents = document.body.innerHTML;
 	document.body.innerHTML = printContents;
 	window.print();
 	document.body.innerHTML = originalContents;
@@ -146,4 +144,4 @@ function prints(parent) {
 // 	backg.style.backgroundColor = randall;
 // }
 // createColor();
-//@prepros-append jquery.js
+// @prepros-append jquery.js
