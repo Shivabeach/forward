@@ -7,6 +7,8 @@ const item3 = document.querySelector('.item-3');
 const item4 = document.querySelector('.item-4');
 const item5 = document.querySelector('.item-5');
 const item6 = document.querySelector('.item-6');
+const item7 = document.querySelector('.item-7');
+
 const date = document.getElementById('date');
 const title = document.getElementById('title');
 const content = document.getElementById('content');
@@ -16,9 +18,9 @@ const prime = document.getElementById('primeKeys');
 const error = document.getElementById('error');
 const three = document.getElementById('three');
 const copyr = document.querySelector('.copyr');
-const div30 = document.querySelector('.div30');
-const distance = document.getElementById('distance');
-const place = document.getElementById('place');
+// const div30 = document.querySelector('.div30');
+// const distance = document.getElementById('distance');
+// const place = document.getElementById('place');
 const demo = document.getElementById('demo12');
 const myVar = setInterval(myTimer, 1000);
 function myTimer() {
@@ -49,6 +51,10 @@ item5.innerHTML = item55;
 const str5 = 'Taxonomy';
 const item66 = str5.link('http://forward/pages/taxes');
 item6.innerHTML = item66;
+
+const str6 = '2022 Stats';
+const item77 = str6.link('http://forward/pages/grid22');
+item7.innerHTML = item77;
 
 for (let i = 0; i < document.links.length; i++) {
 	// this highlights the current active link
@@ -129,13 +135,13 @@ if (three != null) three.append(para);
 const yer = new Date();
 if (copyr != null) copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; // copywright
 
-function prints(parent) {
-	const printContents = document.querySelector('.parent').innerHTML;
-	const originalContents = document.body.innerHTML;
-	document.body.innerHTML = printContents;
-	window.print();
-	document.body.innerHTML = originalContents;
-}
+// function prints(parent) {
+// 	const printContents = document.querySelector('.parent').innerHTML;
+// 	const originalContents = document.body.innerHTML;
+// 	document.body.innerHTML = printContents;
+// 	window.print();
+// 	document.body.innerHTML = originalContents;
+// }
 
 // function createColor() {
 // 	const randl = Math.random().toString(16).substr(2, 6);
@@ -144,4 +150,3 @@ function prints(parent) {
 // 	backg.style.backgroundColor = randall;
 // }
 // createColor();
-// @prepros-append jquery.js

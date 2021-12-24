@@ -1,5 +1,5 @@
 <body id="grid-page">
-   <menu class="top">
+  <menu class="top">
     <ul role="list" class="inline-list">
       <li class="inline-list fs-3" id="demo12"></li>
       <li class="item-1 inline-list fs-3"></li>
@@ -8,6 +8,7 @@
       <li class="item-4 inline-list fs-3"></li>
       <li class="item-5 inline-list fs-3"></li>
       <li class="item-6 inline-list fs-3"></li>
+      <li class="item-7 inline-list fs-3"></li>
     </ul>
   </menu>
   <!-- <div class="grid-container">
@@ -28,7 +29,7 @@
   </div> -->
 
   <div class="filer">
-  	<div id="named1" class="names1">
+    <div id="named1" class="names1">
       <ul>
         <li>Fragile State</li>
         <li>SupperClub</li>
@@ -46,48 +47,80 @@
         <li></li>
       </ul>
     </div>
-  	<div id="named2" class="names2">
-    Sidebar <span>named 2</span>
-    <p class="topColor"></p>
-    <h3>Date Routines</h3>
-    <p>
-      const date = new Date();<br>
-      timers.innerHTML = date.toString();
-    </p>
-    <p id="timers"></p>
-    <p>What is my age? <span class="age"> </span></p>
-    <p>Below shows duplicates removed in an array (1, 1, 3, 4, 1, 6, 5, 7, 6)</p>
-    <p id="newArr"></p>
+    <div id="named2" class="names2">
+      Sidebar <span>named 2</span>
+      <p class="topColor"></p>
+      <h3>Date Routines</h3>
+      <p>
+        const date = new Date();<br>
+        timers.innerHTML = date.toString();
+      </p>
+      <p id="timers"></p>
+      <p>What is my age? <span class="age"> </span></p>
+      <p>Below shows duplicates removed in an array (1, 1, 3, 4, 1, 6, 5, 7, 6)</p>
+      <p id="newArr"></p>
 
-  </div>
-  	<div id="named3" class="names3 multi">
+    </div>
+    <div id="named3" class="names3 multi">
       <p id="colorDisplay"></p>
       <p id="showLength"></p>
       <ul id="showMe"></ul>
 
 
-  	</div>
-  	<div id="named4" class="names4"><span>named 4</span>
-      <p>Dog Breeds</p>
-      <div class="dogs"></div>
+    </div>
+    <div id="named4" class="names4"><span>named 4</span>
+      <p>Sukyaki</p>
+      <p>I look up while I walk <br>
+        So the tears won't fall<br>
+        Remembering those spring days<br>
+        But tonight I'm all alone
+      </p>
+      <p>
+        I look up while I walk<br>
+        Counting the stars with teary eyes<br>
+        Remembering those summer days<br>
+        But tonight I'm all alone
+      </p>
+      <p>
+        Happiness lies beyond the clouds<br>
+        Happiness lies above the sky<br>
+        I look up while I walk<br>
+        So the tears won't fall
+      </p>
+      <p>
+        I cry while I walk<br>
+        For I am alone tonight<br>
+        Remembering those autumn days<br>
+        But tonight I'm all alone
+      </p>
+      <p>
+        Sadness hides in the shadow of the stars<br>
+        Sadness hides in the shadow of the moon<br>
+        I look up while I walk<br>
+        So the tears won't fall
+      </p>
+      <p>
+        My heart is filled with sorrow<br>
+        For tonight I am alone<br>
+        For tonight I am alone
+      </p>
     </div>
 
-  	<div id="named5" class="names5">
-    <span>named 5</span>
-    <p>Convert Miles to Kilometers</p>
-    <form id="conv">
-      <input type="text" id="milesToKilo">
-      <button>Convert</button>
-    </form>
-    <p>Convert Kilos to Miles</p>
-    <form id="kilos">
-      <input type="text" id="kiloToMiles">
-      <button>Convert</button>
-    </form>
-    <p id="convertedMiles"></p>
-    <p id="showMiles"></p>
+    <div id="named5" class="names5">
+      <span>named 5</span>
+      <p>Convert Miles to Kilometers</p>
+      <form id="conv">
+        <input type="text" id="milesToKilo">
+        <button>Convert</button>
+      </form>
+      <p>Convert Kilos to Miles</p>
+      <form id="kilos">
+        <input type="text" id="kiloToMiles">
+        <button>Convert</button>
+      </form>
+      <p id="convertedMiles"></p>
+      <p id="showMiles"></p>
+    </div>
   </div>
-	</div>
 
-<script type="module" src="<?php echo base_url('assets/js/grid.js');?>" defer></script>
-
+  <script type="module" src="<?php echo base_url('assets/js/grid.js');?>" defer></script>

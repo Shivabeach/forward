@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <!-- <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"> -->
-<!--   <base target="_blank"> -->
+  <!--   <base target="_blank"> -->
   <script>
   let FF_FOUC_FIX;
   </script>

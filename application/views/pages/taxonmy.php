@@ -10,6 +10,7 @@
         <li class="item-4 inline-list fs-3 shadow"></li>
         <li class="item-5 inline-list fs-3 shadow"></li>
         <li class="item-6 inline-list fs-3 shadow"></li>
+        <li class="item-7 inline-list fs-3 shadow"></li>
       </ul>
     </menu>
     <div class="discuss">
@@ -134,6 +135,6 @@
     </div>
 
   </div>
-  <!-- <script src="<?php echo base_url('assets/js/script-dist.js');?>" defer></script> -->
+  <script src="<?php echo base_url('assets/js/script-dist.js');?>" defer></script>
   <script src="<?php echo base_url('assets/js/tax-dist.js');?>" defer></script>
 </body>

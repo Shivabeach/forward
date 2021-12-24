@@ -17,7 +17,6 @@
 	margin: 2rem auto
 	width: 98%
 
-
 .top
 	height: 4rem
 	display: flex
@@ -30,6 +29,7 @@
 		margin-right: 1rem
 		text-shadow: 1px 1px 1px $gen14
 		text-decoration: none
+		font-family: $krona
 		&:visited
 			color: map-get($vintage, "sec-text")
 			text-shadow: none
@@ -45,6 +45,8 @@
 	+center(center, center)
 	flex-direction: column
 
+.pb25
+	font-family: $krona
 //
 // For the grid footer
 //
@@ -65,8 +67,6 @@
 		+center(center, flex-start)
 		padding: 0
 		margin: 0
-
-
 
 // =======================================================================================
 // Highe and gen7 are for highlighting positive and negative values on the statistics page

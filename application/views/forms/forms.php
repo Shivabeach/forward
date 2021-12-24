@@ -1,31 +1,32 @@
 <body id="forms">
-	<div class="container">
-		<header>
-			<h1><?=$title;?></h1>
-		</header>
-		<div class="container--left">
-			<h3 class="headline">Future Links</h3>
-			<ul role="list" class="link-list">
-				<li class="item" id="demo12"></li>
-				<li class="item-1"></li>
-				<li class="item-2"></li>
-				<li class="item-3"></li>
-				<li class="item-4"></li>
-				<li class="item-5"></li>
-				<li class="item-6"></li>
-			</ul>
-		</div>
-		<main>
-			<div class="card">
-				<div class="card--inside">
-					<div class="card--inside-header">
-						<h4>Exercise Form</h4>
-					</div>
-					<fieldset>
-						<legend>Walking Record</legend>
-						<!-- date time place -->
-						<div class="dates"></div>
-						<?php
+  <div class="container">
+    <header>
+      <h1><?=$title;?></h1>
+    </header>
+    <div class="container--left">
+      <h3 class="headline">Future Links</h3>
+      <ul role="list" class="link-list">
+        <li class="item" id="demo12"></li>
+        <li class="item-1"></li>
+        <li class="item-2"></li>
+        <li class="item-3"></li>
+        <li class="item-4"></li>
+        <li class="item-5"></li>
+        <li class="item-6"></li>
+        <li class="item-7"></li>
+      </ul>
+    </div>
+    <main>
+      <div class="card">
+        <div class="card--inside">
+          <div class="card--inside-header">
+            <h4>Exercise Form</h4>
+          </div>
+          <fieldset>
+            <legend>Walking Record</legend>
+            <!-- date time place -->
+            <div class="dates"></div>
+            <?php
 						$form1 = [
 							"id" => "weight"
 						];
@@ -59,18 +60,18 @@
 					echo "<button type='reset' value='Reset'>Reset</button>";
 						echo form_close();
 						?>
-					</fieldset>
-				</div>
-				<div class="card--inside">
-					<div class="card--inside-header">
-						<h4>Blog Form</h4>
-					</div>
-					<fieldset>
-						<legend>Blog</legend>
-						<div id="display"></div>
-						<p id="error"></p>
-						<!-- <p> Words: <span id="counted"></span></p> -->
-						<?php
+          </fieldset>
+        </div>
+        <div class="card--inside">
+          <div class="card--inside-header">
+            <h4>Blog Form</h4>
+          </div>
+          <fieldset>
+            <legend>Blog</legend>
+            <div id="display"></div>
+            <p id="error"></p>
+            <!-- <p> Words: <span id="counted"></span></p> -->
+            <?php
 							$form2 = [
 								"id" => "weights"
 							];
@@ -146,32 +147,33 @@
 						echo "<button type='reset' value='Reset'>Reset</button>";
 							echo form_close();
 						?>
-					</fieldset>
-				</div>
-			</div>
-		</main>
-		<div class="container--right">
-			<div class="card--inside">
-				<h5 class="headline fs-3 bold-6">Keys</h5>
-				<div id="display"></div>
-				<!--  -->
-				<div>
-					<p>Multiply</p>
-					<form onsubmit="return false" oninput="o.value = parseInt(a.value) * parseInt(b.value)">
+          </fieldset>
+        </div>
+      </div>
+    </main>
+    <div class="container--right">
+      <div class="card--inside">
+        <h5 class="headline fs-3 bold-6">Keys</h5>
+        <div id="display"></div>
+        <!--  -->
+        <div>
+          <p>Multiply</p>
+          <form onsubmit="return false" oninput="o.value = parseInt(a.value) * parseInt(b.value)">
 
-						<input class="input-med" name="a" type="number" step="any"> *
-						<input class="input-med" name="b" type="number" step="any"> =
-						<output name="o"></output>
-					</form>
-				</div>
-				<div>
-					<p>Subtract</p>
-					<form onsubmit="return false" oninput="o.value = parseInt(a.value) - parseInt(b.value)">
-						<input class="input-med" name="a" type="number" step="any"> -
-						<input class="input-med" name="b" type="number" step="any"> =
-						<output name="o"></output>
-					</form>
-				</div>
-			</div>
-		</div>
-		<script defer src="<?php echo base_url('assets/js/forms.js');?>" ></script>
+            <input class="input-med" name="a" type="number" step="any"> *
+            <input class="input-med" name="b" type="number" step="any"> =
+            <output name="o"></output>
+          </form>
+        </div>
+        <div>
+          <p>Subtract</p>
+          <form onsubmit="return false" oninput="o.value = parseInt(a.value) - parseInt(b.value)">
+            <input class="input-med" name="a" type="number" step="any"> -
+            <input class="input-med" name="b" type="number" step="any"> =
+            <output name="o"></output>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script defer src="<?php echo base_url('assets/js/forms.js');?>"></script>
+    <script defer src="<?php echo base_url('assets/js/jquery.js');?>"></script>

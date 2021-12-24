@@ -1,6 +1,7 @@
 /**
  *  @description The stats JS page that calculates all values needed using querySelectorAll, arrays, toString and forEach.
  *  @format
+ *  @author Brad
  */
 
 import {
@@ -32,8 +33,9 @@ const octob = document.querySelectorAll('.octob');
 const octoHeart = document.querySelectorAll('.octoHeart');
 const novob = document.querySelectorAll('.novob');
 const novHeart = document.querySelectorAll('.novHeart');
-// console.log(months.splice(2, 1, 'March'));
-// console.log(months);
+const decHeart = document.querySelectorAll('.decHeart');
+const decmile = document.querySelectorAll('.decmile');
+
 const ex = document.querySelectorAll('.ex');
 
 const posi = document.getElementById('posi');
@@ -50,14 +52,15 @@ const septMiles = document.getElementById('septMiles');
 const octMiles = document.getElementById('octMiles');
 const octRate = document.getElementById('octRate');
 const novMiles = document.getElementById('novMiles');
-const novAverage = document.getElementById('novAverage');
 const novRate = document.getElementById('novRate');
+const decMiles = document.getElementById('decMiles');
+const decRate = document.getElementById('decRate');
+const decAverage = document.getElementById('decAverage');
 
 const pos = document.querySelectorAll('.pos');
 const exer = document.getElementById('exer');
 
 const item5 = document.querySelector('.inline-list');
-const test = document.querySelector('.ops');
 // console.log(test.firstElementChild.firstChild.nextSibling.textContent);
 // <li class="pb25 ex"> = firstElementChild of the <ul>
 // Exercise: firstchild
@@ -261,6 +264,31 @@ function novBeat() {
 	novRate.innerHTML = `${avg} Heart rate`;
 }
 
+function dec21() {
+	const monthDec = [];
+	decmile.forEach((dec) => {
+		const decMonth = dec.firstElementChild.firstChild.nodeValue;
+		monthDec.push(decMonth);
+	});
+	const toNum = monthDec.map(Number);
+	const decemMile = toNum.reduce((acc, cum) => acc + cum, 0);
+	decMiles.innerHTML = `${decemMile} Miles walked`;
+	const avg = (decemMile / toNum.length).toFixed(2);
+	document.getElementById('decAverage').innerHTML = `${avg} average miles`;
+}
+
+function decBeat() {
+	const beats12 = [];
+	decHeart.forEach((decbeat) => {
+		const decHeartRate = decbeat.firstElementChild.firstChild.nodeValue;
+		beats12.push(decHeartRate);
+	});
+	const toNum = beats12.map(Number);
+	const decemberBeats = toNum.reduce((acc, cum) => acc + cum, 0);
+	const avg = (decemberBeats / toNum.length).toFixed(2);
+	decRate.innerHTML = `${avg} Heart rate`;
+}
+
 steps.forEach((stepp) => {
 	if (stepp.textContent < 0) {
 		stepp.classList.add('highe');
@@ -293,11 +321,11 @@ calories.forEach((calorie) => {
 	}
 });
 
-exercise.forEach((exer) => {
-	if (exer.textContent < 0) {
-		exer.classList.add('highe');
+exercise.forEach((exe) => {
+	if (exe.textContent < 0) {
+		exe.classList.add('highe');
 	} else {
-		exer.classList.add('gen7');
+		exe.classList.add('gen7');
 	}
 });
 
@@ -334,4 +362,6 @@ addEventListener('DOMContentLoaded', () => {
 	octBeat();
 	nov21();
 	novBeat();
+	dec21();
+	decBeat();
 });

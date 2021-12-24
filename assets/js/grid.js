@@ -1,7 +1,7 @@
 /** @format */
-'use strict';
-//1.609344
-//1 * 0.6213712 kph to mph
+
+// 1.609344
+// 1 * 0.6213712 kph to mph
 import { properCase, log, listen, months } from './utils.js';
 
 const timers = document.getElementById('timers');
@@ -25,17 +25,19 @@ const showMiles = document.getElementById('showMiles');
 const topColor = document.querySelector('.topColor');
 const M_TO_KILO = 0.6213712;
 const K_TO_MILES = 1.61;
-let h, s, l;
+let h;
+let s;
+let l;
 
-//filter example to remove duplicates in arrays
-let array = [1, 1, 3, 4, 1, 6, 5, 7, 6];
-let newArray = array.filter((num, i) => array.indexOf(num) === i);
+// filter example to remove duplicates in arrays
+const array = [1, 1, 3, 4, 1, 6, 5, 7, 6];
+const newArray = array.filter((num, i) => array.indexOf(num) === i);
 newArr.innerHTML = newArray;
 
 // const average = (...args) => args.reduce((a, b) => a + b) / args.length;
 // average(1, 2, 3, 4);
 
-//console.log(months.length);
+// console.log(months.length);
 const date = new Date();
 timers.innerHTML = date.toString();
 
@@ -44,7 +46,7 @@ timers.innerHTML = date.toString();
  *  @param  {String} boxes) {	if         (gridpage) {		boxes.style.color [description]
  *  @return {[type]}        [description]
  */
-box.forEach(function(boxes) {
+box.forEach((boxes) => {
 	if (gridpage) {
 		boxes.style.color = '#521B29';
 	}
@@ -64,7 +66,7 @@ let colors = [];
 const retrieve = localStorage.getItem('stored');
 let col;
 function getStore() {
-	let choco = 'hsl(222, 62%, 42%)';
+	const choco = 'hsl(222, 62%, 42%)';
 	if (retrieve === null) {
 		colors.push(choco);
 		localStorage.setItem('stored', JSON.stringify(colors));
@@ -92,14 +94,14 @@ function pusher(added) {
 }
 
 function displayArr(mov) {
-	//alphaSort(colors).reverse();
-	colors.forEach(function(mov, i) {
+	// alphaSort(colors).reverse();
+	colors.forEach((mov, i) => {
 		const html = `<li>${mov}</li>`;
 		showMe.insertAdjacentHTML('afterbegin', html);
 	});
 }
 
-//insert here
+// insert here
 
 function createColor() {
 	h = Math.floor(Math.random() * 360).toString();
@@ -114,10 +116,10 @@ function createColor() {
 }
 
 function rgb() {
-	let r = Math.floor(Math.random() * 255).toString();
-	let g = Math.floor(Math.random() * 255).toString();
-	let b = Math.floor(Math.random() * 255).toString();
-	let created = `rgb(${r},${g},${b})`;
+	const r = Math.floor(Math.random() * 255).toString();
+	const g = Math.floor(Math.random() * 255).toString();
+	const b = Math.floor(Math.random() * 255).toString();
+	const created = `rgb(${r},${g},${b})`;
 	topper.style.backgroundColor = created;
 	topColor.innerHTML = created;
 }
@@ -131,7 +133,7 @@ function convertKToM() {
 	converting = converting.toFixed(2);
 	showMiles.innerHTML = `${converting} Miles`;
 }
-//0.6213712
+/* 0.6213712 */
 addEventListener('DOMContentLoaded', () => {
 	getAge();
 	createColor();

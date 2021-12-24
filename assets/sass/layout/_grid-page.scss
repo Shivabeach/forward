@@ -37,75 +37,75 @@
 //-----------------------------------------
 // large grid
 #grid-page {
-	background-image: url(../images/light.png);
-	background-repeat: repeat;
+  background-image: url(../images/light.png);
+  background-repeat: repeat;
 }
 
 .filer {
-	height: auto;
-	width: 98%;
-	margin: 0.5rem auto;
-	display: grid;
-	grid-gap: 0.5rem;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 0.75fr repeat(4, 1fr);
-	grid-template-areas:
-		'side side topper topper topper slider'
-		'side side boxer boxer boxer slider'
-		'side side boxer boxer boxer slider'
-		'boxy boxy boxer boxer boxer slider'
-		'boxy boxy boxer boxer boxer slider';
+  height: auto;
+  width: 98%;
+  margin: 0.5rem auto;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 0.75fr repeat(4, 1fr);
+  grid-template-areas:
+    'side side topper topper topper slider'
+    'side side boxer boxer boxer slider'
+    'side side boxer boxer boxer slider'
+    'boxy boxy boxer boxer boxer slider'
+    'boxy boxy boxer boxer boxer slider';
 }
 #named1 {
-	grid-area: topper;
-	border: 1px solid black;
-	padding: 1rem;
-	column-count: 3;
-	column-gap: 1.5rem;
-	font-family: Comfortaa;
+  grid-area: topper;
+  border: 1px solid black;
+  padding: 1rem;
+  column-count: 3;
+  column-gap: 1.5rem;
+  font-family: Comfortaa;
 }
 #named1 li {
-	padding: 8px 0;
-	font-family: $comfortaa;
+  padding: 8px 0;
+  font-family: $comfortaa;
 }
 #named2 {
-	grid-area: side;
-	border: 1px solid black;
-	p {
-		color: $deep-brown;
-	}
-	h3 {
-		color: $vintage-red;
-	}
+  grid-area: side;
+  border: 1px solid black;
+  p {
+    color: $deep-brown;
+  }
+  h3 {
+    color: $vintage-red;
+  }
 }
 #named3 {
-	grid-area: boxer;
-	border: 1px solid black;
+  grid-area: boxer;
+  border: 1px solid black;
 }
 #named4 {
-	grid-area: slider;
-	border: 1px solid black;
+  grid-area: slider;
+  border: 1px solid black;
 }
 #named5 {
-	grid-area: boxy;
-	border: 1px solid black;
+  grid-area: boxy;
+  border: 1px solid black;
 }
 .multi {
-	column-count: 4;
-	column-gap: 0.5rem;
-	column-rule: 3px solid $gen26;
+  column-count: 4;
+  column-gap: 0.5rem;
+  column-rule: 3px solid $gen26;
 }
 //-------------------------------------------
 //Attempt 1
 .attempt1 {
-	width: 95%;
-	margin: 0.5rem auto;
+  width: 95%;
+  margin: 0.5rem auto;
 }
 
 #showMe {
-	height: 100%;
+  height: 100%;
 }
 #convertedMiles,
 #showMiles {
-	color: $vintage-brown;
+  color: $vintage-brown;
 }

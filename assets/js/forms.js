@@ -5,11 +5,11 @@
 const date1 = document.getElementById('distance');
 const dates = document.querySelector('.dates');
 
-document.querySelector('#content').addEventListener('keyup', function() {
-	let res = [];
-	let str = this.value.replace(/[\t\n\r\.\?\!]/gm, ' ').split(' ');
+document.querySelector('#content').addEventListener('keyup', function () {
+	const res = [];
+	const str = this.value.replace(/[\t\n\r\.\?\!]/gm, ' ').split(' ');
 	str.map((s) => {
-		let trimStr = s.trim();
+		const trimStr = s.trim();
 		if (trimStr.length > 0) {
 			res.push(trimStr);
 		}

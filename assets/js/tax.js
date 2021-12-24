@@ -18,7 +18,7 @@ const isItTrue = document.getElementById('isItTrue');
 const locate = document.getElementById('location');
 const removal = document.getElementById('removal');
 const display = document.querySelector('.displayArray');
-const make = document.querySelector('.make');
+// const make = document.querySelector('.make');
 const take = document.querySelector('.take');
 const today = document.getElementById('today');
 
@@ -42,16 +42,16 @@ locate.innerHTML = url;
  *  @return {string} RGB color
  */
 function rgb() {
-	let r = Math.floor(Math.random() * 255).toString();
-	let g = Math.floor(Math.random() * 255).toString();
-	let b = Math.floor(Math.random() * 255).toString();
-	let created = `rgb(${r},${g},${b})`;
+	const r = Math.floor(Math.random() * 255).toString();
+	const g = Math.floor(Math.random() * 255).toString();
+	const b = Math.floor(Math.random() * 255).toString();
+	const created = `rgb(${r},${g},${b})`;
 	tax.style.backgroundColor = created;
 	taxColor.innerHTML = created;
 }
-var myVar = setInterval(myTimer, 1000);
+const myVar = setInterval(myTimer, 1000);
 function myTimer() {
-	var d = new Date();
+	const d = new Date();
 	demo.innerHTML = d.toLocaleTimeString();
 }
 const str = 'Home';
@@ -79,7 +79,7 @@ const item66 = str5.link('http://forward/pages/taxes');
 item6.innerHTML = item66;
 
 for (let i = 0; i < document.links.length; i++) {
-	//this highlights the current active link
+	// this highlights the current active link
 	if (document.links[i].href == document.URL) {
 		document.links[i].className = 'current';
 	}
@@ -129,21 +129,21 @@ function showIt(resp) {
 	display.innerHTML = resp;
 }
 // removal, display, make, take
-removal.addEventListener('submit', function(e) {
+removal.addEventListener('submit', (e) => {
 	e.preventDefault();
-	let make = document.querySelector('.make').value;
+	const make = document.querySelector('.make').value;
 	theArray.push(make);
 	showIt(theArray);
 	document.querySelector('.make').value = '';
 });
 
-removal.addEventListener('submit', function(e) {
+removal.addEventListener('submit', (e) => {
 	e.preventDefault();
-	let val = document.querySelector('.take').value;
+	const val = document.querySelector('.take').value;
 	theArray = theArray.filter((item) => item !== val);
 	showIt(theArray);
 	document.querySelector('.take').value = '';
 });
 
-let now = new Date();
+const now = new Date();
 today.innerHTML = now.toDateString();

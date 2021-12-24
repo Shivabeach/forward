@@ -123,12 +123,21 @@ class Pages extends CI_Controller
 		$this->load->view("template/template", $data);
 	}
 
-public function taxes()
-{
-	$data['title'] = "Words";
-	$data["header"] = "Words and Definition";
-	$data["content"] = "pages/taxonmy";
-	$this->load->view("template/full", $data);
-}
+	public function taxes()
+	{
+		$data['title'] = "Words";
+		$data["header"] = "Words and Definition";
+		$data["content"] = "pages/taxonmy";
+		$this->load->view("template/full", $data);
+	}
+
+	public function grid22()
+		{
+			$data['title'] = "2022";
+			$data["header"] = "2022";
+			$data["content"] = "pages/grid22";
+			$this->load->view("template/full", $data);
+		}
+
 }
 /* End of file Pages.php */

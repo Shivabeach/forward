@@ -34,6 +34,17 @@
   font-family: hattori-italic;
   src: url("../fonts/hattori_lightitalic/Hattori_Hanzo_Italic.woff");
 }
+font-face {
+  font-family: kronaOne;
+  src: url("../fonts/KronaOne-Regular.ttf");
+}
+
+/** @format */
+font-face {
+  font-family: federo;
+  src: url("../fonts/Federo-Regular.ttf");
+}
+
 *::before,
 *::after {
   box-sizing: inherit;
@@ -98,6 +109,7 @@ mark {
   font-size: inherit;
   padding: 0.5rem 1rem;
   border-radius: 50%;
+  font-family: federo;
 }
 
 .higher {
@@ -403,19 +415,19 @@ h2 {
 
 h3 {
   font-size: 28px;
-  font-family: MerriweatherSans;
+  font-family: federo;
   margin-bottom: 0.75rem;
 }
 
 h4 {
   font-size: 24px;
-  font-family: MerriweatherSans;
+  font-family: federo;
   margin-bottom: 0.75rem;
 }
 
 h5 {
   font-size: 20px;
-  font-family: MerriweatherSans;
+  font-family: hattori;
   margin-bottom: 0.75rem;
 }
 
@@ -775,6 +787,7 @@ footer {
   margin-right: 1rem;
   text-shadow: 1px 1px 1px #6724e1;
   text-decoration: none;
+  font-family: kronaOne;
 }
 .top a:visited {
   color: #593e3e;
@@ -796,6 +809,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.pb25 {
+  font-family: kronaOne;
 }
 
 .footer {
@@ -1139,6 +1156,17 @@ footer {
 ul.regy,
 #taxColor {
   padding-left: 1rem;
+}
+
+/** @format */
+.grid22 {
+  width: 98%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 0.75fr repeat(5, 1fr);
+  grid-template-rows: repeat(13, 2fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
 }
 
 /* Calendar if needed */
