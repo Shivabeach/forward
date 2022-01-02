@@ -474,22 +474,22 @@
     <div class="div28">
       <h5 class="date-range">Dec 19 - Dec 25</h5>
       <ul>
-        <li class="pb25 step">Steps: <strong>17736</strong> <span class="steps show "> </span></li>
-        <li class="pb25 miles1 decmile">Miles: <strong>8</strong> <span class="miles show"></span></li>
-        <li class="pb25 decHeart">HeartRate: <strong>68</strong> <span class="sleep show"> </span></li>
-        <li class="pb25 cal">Calories: <strong>13637</strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
-        <li class="summary pb25"><span class="pos"></span> <span class="neg"></span> </li>
+        <li class="pb25 step">Steps: <strong>21507</strong> <span class="steps show ">-5947 </span></li>
+        <li class="pb25 miles1 decmile">Miles: <strong>9</strong> <span class="miles show">-3</span></li>
+        <li class="pb25 decHeart">HeartRate: <strong>68.14</strong> <span class="sleep show"> </span></li>
+        <li class="pb25 cal">Calories: <strong>16689</strong> <span class="calorie show ">-807 </span></li>
+        <li class="pb25">Exercise: <strong>1</strong> <span class="exercise show "></span></li>
+        <li class="summary pb25"><span class="pos">1</span> <span class="neg">-3</span> </li>
       </ul>
     </div>
     <div class="div29">
       <h5 class="date-range">Dec 26 - Jan 1</h5>
       <ul>
-        <li class="pb25 ">Steps: <strong></strong> <span class="steps show "> </span></li>
-        <li class="pb25 ">Miles: <strong></strong> <span class="miles show"></span></li>
+        <li class="pb25 step">Steps: <strong>25394</strong> <span class="steps show "> </span></li>
+        <li class="pb25 miles1 decmile">Miles: <strong>11</strong> <span class="miles show"></span></li>
         <li class="pb25 ">HeartRate: <strong></strong> <span class="sleep show"> </span></li>
-        <li class="pb25 ">Calories: <strong></strong> <span class="calorie show "> </span></li>
-        <li class="pb25">Exercise: <strong></strong> <span class="exercise show "></span></li>
+        <li class="pb25 cal">Calories: <strong>15097</strong> <span class="calorie show "> </span></li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> <span class="exercise show "></span></li>
         <li class="summary pb25"><span class="pos"></span> <span class="neg"></span> </li>
       </ul>
     </div>

@@ -30,7 +30,7 @@ class Forms extends CI_Controller {
     $this->form_validation->set_rules('distance', 'Distance', 'required|trim');
     $this->form_validation->set_rules('place', 'Place', 'required|trim');
 
-    if($this->form_validation->run() == false)
+    if($this->form_validation->run() === false)
     {
     	echo validation_errors();
     }else

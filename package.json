@@ -36,5 +36,8 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.2",
     "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "color-name": "^1.1.4"
   }
 }
