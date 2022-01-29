@@ -116,6 +116,13 @@
 
       <form action=""><input class="reg" type="text"><button type="submit">Submit</button></form>
       <div id="isItTrue"></div>
+
+      <P>DISM.exe /Online /Cleanup-Image /Restorehealth</P>
+      <p>DISM /Online /Cleanup-Image /ScanHealth</p>
+      <p>DISM /Online /Cleanup-Image /CheckHealth</p>
+      <p>Use from a windows ISO burned to cd</p>
+      <p>DISM /Online /Cleanup-Image /RestoreHealth /Source:E:\Sources\install.wim</p>
+
     </div>
     <div class="footy">
       <p>Do not use classes more than once when using them in Javascript</p>

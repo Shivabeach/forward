@@ -37,7 +37,7 @@ const decHeart = document.querySelectorAll('.decHeart');
 const decmile = document.querySelectorAll('.decmile');
 
 const ex = document.querySelectorAll('.ex');
-
+console.log(ex);
 const posi = document.getElementById('posi');
 const neggy = document.getElementById('neggy');
 // const miliess = document.getElementById('milies');

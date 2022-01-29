@@ -147,3 +147,17 @@ removal.addEventListener('submit', (e) => {
 
 const now = new Date();
 today.innerHTML = now.toDateString();
+
+const foods = [
+	{
+		type: 'meat',
+		name: 'Chicken Breast',
+		Size: 3,
+		Calories: 185,
+		fat: 9.9,
+		Carbs: 0,
+		Cholesterol: 72,
+		Potassium: 182,
+		Protein: 37,
+	},
+];

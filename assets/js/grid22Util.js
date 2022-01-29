@@ -1,5 +1,8 @@
 /** @format */
 
+export const pos = document.querySelectorAll('.pos');
+export const neg = document.querySelectorAll('.neg');
+
 export const positive = document.getElementById('positive');
 export const negative = document.getElementById('negative');
 export const milesAll = document.getElementById('milesAll');
