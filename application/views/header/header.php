@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <title>
     <?php echo $title;?>
   </title>
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/main.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/css/main.min.css');?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css" media="all"

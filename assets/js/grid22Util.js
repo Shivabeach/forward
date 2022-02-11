@@ -2,6 +2,7 @@
 
 export const pos = document.querySelectorAll('.pos');
 export const neg = document.querySelectorAll('.neg');
+export const exerc = document.querySelectorAll('.ex');
 
 export const positive = document.getElementById('positive');
 export const negative = document.getElementById('negative');
@@ -9,6 +10,7 @@ export const milesAll = document.getElementById('milesAll');
 export const stepAll = document.getElementById('stepAll');
 export const calorieAll = document.getElementById('calorieAll');
 export const exerciseAll = document.getElementById('exerciseAll');
+export const exer = document.getElementById('exer');
 
 export const janMile = document.querySelectorAll('.janMile');
 export const febMile = document.querySelectorAll('.febMile');
@@ -48,19 +50,6 @@ export const sepHeart = document.querySelectorAll('.sepHeart');
 export const octHeart = document.querySelectorAll('.octHeart');
 export const novHeart = document.querySelectorAll('.novHeart');
 export const decHeart = document.querySelectorAll('.decHeart');
-
-export const janExercise = document.querySelectorAll('.janExercise');
-export const febExercise = document.querySelectorAll('.febExercise');
-export const marExercise = document.querySelectorAll('.marExercise');
-export const aprExercise = document.querySelectorAll('.aprExercise');
-export const mayExercise = document.querySelectorAll('.mayExercise');
-export const junExercise = document.querySelectorAll('.junExercise');
-export const julExercise = document.querySelectorAll('.julExercise');
-export const augExercise = document.querySelectorAll('.augExercise');
-export const sepExercise = document.querySelectorAll('.sepExercise');
-export const octExercise = document.querySelectorAll('.octExercise');
-export const novExercise = document.querySelectorAll('.novExercise');
-export const decExercise = document.querySelectorAll('.decExercise');
 
 export const janCalorie = document.querySelectorAll('.janCalorie');
 export const febCalorie = document.querySelectorAll('.febCalorie');

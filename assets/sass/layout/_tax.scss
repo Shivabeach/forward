@@ -59,11 +59,12 @@
 }
 
 #tax-menu ul {
-	background: $vintage-red;
 }
 #tax-menu li {
 	padding-right: 1rem;
 	font-family: $comfortaa;
+	color: $gen25;
+	text-shadow: 2px 2px 3px $gridGen;
 	//background-color: map-get($scheme, 'primary');
 }
 .discuss {

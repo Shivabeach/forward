@@ -68,9 +68,24 @@ function allCals() {
 	calorieAll.textContent = `${results}`;
 }
 
+function allExercise() {
+	const walking = [];
+	mods.exerc.forEach((move) => {
+		const movement = move.firstElementChild.firstChild.nodeValue;
+		walking.push(movement);
+	});
+	const toNum = walking.map(Number);
+	const st = toNum.reduce((acc, cum) => acc + cum, 0);
+	//const results = st.toLocaleString('en-US');
+	exer.textContent = `${st}`;
+}
+
 /*============================================
 =     Monthly totals start            =
 ============================================*/
+/**
+ * Start january
+ */
 
 function janMilers() {
 	const janMonths = [];
@@ -114,16 +129,74 @@ function janHearts() {
 	const heart = (janCals / toNum.length).toFixed(2);
 	document.querySelector('.janHeartRate').innerHTML = `${heart}`;
 }
+/*=============================================
+=            Start February        =
+=============================================*/
+function febMilers() {
+	const febMonths = [];
+	mods.febMile.forEach((feb) => {
+		const february = feb.firstElementChild.firstChild.nodeValue;
+		febMonths.push(february);
+	});
+	const toNum = febMonths.map(Number);
+	const febMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.febMiles').innerHTML = `${febMiler}`;
+}
+
+function febSteppers() {
+	const febMonths = [];
+	mods.febStep.forEach((feb) => {
+		const february = feb.firstElementChild.firstChild.nodeValue;
+		febMonths.push(february);
+	});
+	const toNum = febMonths.map(Number);
+	const febStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.febSteps').innerHTML = `${febStepper}`;
+}
+function febCalor() {
+	const febMonths = [];
+	mods.febCalorie.forEach((feb) => {
+		const february = feb.firstElementChild.firstChild.nodeValue;
+		febMonths.push(february);
+	});
+	const toNum = febMonths.map(Number);
+	const febCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.febCalories').innerHTML = `${febCals}`;
+}
+function febHearts() {
+	const febMonths = [];
+	mods.febHeart.forEach((feb) => {
+		const february = feb.firstElementChild.firstChild.nodeValue;
+		febMonths.push(february);
+	});
+	const toNum = febMonths.map(Number);
+	const febCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (febCals / toNum.length).toFixed(2);
+	document.querySelector('.febHeartRate').innerHTML = `${heart}`;
+}
+/*=====  End of February block  ======*/
 
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
 	janSteppers();
 	janCalor();
 	janHearts();
+	febMilers();
+	febSteppers();
+	febCalor();
+	febHearts();
 	positives();
 	negatives();
 	allMiles();
 	allSteps();
 	allCals();
+	allExercise();
+});
+
+addEventListener('DOMContentLoaded', () => {
+	const h = Math.floor(Math.random() * 360);
+	let col = `hsl(${h}deg, 100%, 90%)`;
+	document.getElementById('grid22').style.backgroundColor = col;
+	document.querySelector('.color').innerText = col;
 });
 // const juneAvg = (juneMile / toNum.length).toFixed(2);

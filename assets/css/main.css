@@ -65,7 +65,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: calc(60% + 0.8vmin);
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -195,8 +195,9 @@ a:focus, a :active {
 }
 
 .current {
-  background: #e9967a;
   color: #140FA9 !important;
+  border: 2px solid #140FA9;
+  padding: 2px 5px;
 }
 
 output {
@@ -209,6 +210,7 @@ output {
 
 .group {
   text-align: left;
+  width: 100%;
 }
 
 .input-small {
@@ -873,7 +875,7 @@ footer {
 
 .neg {
   padding: 0 3px;
-  color: #E60832;
+  color: #111A57;
 }
 
 #mayMiles,
@@ -1024,13 +1026,11 @@ footer {
   }
 }
 
-#tax-menu ul {
-  background: #720933;
-}
-
 #tax-menu li {
   padding-right: 1rem;
   font-family: Comfortaa;
+  color: #1f94f7;
+  text-shadow: 2px 2px 3px #111A57;
 }
 
 .discuss {
@@ -1288,7 +1288,8 @@ fieldset {
 #negative,
 #milesAll,
 #stepAll,
-#calorieAll {
+#calorieAll,
+#exer {
   font-weight: 800;
 }
 

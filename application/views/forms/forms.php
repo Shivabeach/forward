@@ -20,50 +20,6 @@
       <div class="card">
         <div class="card--inside">
           <div class="card--inside-header">
-            <h4>Exercise Form</h4>
-          </div>
-          <fieldset>
-            <legend>Walking Record</legend>
-            <!-- date time place -->
-            <div class="dates"></div>
-            <?php
-						$form1 = [
-							"id" => "weight"
-						];
-						echo form_open('forms/walk', $form1);
-						$date1 = [
-							"id"          => "date1",
-							"type"        => "date",
-							"class"       => "input-date",
-							"name"        => "date"
-						];
-						echo form_error('date');
-						echo form_input($date1);
-						$distance = [
-							"id"          => "distance",
-							"class"       => "input-med",
-							"name"        => "distance",
-							"placeholder" => "distance"
-						];
-						echo form_error('distance');
-						echo form_input($distance);
-						$place = [
-							"id"          => "place",
-							"class"       => "input-med",
-							"name"        => "place",
-							"placeholder" => "place"
-						];
-						echo form_error('place');
-						echo form_input($place);
-						echo "<br>";
-						echo "<button type='submit' id='walk' value='Submit'>Submit</button>";
-					echo "<button type='reset' value='Reset'>Reset</button>";
-						echo form_close();
-						?>
-          </fieldset>
-        </div>
-        <div class="card--inside">
-          <div class="card--inside-header">
             <h4>Blog Form</h4>
           </div>
           <fieldset>
