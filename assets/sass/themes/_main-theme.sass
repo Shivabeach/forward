@@ -15,7 +15,6 @@
   //background: $azure
 
 [class^= "div"]
-  background-color: $blanchedalmond
   color: invert($blanchedalmond)
   padding: 5px
   border: 1px solid black
@@ -27,13 +26,10 @@
     font-size: 1rem
 
 [class^= "primer"]
-  border: 1px solid black
+  border: 2px solid black
   padding: 5px
-  background: $lemonchiffon
-//map-get($vintage, "lt-bg")
-//
-// .top
-//   background: $gen4
+  @include angle-grad(45deg, $indigo2, $orange2)
+  border-radius: 6px
 
 
 .div2,

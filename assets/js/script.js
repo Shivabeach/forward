@@ -135,18 +135,13 @@ if (three != null) three.append(para);
 const yer = new Date();
 if (copyr != null) copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; // copywright
 
-// function prints(parent) {
-// 	const printContents = document.querySelector('.parent').innerHTML;
-// 	const originalContents = document.body.innerHTML;
-// 	document.body.innerHTML = printContents;
-// 	window.print();
-// 	document.body.innerHTML = originalContents;
-// }
+// const randomHex = () => `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0")}`;console.log(randomHex());
+// Result: #92b008
 
-// function createColor() {
-// 	const randl = Math.random().toString(16).substr(2, 6);
-// 	let randall = `#${randl}`;
-// 	colors.innerHTML = randall;
-// 	backg.style.backgroundColor = randall;
+// document.getElementById('btn').onclick = function() {
+//   var markedCheckbox = document.getElementsByName('pl');
+//   for (var checkbox of markedCheckbox) {
+//     if (checkbox.checked)
+//       document.body.append(checkbox.value + ' ');
+//   }
 // }
-// createColor();

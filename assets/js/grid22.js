@@ -10,7 +10,6 @@ import * as mods from './grid22Util.js';
 
  */
 /*----------  Start main stats counter  ----------*/
-
 function positives() {
 	const posits = [];
 	mods.pos.forEach((posi) => {

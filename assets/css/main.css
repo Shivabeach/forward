@@ -516,7 +516,7 @@ select {
 
 /* Gradients */
 .exampl {
-  background: radial-gradient(circle at top left, #bac8ff 15%, #748ffc 5%, #5c7cfa, #4c6ef5, #4263eb, #364fc7);
+  background: radial-gradient(circle at top left, #baffff 15%, #748ffc 5%, #5c7cfa, #4c6ef5, #4263eb, #364fc7);
 }
 
 .ptext {
@@ -887,7 +887,7 @@ footer {
 }
 
 .summary {
-  background: linear-gradient(90deg, #0af820, #f9c59b);
+  background-image: linear-gradient(90deg, #0af820, #f9c59b);
 }
 
 /** @format */
@@ -1236,7 +1236,6 @@ th {
 }
 
 [class^=div] {
-  background-color: #ffebcd;
   color: #001432;
   padding: 5px;
   border: 1px solid black;
@@ -1249,9 +1248,10 @@ th {
 }
 
 [class^=primer] {
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 5px;
-  background: #fffacd;
+  background-image: linear-gradient(45deg, #baffff, #ffd8a8);
+  border-radius: 6px;
 }
 
 .div2,

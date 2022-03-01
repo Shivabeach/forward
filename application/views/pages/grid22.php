@@ -1,16 +1,16 @@
 <body id="grid22">
   <menu class="top">
-  <h2 class="upper">Statistical Data For 2022</h2 class="upper">
-  <ul role="list" class="inline-list">
-    <li class="inline-list fs-3" id="demo12"></li>
-    <li class="item-1 inline-list fs-3"></li>
-    <li class="item-2 inline-list fs-3"></li>
-    <li class="item-3 inline-list fs-3"></li>
-    <li class="item-4 inline-list fs-3"></li>
-    <li class="item-5 inline-list fs-3"></li>
-    <li class="item-6 inline-list fs-3"></li>
-    <li class="item-7 inline-list fs-3"></li>
-  </ul>
+    <h2 class="upper">Statistical Data For 2022</h2 class="upper">
+    <ul role="list" class="inline-list">
+      <li class="inline-list fs-3" id="demo12"></li>
+      <li class="item-1 inline-list fs-3"></li>
+      <li class="item-2 inline-list fs-3"></li>
+      <li class="item-3 inline-list fs-3"></li>
+      <li class="item-4 inline-list fs-3"></li>
+      <li class="item-5 inline-list fs-3"></li>
+      <li class="item-6 inline-list fs-3"></li>
+      <li class="item-7 inline-list fs-3"></li>
+    </ul>
   </menu>
   <!-- <header>
     <h1><?=ucwords($title);?></h1>
@@ -126,44 +126,44 @@
     <div class="div27">
       <h5 class="date-range">Feb 6 - Feb 12</h5>
       <ul>
-        <li class="pb25 febStep">Steps: <strong>21215</strong> </li>
-        <li class="pb25 febMile">Miles: <strong>9</strong> </li>
-        <li class="pb25 febHeart">HeartRate: <strong>61.75</strong> </li>
-        <li class="pb25 febCalorie">Calories: <strong>10766</strong> </li>
+        <li class="pb25 febStep">Steps: <strong>30212</strong> </li>
+        <li class="pb25 febMile">Miles: <strong>13</strong> </li>
+        <li class="pb25 febHeart">HeartRate: <strong>61.71</strong> </li>
+        <li class="pb25 febCalorie">Calories: <strong>17009</strong> </li>
         <li class="pb25 ex">Exercise: <strong>2</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">3</span> <span class="neg">1</span> </li>
       </ul>
     </div>
     <div class="div28">
       <h5 class="date-range">Feb 13 - Feb 19</h5>
       <ul>
-        <li class="pb25 febStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 febMile">Miles: <strong>0</strong> </li>
-        <li class="pb25 febHeart">HeartRate: <strong>60</strong> </li>
-        <li class="pb25 febCalorie">Calories: <strong>0</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 febStep">Steps: <strong>27257</strong> </li>
+        <li class="pb25 febMile">Miles: <strong>12</strong> </li>
+        <li class="pb25 febHeart">HeartRate: <strong>60.14</strong> </li>
+        <li class="pb25 febCalorie">Calories: <strong>16782</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">1</span> <span class="neg">3</span> </li>
       </ul>
     </div>
     <div class="div29">
       <h5 class="date-range">Feb 20 - Feb 26</h5>
       <ul>
-        <li class="pb25 febStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 febMile">Miles: <strong>0</strong> </li>
-        <li class="pb25 febHeart">HeartRate: <strong>60</strong> </li>
-        <li class="pb25 febCalorie">Calories: <strong>0</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 febStep">Steps: <strong>24623</strong> </li>
+        <li class="pb25 febMile">Miles: <strong>11</strong> </li>
+        <li class="pb25 febHeart">HeartRate: <strong>59.42</strong> </li>
+        <li class="pb25 febCalorie">Calories: <strong>16259</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">1</span> <span class="neg">3</span> </li>
       </ul>
     </div>
     <div class="div30">
       <h5 class="date-range">Feb 27 - Mar 5</h5>
       <ul>
-        <li class="pb25 febStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 febMile">Miles: <strong>0</strong> </li>
+        <li class="pb25 febStep">Steps: <strong>11570</strong> </li>
+        <li class="pb25 febMile">Miles: <strong>5</strong> </li>
         <li class="pb25 febHeart">HeartRate: <strong>61</strong> </li>
-        <li class="pb25 febCalorie">Calories: <strong>0</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
+        <li class="pb25 febCalorie">Calories: <strong>6639</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
     </div>
@@ -838,4 +838,5 @@
   <script src="<?php echo base_url('assets/js/grid22-dist.js');?>"></script>
   <script type="module" src="<?php echo base_url('assets/js/grid22Util-dist.js');?>"></script>
 </body>
+
 </html>
