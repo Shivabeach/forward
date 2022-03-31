@@ -37,7 +37,6 @@ const decHeart = document.querySelectorAll('.decHeart');
 const decmile = document.querySelectorAll('.decmile');
 
 const ex = document.querySelectorAll('.ex');
-console.log(ex);
 const posi = document.getElementById('posi');
 const neggy = document.getElementById('neggy');
 // const miliess = document.getElementById('milies');
@@ -61,21 +60,12 @@ const pos = document.querySelectorAll('.pos');
 const exer = document.getElementById('exer');
 
 const item5 = document.querySelector('.inline-list');
-// console.log(test.firstElementChild.firstChild.nextSibling.textContent);
-// <li class="pb25 ex"> = firstElementChild of the <ul>
-// Exercise: firstchild
-// <strong> = nextSibling
-// 2 = textContent
-// var commas = num.toLocaleString("en-US");
-// arrays
+
 const calArray = [];
 const arr = [];
 const miles2 = [];
 const monthMay = [];
 const monthJune = [];
-let h;
-let s;
-let l;
 const happy = [];
 const monthOct = [];
 
@@ -330,13 +320,11 @@ exercise.forEach((exe) => {
 });
 
 function createColor() {
-	h = Math.floor(Math.random() * 360).toString();
-	s = Math.floor(Math.random() * 100).toString();
-	l = Math.floor(Math.random() * 100).toString();
-	const col = `hsl(${h}, ${s}%, ${l}%)`;
+	const h = Math.floor(Math.random() * 360);
+	const col = `hsl(${h}deg, 100%, 90%)`;
 	document.body.style.backgroundColor = col;
 	colorDisplay.innerHTML = col;
-	item5.style.backgroundColor = col;
+	// item5.style.backgroundColor = col;
 }
 
 /**

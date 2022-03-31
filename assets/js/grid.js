@@ -7,8 +7,8 @@ import { properCase, log, listen, months } from './utils.js';
 const timers = document.getElementById('timers');
 const gridpage = document.getElementById('grid-page');
 const box = document.querySelectorAll('.box');
-const gridly = document.getElementById('gridly');
-const dogs = document.querySelector('.dogs');
+// const gridly = document.getElementById('gridly');
+// const dogs = document.querySelector('.dogs');
 const age = document.querySelector('.age');
 const name5 = document.getElementById('named3');
 const colorDisplay = document.getElementById('colorDisplay');
@@ -64,7 +64,6 @@ const getAge = () => {
 //-----------------------------------------
 let colors = [];
 const retrieve = localStorage.getItem('stored');
-let col;
 function getStore() {
 	const choco = 'hsl(222, 62%, 42%)';
 	if (retrieve === null) {

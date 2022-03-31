@@ -9,7 +9,7 @@ import * as mods from './grid22Util.js';
 	- add posivive and negative during each month
 
  */
-/*----------  Start main stats counter  ----------*/
+/* ----------  Start main stats counter  ----------*/
 function positives() {
 	const posits = [];
 	mods.pos.forEach((posi) => {
@@ -75,13 +75,13 @@ function allExercise() {
 	});
 	const toNum = walking.map(Number);
 	const st = toNum.reduce((acc, cum) => acc + cum, 0);
-	//const results = st.toLocaleString('en-US');
+	// const results = st.toLocaleString('en-US');
 	exer.textContent = `${st}`;
 }
 
-/*============================================
+/*= ===========================================
 =     Monthly totals start            =
-============================================*/
+============================================ */
 /**
  * Start january
  */
@@ -128,9 +128,9 @@ function janHearts() {
 	const heart = (janCals / toNum.length).toFixed(2);
 	document.querySelector('.janHeartRate').innerHTML = `${heart}`;
 }
-/*=============================================
+/*= ============================================
 =            Start February        =
-=============================================*/
+============================================= */
 function febMilers() {
 	const febMonths = [];
 	mods.febMile.forEach((feb) => {
@@ -173,7 +173,52 @@ function febHearts() {
 	const heart = (febCals / toNum.length).toFixed(2);
 	document.querySelector('.febHeartRate').innerHTML = `${heart}`;
 }
-/*=====  End of February block  ======*/
+/*= ====  End of February block  ====== */
+
+/* = = = Start march = = = */
+function marMilers() {
+	const marMonths = [];
+	mods.marMile.forEach((mar) => {
+		const march = mar.firstElementChild.firstChild.nodeValue;
+		marMonths.push(march);
+	});
+	const toNum = marMonths.map(Number);
+	const marMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.marMiles').innerHTML = `${marMiler}`;
+}
+
+function marSteppers() {
+	const marMonths = [];
+	mods.marStep.forEach((mar) => {
+		const march = mar.firstElementChild.firstChild.nodeValue;
+		marMonths.push(march);
+	});
+	const toNum = marMonths.map(Number);
+	const marStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.marSteps').innerHTML = `${marStepper}`;
+}
+
+function marCalor() {
+	const marMonths = [];
+	mods.marCalorie.forEach((mar) => {
+		const march = mar.firstElementChild.firstChild.nodeValue;
+		marMonths.push(march);
+	});
+	const toNum = marMonths.map(Number);
+	const marCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.marCalories').innerHTML = `${marCals}`;
+}
+function marHearts() {
+	const marMonths = [];
+	mods.marHeart.forEach((mar) => {
+		const march = mar.firstElementChild.firstChild.nodeValue;
+		marMonths.push(march);
+	});
+	const toNum = marMonths.map(Number);
+	const marCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (marCals / toNum.length).toFixed(2);
+	document.querySelector('.marHeartRate').innerHTML = `${heart}`;
+}
 
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
@@ -184,6 +229,10 @@ addEventListener('DOMContentLoaded', () => {
 	febSteppers();
 	febCalor();
 	febHearts();
+	marMilers();
+	marSteppers();
+	marCalor();
+	marHearts();
 	positives();
 	negatives();
 	allMiles();
@@ -194,7 +243,7 @@ addEventListener('DOMContentLoaded', () => {
 
 addEventListener('DOMContentLoaded', () => {
 	const h = Math.floor(Math.random() * 360);
-	let col = `hsl(${h}deg, 100%, 90%)`;
+	const col = `hsl(${h}deg, 100%, 90%)`;
 	document.getElementById('grid22').style.backgroundColor = col;
 	document.querySelector('.color').innerText = col;
 });
