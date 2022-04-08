@@ -1251,8 +1251,9 @@ th {
 [class^=primer] {
   border: 2px solid black;
   padding: 5px;
-  background-image: linear-gradient(45deg, #baffff, #ffd8a8);
   border-radius: 6px;
+  background-color: #ed761f;
+  background-image: radial-gradient(at 0% 36%, #1bf898 0, rgba(27, 248, 152, 0) 50%), radial-gradient(at 97% 16%, #95fa29 0, rgba(149, 250, 41, 0) 50%), radial-gradient(at 83% 70%, #e8f25f 0, rgba(232, 242, 95, 0) 50%), radial-gradient(at 19% 78%, #f49867 0, rgba(244, 152, 103, 0) 50%), radial-gradient(at 43% 72%, #72f466 0, rgba(114, 244, 102, 0) 50%), radial-gradient(at 58% 18%, #f18a41 0, rgba(241, 138, 65, 0) 50%);
 }
 
 .div2,

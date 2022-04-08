@@ -220,6 +220,51 @@ function marHearts() {
 	document.querySelector('.marHeartRate').innerHTML = `${heart}`;
 }
 
+/*= ========== Start April ========= */
+
+function aprMilers() {
+	const aprMonths = [];
+	mods.aprMile.forEach((apr) => {
+		const april = apr.firstElementChild.firstChild.nodeValue;
+		aprMonths.push(april);
+	});
+	const toNum = aprMonths.map(Number);
+	const janMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.aprMiles').innerHTML = `${janMiler}`;
+}
+
+function aprSteppers() {
+	const aprMonths = [];
+	mods.janStep.forEach((apr) => {
+		const april = apr.firstElementChild.firstChild.nodeValue;
+		aprMonths.push(april);
+	});
+	const toNum = aprMonths.map(Number);
+	const janStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.aprSteps').innerHTML = `${janStepper}`;
+}
+function aprCalor() {
+	const aprMonths = [];
+	mods.aprCalorie.forEach((apr) => {
+		const april = apr.firstElementChild.firstChild.nodeValue;
+		aprMonths.push(april);
+	});
+	const toNum = aprMonths.map(Number);
+	const janCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.aprCalories').innerHTML = `${janCals}`;
+}
+function aprHearts() {
+	const aprMonths = [];
+	mods.aprHeart.forEach((apr) => {
+		const april = apr.firstElementChild.firstChild.nodeValue;
+		aprMonths.push(april);
+	});
+	const toNum = aprMonths.map(Number);
+	const aprCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (aprCals / toNum.length).toFixed(2);
+	document.querySelector('.aprHeartRate').innerHTML = `${heart}`;
+}
+
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
 	janSteppers();
@@ -233,6 +278,10 @@ addEventListener('DOMContentLoaded', () => {
 	marSteppers();
 	marCalor();
 	marHearts();
+	aprMilers();
+	aprSteppers();
+	aprCalor();
+	aprHearts();
 	positives();
 	negatives();
 	allMiles();
