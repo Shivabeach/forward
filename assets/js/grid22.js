@@ -235,13 +235,13 @@ function aprMilers() {
 
 function aprSteppers() {
 	const aprMonths = [];
-	mods.janStep.forEach((apr) => {
+	mods.aprStep.forEach((apr) => {
 		const april = apr.firstElementChild.firstChild.nodeValue;
 		aprMonths.push(april);
 	});
 	const toNum = aprMonths.map(Number);
-	const janStepper = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.aprSteps').innerHTML = `${janStepper}`;
+	const aprStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.aprSteps').innerHTML = `${aprStepper}`;
 }
 function aprCalor() {
 	const aprMonths = [];
@@ -264,6 +264,7 @@ function aprHearts() {
 	const heart = (aprCals / toNum.length).toFixed(2);
 	document.querySelector('.aprHeartRate').innerHTML = `${heart}`;
 }
+/* ==================== Start May ====================== */
 
 addEventListener('DOMContentLoaded', () => {
 	janMilers();

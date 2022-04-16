@@ -135,7 +135,11 @@ if (three != null) three.append(para);
 const yer = new Date();
 if (copyr != null) copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; // copywright
 
-// const randomHex = () => `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0")}`;console.log(randomHex());
+// const randomHex = () =>
+// 	`#${Math.floor(Math.random() * 0xffffff)
+// 		.toString(16)
+// 		.padEnd(6, '0')}`;
+// console.log(randomHex());
 // Result: #92b008
 
 // document.getElementById('btn').onclick = function() {

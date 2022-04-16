@@ -111,6 +111,7 @@ mark {
   padding: 0.5rem 1rem;
   border-radius: 50%;
   font-family: federo;
+  box-shadow: 2px 1px 2px black;
 }
 
 .higher {
@@ -1261,7 +1262,8 @@ th {
 .div4,
 .div5,
 .div6 {
-  background: #f0e68c;
+  background-color: #800040;
+  background-image: radial-gradient(at 18% 21%, #f67655 0, rgba(246, 118, 85, 0) 50%), radial-gradient(at 17% 11%, #1feaf4 0, rgba(31, 234, 244, 0) 50%), radial-gradient(at 49% 90%, #e5f854 0, rgba(229, 248, 84, 0) 50%), radial-gradient(at 98% 14%, #f5383b 0, rgba(245, 56, 59, 0) 50%), radial-gradient(at 26% 84%, #f02db9 0, rgba(240, 45, 185, 0) 50%), radial-gradient(at 7% 42%, #dc1bee 0, rgba(220, 27, 238, 0) 50%), radial-gradient(at 7% 7%, #f7a036 0, rgba(247, 160, 54, 0) 50%);
 }
 
 #demo12 {
