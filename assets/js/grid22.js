@@ -265,7 +265,48 @@ function aprHearts() {
 	document.querySelector('.aprHeartRate').innerHTML = `${heart}`;
 }
 /* ==================== Start May ====================== */
-
+function mayMilers() {
+	const mayMonths = [];
+	mods.mayMile.forEach((may) => {
+		const mays = may.firstElementChild.firstChild.nodeValue;
+		mayMonths.push(mays);
+	});
+	const toNum = mayMonths.map(Number);
+	const janMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.mayMiles').innerHTML = `${janMiler}`;
+}
+function maySteppers() {
+	const mayMonths = [];
+	mods.mayStep.forEach((may) => {
+		const mays = may.firstElementChild.firstChild.nodeValue;
+		mayMonths.push(mays);
+	});
+	const toNum = mayMonths.map(Number);
+	const mayStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.maySteps').innerHTML = `${mayStepper}`;
+}
+function mayCalor() {
+	const mayMonths = [];
+	mods.mayCalorie.forEach((may) => {
+		const mays = may.firstElementChild.firstChild.nodeValue;
+		mayMonths.push(mays);
+	});
+	const toNum = mayMonths.map(Number);
+	const mayCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	document.querySelector('.mayCalories').innerHTML = `${mayCals}`;
+}
+function mayHearts() {
+	const mayMonths = [];
+	mods.mayHeart.forEach((may) => {
+		const mays = may.firstElementChild.firstChild.nodeValue;
+		mayMonths.push(mays);
+	});
+	const toNum = mayMonths.map(Number);
+	const mayals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (mayals / toNum.length).toFixed(2);
+	document.querySelector('.mayHeartRate').innerHTML = `${heart}`;
+}
+/* ===========================start June ============= */
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
 	janSteppers();
@@ -283,6 +324,10 @@ addEventListener('DOMContentLoaded', () => {
 	aprSteppers();
 	aprCalor();
 	aprHearts();
+	mayMilers();
+	maySteppers();
+	mayCalor();
+	mayHearts();
 	positives();
 	negatives();
 	allMiles();
