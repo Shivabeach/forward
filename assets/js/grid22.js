@@ -19,7 +19,7 @@ function positives() {
 	const toNum = posits.map(Number);
 	const totalPos = toNum.reduce((acc, cum) => acc + cum, 0);
 	const results = totalPos.toLocaleString('en-US');
-	positive.innerHTML = `${results}`;
+	mods.positive.innerHTML = `${results}`;
 }
 function negatives() {
 	const negits = [];
@@ -30,7 +30,7 @@ function negatives() {
 	const toNum = negits.map(Number);
 	const totalNeg = toNum.reduce((acc, cum) => acc + cum, 0);
 	const results = totalNeg.toLocaleString('en-US');
-	negative.innerHTML = `${results}`;
+	mods.negative.innerHTML = `${results}`;
 }
 
 function allMiles() {
@@ -41,7 +41,7 @@ function allMiles() {
 	});
 	const toNum = miler.map(Number);
 	const mi = toNum.reduce((acc, cum) => acc + cum, 0);
-	milesAll.textContent = `${mi}`;
+	mods.milesAll.textContent = `${mi}`;
 }
 function allSteps() {
 	const stepping = [];
@@ -52,7 +52,7 @@ function allSteps() {
 	const toNum = stepping.map(Number);
 	const st = toNum.reduce((acc, cum) => acc + cum, 0);
 	const results = st.toLocaleString('en-US');
-	stepAll.textContent = `${results}`;
+	mods.stepAll.textContent = `${results}`;
 }
 
 function allCals() {
@@ -64,7 +64,7 @@ function allCals() {
 	const toNum = cal.map(Number);
 	const st = toNum.reduce((acc, cum) => acc + cum, 0);
 	const results = st.toLocaleString('en-US');
-	calorieAll.textContent = `${results}`;
+	mods.calorieAll.textContent = `${results}`;
 }
 
 function allExercise() {
@@ -76,7 +76,7 @@ function allExercise() {
 	const toNum = walking.map(Number);
 	const st = toNum.reduce((acc, cum) => acc + cum, 0);
 	// const results = st.toLocaleString('en-US');
-	exer.textContent = `${st}`;
+	mods.exer.textContent = `${st}`;
 }
 
 /*= ===========================================
@@ -94,7 +94,7 @@ function janMilers() {
 	});
 	const toNum = janMonths.map(Number);
 	const janMiler = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.janMiles').innerHTML = `${janMiler}`;
+	mods.janMiles.innerHTML = `${janMiler}`;
 }
 
 function janSteppers() {
@@ -105,7 +105,7 @@ function janSteppers() {
 	});
 	const toNum = janMonths.map(Number);
 	const janStepper = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.janSteps').innerHTML = `${janStepper}`;
+	mods.janSteps.innerHTML = `${janStepper}`;
 }
 function janCalor() {
 	const janMonths = [];
@@ -115,7 +115,7 @@ function janCalor() {
 	});
 	const toNum = janMonths.map(Number);
 	const janCals = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.janCalories').innerHTML = `${janCals}`;
+	mods.janCalories.innerHTML = `${janCals}`;
 }
 function janHearts() {
 	const janMonths = [];
@@ -126,7 +126,7 @@ function janHearts() {
 	const toNum = janMonths.map(Number);
 	const janCals = toNum.reduce((acc, cum) => acc + cum, 0);
 	const heart = (janCals / toNum.length).toFixed(2);
-	document.querySelector('.janHeartRate').innerHTML = `${heart}`;
+	mods.janHeartRate.innerHTML = `${heart}`;
 }
 /*= ============================================
 =            Start February        =
@@ -139,7 +139,7 @@ function febMilers() {
 	});
 	const toNum = febMonths.map(Number);
 	const febMiler = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.febMiles').innerHTML = `${febMiler}`;
+	mods.febMiles.innerHTML = `${febMiler}`;
 }
 
 function febSteppers() {
@@ -150,7 +150,7 @@ function febSteppers() {
 	});
 	const toNum = febMonths.map(Number);
 	const febStepper = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.febSteps').innerHTML = `${febStepper}`;
+	mods.febSteps.innerHTML = `${febStepper}`;
 }
 function febCalor() {
 	const febMonths = [];
@@ -160,7 +160,7 @@ function febCalor() {
 	});
 	const toNum = febMonths.map(Number);
 	const febCals = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.febCalories').innerHTML = `${febCals}`;
+	mods.febCalories.innerHTML = `${febCals}`;
 }
 function febHearts() {
 	const febMonths = [];
@@ -171,7 +171,7 @@ function febHearts() {
 	const toNum = febMonths.map(Number);
 	const febCals = toNum.reduce((acc, cum) => acc + cum, 0);
 	const heart = (febCals / toNum.length).toFixed(2);
-	document.querySelector('.febHeartRate').innerHTML = `${heart}`;
+	mods.febHeartRate.innerHTML = `${heart}`;
 }
 /*= ====  End of February block  ====== */
 
@@ -184,7 +184,7 @@ function marMilers() {
 	});
 	const toNum = marMonths.map(Number);
 	const marMiler = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.marMiles').innerHTML = `${marMiler}`;
+	mods.marMiles.innerHTML = `${marMiler}`;
 }
 
 function marSteppers() {
@@ -195,7 +195,7 @@ function marSteppers() {
 	});
 	const toNum = marMonths.map(Number);
 	const marStepper = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.marSteps').innerHTML = `${marStepper}`;
+	mods.marSteps.innerHTML = `${marStepper}`;
 }
 
 function marCalor() {
@@ -206,7 +206,7 @@ function marCalor() {
 	});
 	const toNum = marMonths.map(Number);
 	const marCals = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.marCalories').innerHTML = `${marCals}`;
+	mods.marCalories.innerHTML = `${marCals}`;
 }
 function marHearts() {
 	const marMonths = [];
@@ -217,7 +217,7 @@ function marHearts() {
 	const toNum = marMonths.map(Number);
 	const marCals = toNum.reduce((acc, cum) => acc + cum, 0);
 	const heart = (marCals / toNum.length).toFixed(2);
-	document.querySelector('.marHeartRate').innerHTML = `${heart}`;
+	mods.marHeartRate.innerHTML = `${heart}`;
 }
 
 /*= ========== Start April ========= */
@@ -230,7 +230,7 @@ function aprMilers() {
 	});
 	const toNum = aprMonths.map(Number);
 	const janMiler = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.aprMiles').innerHTML = `${janMiler}`;
+	mods.aprMiles.innerHTML = `${janMiler}`;
 }
 
 function aprSteppers() {
@@ -241,7 +241,7 @@ function aprSteppers() {
 	});
 	const toNum = aprMonths.map(Number);
 	const aprStepper = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.aprSteps').innerHTML = `${aprStepper}`;
+	mods.aprSteps.innerHTML = `${aprStepper}`;
 }
 function aprCalor() {
 	const aprMonths = [];
@@ -251,7 +251,7 @@ function aprCalor() {
 	});
 	const toNum = aprMonths.map(Number);
 	const janCals = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.aprCalories').innerHTML = `${janCals}`;
+	mods.aprCalories.innerHTML = `${janCals}`;
 }
 function aprHearts() {
 	const aprMonths = [];
@@ -262,7 +262,7 @@ function aprHearts() {
 	const toNum = aprMonths.map(Number);
 	const aprCals = toNum.reduce((acc, cum) => acc + cum, 0);
 	const heart = (aprCals / toNum.length).toFixed(2);
-	document.querySelector('.aprHeartRate').innerHTML = `${heart}`;
+	mods.aprHeartRate.innerHTML = `${heart}`;
 }
 /* ==================== Start May ====================== */
 function mayMilers() {
@@ -273,7 +273,7 @@ function mayMilers() {
 	});
 	const toNum = mayMonths.map(Number);
 	const janMiler = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.mayMiles').innerHTML = `${janMiler}`;
+	mods.mayMiles.innerHTML = `${janMiler}`;
 }
 function maySteppers() {
 	const mayMonths = [];
@@ -283,7 +283,7 @@ function maySteppers() {
 	});
 	const toNum = mayMonths.map(Number);
 	const mayStepper = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.maySteps').innerHTML = `${mayStepper}`;
+	mods.maySteps.innerHTML = `${mayStepper}`;
 }
 function mayCalor() {
 	const mayMonths = [];
@@ -293,7 +293,7 @@ function mayCalor() {
 	});
 	const toNum = mayMonths.map(Number);
 	const mayCals = toNum.reduce((acc, cum) => acc + cum, 0);
-	document.querySelector('.mayCalories').innerHTML = `${mayCals}`;
+	mods.mayCalories.innerHTML = `${mayCals}`;
 }
 function mayHearts() {
 	const mayMonths = [];
@@ -304,9 +304,97 @@ function mayHearts() {
 	const toNum = mayMonths.map(Number);
 	const mayals = toNum.reduce((acc, cum) => acc + cum, 0);
 	const heart = (mayals / toNum.length).toFixed(2);
-	document.querySelector('.mayHeartRate').innerHTML = `${heart}`;
+	mods.mayHeartRate.innerHTML = `${heart}`;
 }
 /* ===========================start June ============= */
+
+function juneMilers() {
+	const juneMonths = [];
+	mods.junMile.forEach((june) => {
+		const junes = june.firstElementChild.firstChild.nodeValue;
+		juneMonths.push(junes);
+	});
+	const toNum = juneMonths.map(Number);
+	const janMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.junMiles.innerHTML = `${janMiler}`;
+}
+function juneSteppers() {
+	const juneMonths = [];
+	mods.junStep.forEach((june) => {
+		const junes = june.firstElementChild.firstChild.nodeValue;
+		juneMonths.push(junes);
+	});
+	const toNum = juneMonths.map(Number);
+	const juneStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.junSteps.innerHTML = `${juneStepper}`;
+}
+function juneCalor() {
+	const juneMonths = [];
+	mods.junCalorie.forEach((june) => {
+		const junes = june.firstElementChild.firstChild.nodeValue;
+		juneMonths.push(junes);
+	});
+	const toNum = juneMonths.map(Number);
+	const juneCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.junCalories.innerHTML = `${juneCals}`;
+}
+function juneHearts() {
+	const juneMonths = [];
+	mods.junHeart.forEach((june) => {
+		const junes = june.firstElementChild.firstChild.nodeValue;
+		juneMonths.push(junes);
+	});
+	const toNum = juneMonths.map(Number);
+	const mayals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (mayals / toNum.length).toFixed(2);
+	mods.junHeartRate.innerHTML = `${heart}`;
+}
+// Start July
+
+function julyMilers() {
+	const julMonths = [];
+	mods.julMile.forEach((july) => {
+		const julys = july.firstElementChild.firstChild.nodeValue;
+		julMonths.push(julys);
+	});
+	const toNum = julMonths.map(Number);
+	const julMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.julMiles.innerHTML = `${julMiler}`;
+}
+function julySteppers() {
+	const julMonths = [];
+	mods.julStep.forEach((july) => {
+		const julys = july.firstElementChild.firstChild.nodeValue;
+		julMonths.push(julys);
+	});
+	const toNum = julMonths.map(Number);
+	const julyStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.julSteps.innerHTML = `${julyStepper}`;
+}
+
+function julyCalor() {
+	const julMonths = [];
+	mods.julCalorie.forEach((july) => {
+		const julys = july.firstElementChild.firstChild.nodeValue;
+		julMonths.push(julys);
+	});
+	const toNum = julMonths.map(Number);
+	const julyCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.julCalories.innerHTML = `${julyCals}`;
+}
+
+function julyHearts() {
+	const julyMonths = [];
+	mods.julHeart.forEach((july) => {
+		const julys = july.firstElementChild.firstChild.nodeValue;
+		julyMonths.push(julys);
+	});
+	const toNum = julyMonths.map(Number);
+	const mayals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (mayals / toNum.length).toFixed(2);
+	mods.julHeartRate.innerHTML = `${heart}`;
+}
+
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
 	janSteppers();
@@ -328,6 +416,14 @@ addEventListener('DOMContentLoaded', () => {
 	maySteppers();
 	mayCalor();
 	mayHearts();
+	juneMilers();
+	juneSteppers();
+	juneCalor();
+	juneHearts();
+	julyMilers();
+	julySteppers();
+	julyCalor();
+	julyHearts();
 	positives();
 	negatives();
 	allMiles();

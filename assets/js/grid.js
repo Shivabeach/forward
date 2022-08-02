@@ -53,7 +53,6 @@ box.forEach((boxes) => {
 });
 
 const getAge = () => {
-	const date = new Date();
 	const currentYear = date.getFullYear();
 	const birthYear = 1950;
 	const currentAge = currentYear - birthYear;
@@ -92,7 +91,7 @@ function pusher(added) {
 	localStorage.setItem('stored', JSON.stringify(colors));
 }
 
-function displayArr(mov) {
+function displayArr() {
 	// alphaSort(colors).reverse();
 	colors.forEach((mov, i) => {
 		const html = `<li>${mov}</li>`;

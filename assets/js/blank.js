@@ -3,7 +3,7 @@ let colors = [];
 const retrieve = localStorage.getItem('stored');
 
 function getStore() {
-	let choco = 'hsl(222, 62%, 42%)';
+	const choco = 'hsl(222, 62%, 42%)';
 	if (retrieve === null) {
 		colors.push(choco);
 		localStorage.setItem('stored', JSON.stringify(colors));
@@ -29,9 +29,9 @@ function pusher(added) {
 	localStorage.setItem('stored', JSON.stringify(colors));
 }
 
-function displayArr(mov) {
+function displayArr() {
 	alphaSort(colors).reverse();
-	colors.forEach(function (mov, i) {
+	colors.forEach((mov, i) => {
 		const html = `<li>${mov}</li>`;
 		showMe.insertAdjacentHTML('afterbegin', html);
 	});
