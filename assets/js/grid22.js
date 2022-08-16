@@ -394,6 +394,51 @@ function julyHearts() {
 	const heart = (mayals / toNum.length).toFixed(2);
 	mods.julHeartRate.innerHTML = `${heart}`;
 }
+// start August -----------------------------
+function augMilers() {
+	const augMonths = [];
+	mods.augMile.forEach((aug) => {
+		const augs = aug.firstElementChild.firstChild.nodeValue;
+		augMonths.push(augs);
+	});
+	const toNum = augMonths.map(Number);
+	const augMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.augMiles.innerHTML = `${augMiler}`;
+}
+
+function augSteppers() {
+	const augMonths = [];
+	mods.augStep.forEach((aug) => {
+		const augs = aug.firstElementChild.firstChild.nodeValue;
+		augMonths.push(augs);
+	});
+	const toNum = augMonths.map(Number);
+	const augStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.augSteps.innerHTML = `${augStepper}`;
+}
+
+function augCalor() {
+	const augMonths = [];
+	mods.augCalorie.forEach((aug) => {
+		const augs = aug.firstElementChild.firstChild.nodeValue;
+		augMonths.push(augs);
+	});
+	const toNum = augMonths.map(Number);
+	const augCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.augCalories.innerHTML = `${augCals}`;
+}
+
+function augHearts() {
+	const augMonths = [];
+	mods.augHeart.forEach((aug) => {
+		const augs = aug.firstElementChild.firstChild.nodeValue;
+		augMonths.push(augs);
+	});
+	const toNum = augMonths.map(Number);
+	const mayals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (mayals / toNum.length).toFixed(2);
+	mods.augHeartRate.innerHTML = `${heart}`;
+}
 
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
@@ -424,6 +469,10 @@ addEventListener('DOMContentLoaded', () => {
 	julySteppers();
 	julyCalor();
 	julyHearts();
+	augMilers();
+	augSteppers();
+	augCalor();
+	augHearts();
 	positives();
 	negatives();
 	allMiles();
