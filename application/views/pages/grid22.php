@@ -502,10 +502,10 @@
     <div class="div28">
       <h5 class="date-range">Aug 14 - Aug 20</h5>
       <ul>
-        <li class="pb25 augStep">Steps: <strong>7716</strong> </li>
-        <li class="pb25 augMile ">Miles: <strong>3</strong> </li>
+        <li class="pb25 augStep">Steps: <strong>19762</strong> </li>
+        <li class="pb25 augMile ">Miles: <strong>9</strong> </li>
         <li class="pb25 augHeart">HeartRate: <strong>55</strong> </li>
-        <li class="pb25 augCalorie">Calories: <strong>4654</strong> </li>
+        <li class="pb25 augCalorie">Calories: <strong>13351</strong> </li>
         <li class="pb25 ex">Exercise: <strong>1</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
