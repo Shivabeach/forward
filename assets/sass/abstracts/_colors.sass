@@ -1,7 +1,17 @@
 
+@use 'maps' as *
+:root
+  @each $key, $val in $colors
+    --#{$key}: #{$val}
 
-
-
-
-
-
+:root
+  @each $key, $val in $brownish
+    --#{$key}: #{$val}
+:root
+  @each $key, $val in $dark
+    --#{$key}: #{$val}
+@keyframes rotate
+  0%
+    rotate: 0
+  100%
+    rotate: 45deg

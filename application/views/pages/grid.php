@@ -58,6 +58,8 @@
       <p id="timers"></p>
       <p>What is my age? <span class="age"> </span></p>
       <p>Below shows duplicates removed in an array (1, 1, 3, 4, 1, 6, 5, 7, 6)</p>
+      <code>const array = [1, 1, 3, 4, 1, 6, 5, 7, 6];<br>
+      const newArray = array.filter((num, i) => array.indexOf(num) === i);</code>
       <p id="newArr"></p>
 
     </div>
@@ -122,5 +124,5 @@
       <p id="showMiles"></p>
     </div>
   </div>
-
-  <script type="module" src="<?php echo base_url('assets/js/grid.js');?>" defer></script>
+  <script src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
+  <script type="module" src="<?php echo base_url('assets/js/grid.js');?>"></script>

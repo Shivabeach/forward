@@ -89,7 +89,7 @@
       </div>
       <p>Below shows how to remove a particular value from an array. theArray = ['one', 'two', 'three'];</p>
       <p>const val = document.querySelector('.take').value;<br>
-  theArray = theArray.filter((item) => item !== val);</p>
+        theArray = theArray.filter((item) => item !== val);</p>
       <div class="arra">
         <form action="" id="removal">
           <p><input class="make" type="text" placeholder="make"></p>
@@ -144,6 +144,6 @@
     </div>
 
   </div>
-  <script src="<?php echo base_url('assets/js/script-dist.js');?>" defer></script>
+  <script src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
   <script src="<?php echo base_url('assets/js/tax-dist.js');?>" defer></script>
 </body>

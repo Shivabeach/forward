@@ -502,33 +502,33 @@
     <div class="div28">
       <h5 class="date-range">Aug 14 - Aug 20</h5>
       <ul>
-        <li class="pb25 augStep">Steps: <strong>19762</strong> </li>
-        <li class="pb25 augMile ">Miles: <strong>9</strong> </li>
-        <li class="pb25 augHeart">HeartRate: <strong>55</strong> </li>
-        <li class="pb25 augCalorie">Calories: <strong>13351</strong> </li>
+        <li class="pb25 augStep">Steps: <strong>23720</strong> </li>
+        <li class="pb25 augMile ">Miles: <strong>10</strong> </li>
+        <li class="pb25 augHeart">HeartRate: <strong>54.71</strong> </li>
+        <li class="pb25 augCalorie">Calories: <strong>16068</strong> </li>
         <li class="pb25 ex">Exercise: <strong>1</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">0</span> <span class="neg">4</span> </li>
       </ul>
     </div>
     <div class="div29">
       <h5 class="date-range">Aug 21 - Aug 27</h5>
       <ul>
-        <li class="pb25 augStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 augMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 augHeart">HeartRate: <strong>55</strong> </li>
-        <li class="pb25 augCalorie">Calories: <strong>0</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 augStep">Steps: <strong>25373</strong> </li>
+        <li class="pb25 augMile ">Miles: <strong>11</strong> </li>
+        <li class="pb25 augHeart">HeartRate: <strong>53.5</strong> </li>
+        <li class="pb25 augCalorie">Calories: <strong>16706</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div30">
       <h5 class="date-range">Aug 28 - Sept 3</h5>
       <ul>
-        <li class="pb25 augStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 augMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 augHeart">HeartRate: <strong>55</strong> </li>
-        <li class="pb25 augCalorie">Calories: <strong>0</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
+        <li class="pb25 augStep">Steps: <strong>20807</strong> </li>
+        <li class="pb25 augMile ">Miles: <strong>9</strong> </li>
+        <li class="pb25 augHeart">HeartRate: <strong>54.71</strong> </li>
+        <li class="pb25 augCalorie">Calories: <strong>15863</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
     </div>
@@ -545,22 +545,22 @@
     <div class="div26">
       <h5 class="date-range">Sept 4 - Sept 10</h5>
       <ul>
-        <li class="pb25 sepStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 sepMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 sepHeart">HeartRate: <strong>0</strong> </li>
-        <li class="pb25 sepCalorie">Calories: <strong>0</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 sepStep">Steps: <strong>20688</strong> </li>
+        <li class="pb25 sepMile ">Miles: <strong>9</strong> </li>
+        <li class="pb25 sepHeart">HeartRate: <strong>55.71</strong> </li>
+        <li class="pb25 sepCalorie">Calories: <strong>15970</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> </li>
+        <li class="summary pb25"><span class="pos">2</span> <span class="neg">2</span> </li>
       </ul>
     </div>
     <div class="div27">
       <h5 class="date-range">Sept 11 - Sept 17</h5>
       <ul>
-        <li class="pb25 sepStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 sepMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 sepHeart">HeartRate: <strong>0</strong> </li>
-        <li class="pb25 sepCalorie">Calories: <strong>0</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
+        <li class="pb25 sepStep">Steps: <strong>5364</strong> </li>
+        <li class="pb25 sepMile ">Miles: <strong>2</strong> </li>
+        <li class="pb25 sepHeart">HeartRate: <strong>55</strong> </li>
+        <li class="pb25 sepCalorie">Calories: <strong>5103</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
     </div>
@@ -569,7 +569,7 @@
       <ul>
         <li class="pb25 sepStep">Steps: <strong>0</strong> </li>
         <li class="pb25 sepMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 sepHeart">HeartRate: <strong>0</strong> </li>
+        <li class="pb25 sepHeart">HeartRate: <strong>55</strong> </li>
         <li class="pb25 sepCalorie">Calories: <strong>0</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
@@ -580,7 +580,7 @@
       <ul>
         <li class="pb25 sepStep">Steps: <strong>0</strong> </li>
         <li class="pb25 sepMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 sepHeart">HeartRate: <strong>0</strong> </li>
+        <li class="pb25 sepHeart">HeartRate: <strong>55</strong> </li>
         <li class="pb25 sepCalorie">Calories: <strong>0</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>

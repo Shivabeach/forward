@@ -440,6 +440,51 @@ function augHearts() {
 	mods.augHeartRate.innerHTML = `${heart}`;
 }
 
+// start SEPTEMBER -----------------------------
+function sepMilers() {
+	const sepMonths = [];
+	mods.sepMile.forEach((sep) => {
+		const seps = sep.firstElementChild.firstChild.nodeValue;
+		sepMonths.push(seps);
+	});
+	const toNum = sepMonths.map(Number);
+	const sepMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.sepMiles.innerHTML = `${sepMiler}`;
+}
+
+function sepSteppers() {
+	const sepMonths = [];
+	mods.sepStep.forEach((sep) => {
+		const seps = sep.firstElementChild.firstChild.nodeValue;
+		sepMonths.push(seps);
+	});
+	const toNum = sepMonths.map(Number);
+	const sepStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.sepSteps.innerHTML = `${sepStepper}`;
+}
+
+function sepCalor() {
+	const sepMonths = [];
+	mods.sepCalorie.forEach((sep) => {
+		const seps = sep.firstElementChild.firstChild.nodeValue;
+		sepMonths.push(seps);
+	});
+	const toNum = sepMonths.map(Number);
+	const sepCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.sepCalories.innerHTML = `${sepCals}`;
+}
+
+function sepHearts() {
+	const sepMonths = [];
+	mods.sepHeart.forEach((sep) => {
+		const seps = sep.firstElementChild.firstChild.nodeValue;
+		sepMonths.push(seps);
+	});
+	const toNum = sepMonths.map(Number);
+	const mayals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (mayals / toNum.length).toFixed(2);
+	mods.sepHeartRate.innerHTML = `${heart}`;
+}
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
 	janSteppers();
@@ -473,6 +518,10 @@ addEventListener('DOMContentLoaded', () => {
 	augSteppers();
 	augCalor();
 	augHearts();
+	sepMilers();
+	sepSteppers();
+	sepCalor();
+	sepHearts();
 	positives();
 	negatives();
 	allMiles();

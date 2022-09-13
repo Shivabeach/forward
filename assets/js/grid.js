@@ -30,8 +30,8 @@ let s;
 let l;
 
 // filter example to remove duplicates in arrays
-const array = [1, 1, 3, 4, 1, 6, 5, 7, 6];
-const newArray = array.filter((num, i) => array.indexOf(num) === i);
+const array1 = [1, 1, 3, 4, 1, 6, 5, 7, 6];
+const newArray = array1.filter((num, i) => array1.indexOf(num) === i);
 newArr.innerHTML = newArray;
 
 // const average = (...args) => args.reduce((a, b) => a + b) / args.length;
@@ -71,10 +71,10 @@ function getStore() {
 	}
 }
 
-const alphaSort = (array) => {
-	if (!array.length) return;
-	return array.sort();
-};
+// const alphaSort = (array) => {
+// 	if (!array.length) return;
+// 	return array.sort();
+// };
 
 function getStorage() {
 	if (localStorage.getItem('stored') === null) {
@@ -134,16 +134,16 @@ function convertKToM() {
 /* 0.6213712 */
 addEventListener('DOMContentLoaded', () => {
 	getAge();
-	createColor();
+	// createColor();
 	displayArr();
 	rgb();
 });
 
-conv.addEventListener('submit', (e) => {
+conv.addEventListener('keyup', (e) => {
 	e.preventDefault();
 	convertsMToK();
 });
-kilos.addEventListener('submit', (e) => {
+kilos.addEventListener('keyup', (e) => {
 	e.preventDefault();
 	convertKToM();
 });
