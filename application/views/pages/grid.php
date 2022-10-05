@@ -60,11 +60,17 @@
       <p>Below shows duplicates removed in an array (1, 1, 3, 4, 1, 6, 5, 7, 6)</p>
       <code>const array = [1, 1, 3, 4, 1, 6, 5, 7, 6];<br>
       const newArray = array.filter((num, i) => array.indexOf(num) === i);</code>
+
+      <p>Another way
+        <code>let arg = [1, 1, 2, 2, 3, 3, 4, 4];<br>
+              const sett = [...new Set(arg)];
+        </code>
+      </p>
       <p id="newArr"></p>
 
     </div>
     <div id="named3" class="names3 multi">
-      <p id="colorDisplay"></p>
+      <p id="colorDisplay">Color was here</p>
       <p id="showLength"></p>
       <ul id="showMe"></ul>
 

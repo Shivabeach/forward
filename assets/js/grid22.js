@@ -485,6 +485,54 @@ function sepHearts() {
 	const heart = (mayals / toNum.length).toFixed(2);
 	mods.sepHeartRate.innerHTML = `${heart}`;
 }
+
+/* --------------------------------- October -------------------------------- */
+
+function octMilers() {
+	const octMonths = [];
+	mods.octMile.forEach((oct) => {
+		const octs = oct.firstElementChild.firstChild.nodeValue;
+		octMonths.push(octs);
+	});
+	const toNum = octMonths.map(Number);
+	const octMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.octMiles.innerHTML = `${octMiler}`;
+}
+
+function octSteppers() {
+	const octMonths = [];
+	mods.octStep.forEach((oct) => {
+		const octs = oct.firstElementChild.firstChild.nodeValue;
+		octMonths.push(octs);
+	});
+	const toNum = octMonths.map(Number);
+	const octStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.octSteps.innerHTML = `${octStepper}`;
+}
+
+function octCalor() {
+	const octMonths = [];
+	mods.octCalorie.forEach((oct) => {
+		const octs = oct.firstElementChild.firstChild.nodeValue;
+		octMonths.push(octs);
+	});
+	const toNum = octMonths.map(Number);
+	const octCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.octCalories.innerHTML = `${octCals}`;
+}
+
+function octHearts() {
+	const octMonths = [];
+	mods.octHeart.forEach((oct) => {
+		const octs = oct.firstElementChild.firstChild.nodeValue;
+		octMonths.push(octs);
+	});
+	const toNum = octMonths.map(Number);
+	const mayals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (mayals / toNum.length).toFixed(2);
+	mods.octHeartRate.innerHTML = `${heart}`;
+}
+/* -------------------------------- The works ------------------------------- */
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
 	janSteppers();
@@ -522,6 +570,10 @@ addEventListener('DOMContentLoaded', () => {
 	sepSteppers();
 	sepCalor();
 	sepHearts();
+	octSteppers();
+	octCalor();
+	octHearts();
+	octMilers();
 	positives();
 	negatives();
 	allMiles();

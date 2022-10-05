@@ -118,12 +118,21 @@
 
       <form action=""><input class="reg" type="text"><button type="submit">Submit</button></form>
       <div id="isItTrue"></div>
+      <div>
+        <P>DISM.exe /Online /Cleanup-Image /Restorehealth</P>
+        <p>DISM /Online /Cleanup-Image /ScanHealth</p>
+        <p>DISM /Online /Cleanup-Image /CheckHealth</p>
+        <p>Use from a windows ISO burned to cd</p>
+        <p>DISM /Online /Cleanup-Image /RestoreHealth /Source:E:\Sources\install.wim</p>
+      </div>
+      <div>
+        <code>
+        datalist id="thelist"<br>
+        option value="Me"<br>
+        option value="you"<br>
 
-      <P>DISM.exe /Online /Cleanup-Image /Restorehealth</P>
-      <p>DISM /Online /Cleanup-Image /ScanHealth</p>
-      <p>DISM /Online /Cleanup-Image /CheckHealth</p>
-      <p>Use from a windows ISO burned to cd</p>
-      <p>DISM /Online /Cleanup-Image /RestoreHealth /Source:E:\Sources\install.wim</p>
+        input type="text" list="thelist"
+      </div>
 
     </div>
     <div class="footy">
@@ -141,9 +150,9 @@
         [ 1, 2, 4, 5 ]
 
       </code>
-    </div>
+      </div>
 
-  </div>
-  <script src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/tax-dist.js');?>" defer></script>
+    </div>
+    <script src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
+    <script src="<?php echo base_url('assets/js/tax-dist.js');?>" defer></script>
 </body>

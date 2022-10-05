@@ -22,11 +22,12 @@ const copyr = document.querySelector('.copyr');
 // const distance = document.getElementById('distance');
 // const place = document.getElementById('place');
 const demo = document.getElementById('demo12');
-const myVar = setInterval(myTimer, 1000);
 function myTimer() {
 	const d = new Date();
 	demo.innerHTML = d.toLocaleTimeString();
 }
+
+const myVar = setInterval(myTimer, 1000);
 
 const str = 'Home';
 const item11 = str.link('http://forward/');
@@ -40,7 +41,7 @@ const str2 = 'General Health';
 const item33 = str2.link('http://forward/pages/health');
 item3.innerHTML = item33;
 
-const str3 = 'Statistics';
+const str3 = '2021 Stats';
 const item44 = str3.link('http://forward/pages/grids');
 item4.innerHTML = item44;
 

@@ -2,6 +2,7 @@
 
 // 1.609344
 // 1 * 0.6213712 kph to mph
+import { toUnicode } from 'punycode';
 import { properCase, log, listen, months } from './utils.js';
 
 const timers = document.getElementById('timers');
@@ -90,10 +91,9 @@ function pusher(added) {
 	colors.push(added);
 	localStorage.setItem('stored', JSON.stringify(colors));
 }
-
+//? display the color
 function displayArr() {
-	// alphaSort(colors).reverse();
-	colors.forEach((mov, i) => {
+	colors.forEach((mov) => {
 		const html = `<li>${mov}</li>`;
 		showMe.insertAdjacentHTML('afterbegin', html);
 	});
@@ -134,7 +134,7 @@ function convertKToM() {
 /* 0.6213712 */
 addEventListener('DOMContentLoaded', () => {
 	getAge();
-	// createColor();
+	createColor();
 	displayArr();
 	rgb();
 });
