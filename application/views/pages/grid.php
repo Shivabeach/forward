@@ -116,18 +116,20 @@
 
     <div id="named5" class="names5">
       <span>named 5</span>
-      <p>Convert Miles to Kilometers</p>
-      <form id="conv">
-        <input type="text" id="milesToKilo">
-        <button>Convert</button>
-      </form>
-      <p>Convert Kilos to Miles</p>
-      <form id="kilos">
-        <input type="text" id="kiloToMiles">
-        <button>Convert</button>
-      </form>
+      <p>Convert Miles to Kilometers : <input type="text" id="milesToKilo"></p>
+      <p>Convert Kilos to Miles : <input type="text" id="kiloToMiles"></p>
       <p id="convertedMiles"></p>
       <p id="showMiles"></p>
+
+      <h3>Calc %</h3>
+      <form>
+        <input type="text" class="no1"> <br> <input type="text" class="no2">
+        <button type="submit" class="click">Calc</button><button type="reset">Clear</button>
+
+      </form>
+      <div class="calculated"></div>
+
+
     </div>
   </div>
   <script src="<?php echo base_url('assets/js/script-dist.js');?>"></script>

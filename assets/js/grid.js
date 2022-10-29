@@ -2,8 +2,13 @@
 
 // 1.609344
 // 1 * 0.6213712 kph to mph
-import { toUnicode } from 'punycode';
 import { properCase, log, listen, months } from './utils.js';
+
+/* for calculations */
+const number1 = document.querySelector('.no1');
+const number2 = document.querySelector('.no2');
+const click = document.querySelector('.click');
+const calculated = document.querySelector('.calculated');
 
 const timers = document.getElementById('timers');
 const gridpage = document.getElementById('grid-page');
@@ -91,7 +96,7 @@ function pusher(added) {
 	colors.push(added);
 	localStorage.setItem('stored', JSON.stringify(colors));
 }
-//? display the color
+// ? display the color
 function displayArr() {
 	colors.forEach((mov) => {
 		const html = `<li>${mov}</li>`;
@@ -132,18 +137,30 @@ function convertKToM() {
 	showMiles.innerHTML = `${converting} Miles`;
 }
 /* 0.6213712 */
-addEventListener('DOMContentLoaded', () => {
+gridpage.addEventListener('DOMContentLoaded', () => {
 	getAge();
 	createColor();
 	displayArr();
 	rgb();
 });
 
-conv.addEventListener('keyup', (e) => {
+milesToKilo.addEventListener('keyup', (e) => {
 	e.preventDefault();
 	convertsMToK();
 });
-kilos.addEventListener('keyup', (e) => {
+kiloToMiles.addEventListener('keyup', (e) => {
 	e.preventDefault();
 	convertKToM();
+});
+
+function calculate() {
+	const one = number1.value;
+	const two = number2.value;
+	const done = (one / two) * 100;
+	calculated.innerText = `${done.toFixed(2)}%`;
+}
+
+click.addEventListener('click', (e) => {
+	e.preventDefault();
+	calculate();
 });
