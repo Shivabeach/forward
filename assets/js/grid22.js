@@ -532,7 +532,54 @@ function octHearts() {
 	const heart = (mayals / toNum.length).toFixed(2);
 	mods.octHeartRate.innerHTML = `${heart}`;
 }
-/* -------------------------------- The works ------------------------------- */
+/* Start November */
+
+function novMilers() {
+	const novMonths = [];
+	mods.novMile.forEach((nov) => {
+		const novs = nov.firstElementChild.firstChild.nodeValue;
+		novMonths.push(novs);
+	});
+	const toNum = novMonths.map(Number);
+	const novMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.novMiles.innerHTML = `${novMiler}`;
+}
+
+function novSteppers() {
+	const novMonths = [];
+	mods.novStep.forEach((nov) => {
+		const novs = nov.firstElementChild.firstChild.nodeValue;
+		novMonths.push(novs);
+	});
+	const toNum = novMonths.map(Number);
+	const novStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.novSteps.innerHTML = `${novStepper}`;
+}
+
+function novCalor() {
+	const novMonths = [];
+	mods.novCalorie.forEach((nov) => {
+		const novs = nov.firstElementChild.firstChild.nodeValue;
+		novMonths.push(novs);
+	});
+	const toNum = novMonths.map(Number);
+	const novCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.novCalories.innerHTML = `${novCals}`;
+}
+
+function novHearts() {
+	const novMonths = [];
+	mods.novHeart.forEach((nov) => {
+		const novs = nov.firstElementChild.firstChild.nodeValue;
+		novMonths.push(novs);
+	});
+	const toNum = novMonths.map(Number);
+	const mayals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (mayals / toNum.length).toFixed(2);
+	mods.novHeartRate.innerHTML = `${heart}`;
+}
+
+/* -------------------------------- The works ------------------------ */
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
 	janSteppers();
@@ -574,6 +621,10 @@ addEventListener('DOMContentLoaded', () => {
 	octCalor();
 	octHearts();
 	octMilers();
+	novCalor();
+	novMilers();
+	novSteppers();
+	novHearts();
 	positives();
 	negatives();
 	allMiles();

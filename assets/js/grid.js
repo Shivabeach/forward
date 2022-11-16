@@ -36,7 +36,7 @@ let s;
 let l;
 
 // filter example to remove duplicates in arrays
-const array1 = [1, 1, 3, 4, 1, 6, 5, 7, 6];
+const array1 = [1, 1, 3, 3, 4, 1, 6, 5, 7, 6];
 const newArray = array1.filter((num, i) => array1.indexOf(num) === i);
 newArr.innerHTML = newArray;
 
@@ -69,6 +69,7 @@ const getAge = () => {
 //-----------------------------------------
 let colors = [];
 const retrieve = localStorage.getItem('stored');
+
 function getStore() {
 	const choco = 'hsl(222, 62%, 42%)';
 	if (retrieve === null) {
@@ -164,3 +165,8 @@ click.addEventListener('click', (e) => {
 	e.preventDefault();
 	calculate();
 });
+
+// for (let i = 0; i < array1.length; i++) {
+// 	const element = array1[i];
+// 	console.log(element);
+// }

@@ -4,7 +4,7 @@
 
 .grid22 {
   width: 98%;
-  margin: 2rem auto;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: 0.75fr repeat(5, 1fr);
   grid-template-rows: repeat(13, 2fr);
