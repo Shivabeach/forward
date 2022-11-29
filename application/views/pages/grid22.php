@@ -681,23 +681,23 @@
     <div class="div28">
       <h5 class="date-range">Nov 13 - Nov 19</h5>
       <ul>
-        <li class="pb25 novStep">Steps: <strong>5740</strong> <span class="steps show "></span></li>
-        <li class="pb25 novMile ">Miles: <strong>3</strong> </li>
+        <li class="pb25 novStep">Steps: <strong>22952</strong> <span class="steps show "></span></li>
+        <li class="pb25 novMile ">Miles: <strong>10</strong> </li>
         <li class="pb25 novHeart">HeartRate: <strong>59.5</strong> </li>
-        <li class="pb25 novCalorie">Calories: <strong>5170</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 novCalorie">Calories: <strong>16106</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div29">
       <h5 class="date-range">Nov 20 - Nov 26</h5>
       <ul>
-        <li class="pb25 novStep">Steps: <strong>0</strong> <span class="steps show "></span></li>
-        <li class="pb25 novMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 novHeart">HeartRate: <strong>57</strong> </li>
-        <li class="pb25 novCalorie">Calories: <strong>0</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 novStep">Steps: <strong>26262</strong> <span class="steps show "></span></li>
+        <li class="pb25 novMile ">Miles: <strong>11</strong> </li>
+        <li class="pb25 novHeart">HeartRate: <strong>58.28</strong> </li>
+        <li class="pb25 novCalorie">Calories: <strong>16632</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div30">
