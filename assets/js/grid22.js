@@ -578,7 +578,52 @@ function novHearts() {
 	const heart = (mayals / toNum.length).toFixed(2);
 	mods.novHeartRate.innerHTML = `${heart}`;
 }
+/* ----------- December ----------------------- */
 
+function decMilers() {
+	const decMonths = [];
+	mods.decMile.forEach((dec) => {
+		const decs = dec.firstElementChild.firstChild.nodeValue;
+		decMonths.push(decs);
+	});
+	const toNum = decMonths.map(Number);
+	const decMiler = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.decMiles.innerHTML = `${decMiler}`;
+}
+
+function decSteppers() {
+	const decMonths = [];
+	mods.decStep.forEach((dec) => {
+		const decs = dec.firstElementChild.firstChild.nodeValue;
+		decMonths.push(decs);
+	});
+	const toNum = decMonths.map(Number);
+	const decStepper = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.decSteps.innerHTML = `${decStepper}`;
+}
+
+function decCalor() {
+	const decMonths = [];
+	mods.decCalorie.forEach((dec) => {
+		const decs = dec.firstElementChild.firstChild.nodeValue;
+		decMonths.push(decs);
+	});
+	const toNum = decMonths.map(Number);
+	const decCals = toNum.reduce((acc, cum) => acc + cum, 0);
+	mods.decCalories.innerHTML = `${decCals}`;
+}
+
+function decHearts() {
+	const decMonths = [];
+	mods.decHeart.forEach((dec) => {
+		const decs = dec.firstElementChild.firstChild.nodeValue;
+		decMonths.push(decs);
+	});
+	const toNum = decMonths.map(Number);
+	const mayals = toNum.reduce((acc, cum) => acc + cum, 0);
+	const heart = (mayals / toNum.length).toFixed(2);
+	mods.decHeartRate.innerHTML = `${heart}`;
+}
 /* -------------------------------- The works ------------------------ */
 addEventListener('DOMContentLoaded', () => {
 	janMilers();
@@ -625,6 +670,10 @@ addEventListener('DOMContentLoaded', () => {
 	novMilers();
 	novSteppers();
 	novHearts();
+	decSteppers();
+	decMilers();
+	decCalor();
+	decHearts();
 	positives();
 	negatives();
 	allMiles();

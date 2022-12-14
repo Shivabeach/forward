@@ -2,7 +2,7 @@
 
 // 1.609344
 // 1 * 0.6213712 kph to mph
-import { properCase, log, listen, months } from './utils.js';
+import { listen, log, months, properCase } from './utils.js';
 
 /* for calculations */
 const number1 = document.querySelector('.no1');
@@ -70,6 +70,11 @@ const getAge = () => {
 let colors = [];
 const retrieve = localStorage.getItem('stored');
 
+/**
+ * @description
+ * @author Brad
+ * @date 2022-11-30
+ */
 function getStore() {
 	const choco = 'hsl(222, 62%, 42%)';
 	if (retrieve === null) {

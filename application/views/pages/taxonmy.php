@@ -19,6 +19,7 @@
         the goals</p>
       <div id="taxColor"></div>
       <p id="location"></p>
+      <p>MAKE YOUR OWN RESET</p>
     </div>
     <div class="word">
       <h5 class="top-title">Words, Definitions and Details</h5>

@@ -703,12 +703,12 @@
     <div class="div30">
       <h5 class="date-range">Nov 27 - Dec 3</h5>
       <ul>
-        <li class="pb25 novStep">Steps: <strong>0</strong> <span class="steps show "></span></li>
-        <li class="pb25 novMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 novHeart">HeartRate: <strong>57</strong> </li>
-        <li class="pb25 novCalorie">Calories: <strong>0</strong> </li>
+        <li class="pb25 novStep">Steps: <strong>20548</strong> <span class="steps show "></span></li>
+        <li class="pb25 novMile ">Miles: <strong>9</strong> </li>
+        <li class="pb25 novHeart">HeartRate: <strong>56.85</strong> </li>
+        <li class="pb25 novCalorie">Calories: <strong>15699</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">0</span> <span class="neg">4</span> </li>
       </ul>
     </div>
     <!-- Dec 2022 -->
@@ -722,59 +722,51 @@
       </div>
     </div>
     <div class="div26">
-      <h5 class="date-range"></h5>
+      <h5 class="date-range">Dec 4 - Dec 10</h5>
       <ul>
-        <li class="pb25 decStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 decMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 decHeart">HeartRate: <strong>0</strong> </li>
-        <li class="pb25 decCalorie">Calories: <strong>0</strong> </li>
+        <li class="pb25 decStep">Steps: <strong>20224</strong> </li>
+        <li class="pb25 decMile ">Miles: <strong>9</strong> </li>
+        <li class="pb25 decHeart">HeartRate: <strong>56.33</strong> </li>
+        <li class="pb25 decCalorie">Calories: <strong>15954</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">1</span> <span class="neg">3</span> </li>
       </ul>
     </div>
     <div class="div27">
-      <h5 class="date-range"></h5>
+      <h5 class="date-range">Dec 11 - Dec 17</h5>
       <ul>
-        <li class="pb25 decStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 decMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 decHeart">HeartRate: <strong>0</strong> </li>
-        <li class="pb25 decCalorie">Calories: <strong>0</strong> </li>
+        <li class="pb25 decStep">Steps: <strong>5226</strong> </li>
+        <li class="pb25 decMile ">Miles: <strong>2</strong> </li>
+        <li class="pb25 decHeart">HeartRate: <strong>56</strong> </li>
+        <li class="pb25 decCalorie">Calories: <strong>4474</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div28">
-      <h5 class="date-range"></h5>
+      <h5 class="date-range">Dec 18 - Dec 24</h5>
       <ul>
         <li class="pb25 decStep">Steps: <strong>0</strong> </li>
         <li class="pb25 decMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 decHeart">HeartRate: <strong>0</strong> </li>
+        <li class="pb25 decHeart">HeartRate: <strong>56</strong> </li>
         <li class="pb25 decCalorie">Calories: <strong>0</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div29">
-      <h5 class="date-range"></h5>
+      <h5 class="date-range">Dec 25 - Dec 31</h5>
       <ul>
         <li class="pb25 decStep">Steps: <strong>0</strong> </li>
         <li class="pb25 decMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 decHeart">HeartRate: <strong>0</strong> </li>
+        <li class="pb25 decHeart">HeartRate: <strong>56</strong> </li>
         <li class="pb25 decCalorie">Calories: <strong>0</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div30">
-      <h5 class="date-range"></h5>
-      <ul>
-        <li class="pb25 decStep">Steps: <strong>0</strong> </li>
-        <li class="pb25 decMile ">Miles: <strong>0</strong> </li>
-        <li class="pb25 decHeart">HeartRate: <strong>0</strong> </li>
-        <li class="pb25 decCalorie">Calories: <strong>0</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
-      </ul>
+      spacer
     </div>
   </div>
   <div class="footer">
