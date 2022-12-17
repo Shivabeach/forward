@@ -735,10 +735,10 @@
     <div class="div27">
       <h5 class="date-range">Dec 11 - Dec 17</h5>
       <ul>
-        <li class="pb25 decStep">Steps: <strong>5226</strong> </li>
-        <li class="pb25 decMile ">Miles: <strong>2</strong> </li>
+        <li class="pb25 decStep">Steps: <strong>11470</strong> </li>
+        <li class="pb25 decMile ">Miles: <strong>5</strong> </li>
         <li class="pb25 decHeart">HeartRate: <strong>56</strong> </li>
-        <li class="pb25 decCalorie">Calories: <strong>4474</strong> </li>
+        <li class="pb25 decCalorie">Calories: <strong>10021</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
