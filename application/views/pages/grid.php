@@ -9,6 +9,7 @@
       <li class="item-5 inline-list fs-3"></li>
       <li class="item-6 inline-list fs-3"></li>
       <li class="item-7 inline-list fs-3"></li>
+      <li class="item-8 inline-list fs-3"></li>
     </ul>
   </menu>
   <!-- <div class="grid-container">

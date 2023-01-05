@@ -139,5 +139,13 @@ class Pages extends CI_Controller
 			$this->load->view("template/full", $data);
 		}
 
+	public function grid23()
+		{
+			$data['title'] = "2023 Stats";
+			$data["header"] = "2023";
+			$data["content"] = "pages/grid23";
+			$this->load->view("template/full", $data);
+		}
+
 }
 /* End of file Pages.php */

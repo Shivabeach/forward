@@ -1,7 +1,6 @@
+import * as mods from './grid22Util.js';
 /** @format */
 /* Main stats */
-import * as mods from './grid22Util.js';
-
 /**
 
 	TODO:
@@ -70,7 +69,7 @@ function allCals() {
 function allExercise() {
 	const walking = [];
 	mods.exerc.forEach((move) => {
-		const movement = move.firstElementChild.firstChild.nodeValue;
+		const movement = move.textContent;
 		walking.push(movement);
 	});
 	const toNum = walking.map(Number);
@@ -89,7 +88,7 @@ function allExercise() {
 function janMilers() {
 	const janMonths = [];
 	mods.janMile.forEach((jan) => {
-		const january = jan.firstElementChild.firstChild.nodeValue;
+		const january = jan.firstChild.nextElementSibling.innerText;
 		janMonths.push(january);
 	});
 	const toNum = janMonths.map(Number);
@@ -100,7 +99,7 @@ function janMilers() {
 function janSteppers() {
 	const janMonths = [];
 	mods.janStep.forEach((jan) => {
-		const january = jan.firstElementChild.firstChild.nodeValue;
+		const january = jan.firstChild.nextElementSibling.innerText;
 		janMonths.push(january);
 	});
 	const toNum = janMonths.map(Number);
@@ -110,7 +109,7 @@ function janSteppers() {
 function janCalor() {
 	const janMonths = [];
 	mods.janCalorie.forEach((jan) => {
-		const january = jan.firstElementChild.firstChild.nodeValue;
+		const january = jan.firstChild.nextElementSibling.innerText;
 		janMonths.push(january);
 	});
 	const toNum = janMonths.map(Number);
@@ -120,7 +119,7 @@ function janCalor() {
 function janHearts() {
 	const janMonths = [];
 	mods.janHeart.forEach((jan) => {
-		const january = jan.firstElementChild.firstChild.nodeValue;
+		const january = jan.firstChild.nextElementSibling.innerText;
 		janMonths.push(january);
 	});
 	const toNum = janMonths.map(Number);
@@ -134,7 +133,7 @@ function janHearts() {
 function febMilers() {
 	const febMonths = [];
 	mods.febMile.forEach((feb) => {
-		const february = feb.firstElementChild.firstChild.nodeValue;
+		const february = feb.firstChild.nextElementSibling.innerText;
 		febMonths.push(february);
 	});
 	const toNum = febMonths.map(Number);
@@ -145,7 +144,7 @@ function febMilers() {
 function febSteppers() {
 	const febMonths = [];
 	mods.febStep.forEach((feb) => {
-		const february = feb.firstElementChild.firstChild.nodeValue;
+		const february = feb.firstChild.nextElementSibling.innerText;
 		febMonths.push(february);
 	});
 	const toNum = febMonths.map(Number);
@@ -155,7 +154,7 @@ function febSteppers() {
 function febCalor() {
 	const febMonths = [];
 	mods.febCalorie.forEach((feb) => {
-		const february = feb.firstElementChild.firstChild.nodeValue;
+		const february = feb.firstChild.nextElementSibling.innerText;
 		febMonths.push(february);
 	});
 	const toNum = febMonths.map(Number);
@@ -165,7 +164,7 @@ function febCalor() {
 function febHearts() {
 	const febMonths = [];
 	mods.febHeart.forEach((feb) => {
-		const february = feb.firstElementChild.firstChild.nodeValue;
+		const february = feb.firstChild.nextElementSibling.innerText;
 		febMonths.push(february);
 	});
 	const toNum = febMonths.map(Number);
@@ -179,7 +178,7 @@ function febHearts() {
 function marMilers() {
 	const marMonths = [];
 	mods.marMile.forEach((mar) => {
-		const march = mar.firstElementChild.firstChild.nodeValue;
+		const march = mar.firstChild.nextElementSibling.innerText;
 		marMonths.push(march);
 	});
 	const toNum = marMonths.map(Number);
@@ -190,7 +189,7 @@ function marMilers() {
 function marSteppers() {
 	const marMonths = [];
 	mods.marStep.forEach((mar) => {
-		const march = mar.firstElementChild.firstChild.nodeValue;
+		const march = mar.firstChild.nextElementSibling.innerText;
 		marMonths.push(march);
 	});
 	const toNum = marMonths.map(Number);
@@ -201,7 +200,7 @@ function marSteppers() {
 function marCalor() {
 	const marMonths = [];
 	mods.marCalorie.forEach((mar) => {
-		const march = mar.firstElementChild.firstChild.nodeValue;
+		const march = mar.firstChild.nextElementSibling.innerText;
 		marMonths.push(march);
 	});
 	const toNum = marMonths.map(Number);
@@ -211,7 +210,7 @@ function marCalor() {
 function marHearts() {
 	const marMonths = [];
 	mods.marHeart.forEach((mar) => {
-		const march = mar.firstElementChild.firstChild.nodeValue;
+		const march = mar.firstChild.nextElementSibling.innerText;
 		marMonths.push(march);
 	});
 	const toNum = marMonths.map(Number);
@@ -225,7 +224,7 @@ function marHearts() {
 function aprMilers() {
 	const aprMonths = [];
 	mods.aprMile.forEach((apr) => {
-		const april = apr.firstElementChild.firstChild.nodeValue;
+		const april = apr.firstChild.nextElementSibling.innerText;
 		aprMonths.push(april);
 	});
 	const toNum = aprMonths.map(Number);
@@ -236,7 +235,7 @@ function aprMilers() {
 function aprSteppers() {
 	const aprMonths = [];
 	mods.aprStep.forEach((apr) => {
-		const april = apr.firstElementChild.firstChild.nodeValue;
+		const april = apr.firstChild.nextElementSibling.innerText;
 		aprMonths.push(april);
 	});
 	const toNum = aprMonths.map(Number);
@@ -246,7 +245,7 @@ function aprSteppers() {
 function aprCalor() {
 	const aprMonths = [];
 	mods.aprCalorie.forEach((apr) => {
-		const april = apr.firstElementChild.firstChild.nodeValue;
+		const april = apr.firstChild.nextElementSibling.innerText;
 		aprMonths.push(april);
 	});
 	const toNum = aprMonths.map(Number);
@@ -256,7 +255,7 @@ function aprCalor() {
 function aprHearts() {
 	const aprMonths = [];
 	mods.aprHeart.forEach((apr) => {
-		const april = apr.firstElementChild.firstChild.nodeValue;
+		const april = apr.firstChild.nextElementSibling.innerText;
 		aprMonths.push(april);
 	});
 	const toNum = aprMonths.map(Number);
@@ -268,7 +267,7 @@ function aprHearts() {
 function mayMilers() {
 	const mayMonths = [];
 	mods.mayMile.forEach((may) => {
-		const mays = may.firstElementChild.firstChild.nodeValue;
+		const mays = may.firstChild.nextElementSibling.innerText;
 		mayMonths.push(mays);
 	});
 	const toNum = mayMonths.map(Number);
@@ -278,7 +277,7 @@ function mayMilers() {
 function maySteppers() {
 	const mayMonths = [];
 	mods.mayStep.forEach((may) => {
-		const mays = may.firstElementChild.firstChild.nodeValue;
+		const mays = may.firstChild.nextElementSibling.innerText;
 		mayMonths.push(mays);
 	});
 	const toNum = mayMonths.map(Number);
@@ -288,7 +287,7 @@ function maySteppers() {
 function mayCalor() {
 	const mayMonths = [];
 	mods.mayCalorie.forEach((may) => {
-		const mays = may.firstElementChild.firstChild.nodeValue;
+		const mays = may.firstChild.nextElementSibling.innerText;
 		mayMonths.push(mays);
 	});
 	const toNum = mayMonths.map(Number);
@@ -298,7 +297,7 @@ function mayCalor() {
 function mayHearts() {
 	const mayMonths = [];
 	mods.mayHeart.forEach((may) => {
-		const mays = may.firstElementChild.firstChild.nodeValue;
+		const mays = may.firstChild.nextElementSibling.innerText;
 		mayMonths.push(mays);
 	});
 	const toNum = mayMonths.map(Number);
@@ -311,7 +310,7 @@ function mayHearts() {
 function juneMilers() {
 	const juneMonths = [];
 	mods.junMile.forEach((june) => {
-		const junes = june.firstElementChild.firstChild.nodeValue;
+		const junes = june.firstChild.nextElementSibling.innerText;
 		juneMonths.push(junes);
 	});
 	const toNum = juneMonths.map(Number);
@@ -321,7 +320,7 @@ function juneMilers() {
 function juneSteppers() {
 	const juneMonths = [];
 	mods.junStep.forEach((june) => {
-		const junes = june.firstElementChild.firstChild.nodeValue;
+		const junes = june.firstChild.nextElementSibling.innerText;
 		juneMonths.push(junes);
 	});
 	const toNum = juneMonths.map(Number);
@@ -331,7 +330,7 @@ function juneSteppers() {
 function juneCalor() {
 	const juneMonths = [];
 	mods.junCalorie.forEach((june) => {
-		const junes = june.firstElementChild.firstChild.nodeValue;
+		const junes = june.firstChild.nextElementSibling.innerText;
 		juneMonths.push(junes);
 	});
 	const toNum = juneMonths.map(Number);
@@ -341,7 +340,7 @@ function juneCalor() {
 function juneHearts() {
 	const juneMonths = [];
 	mods.junHeart.forEach((june) => {
-		const junes = june.firstElementChild.firstChild.nodeValue;
+		const junes = june.firstChild.nextElementSibling.innerText;
 		juneMonths.push(junes);
 	});
 	const toNum = juneMonths.map(Number);
@@ -354,7 +353,7 @@ function juneHearts() {
 function julyMilers() {
 	const julMonths = [];
 	mods.julMile.forEach((july) => {
-		const julys = july.firstElementChild.firstChild.nodeValue;
+		const julys = july.firstChild.nextElementSibling.innerText;
 		julMonths.push(julys);
 	});
 	const toNum = julMonths.map(Number);
@@ -364,7 +363,7 @@ function julyMilers() {
 function julySteppers() {
 	const julMonths = [];
 	mods.julStep.forEach((july) => {
-		const julys = july.firstElementChild.firstChild.nodeValue;
+		const julys = july.firstChild.nextElementSibling.innerText;
 		julMonths.push(julys);
 	});
 	const toNum = julMonths.map(Number);
@@ -375,7 +374,7 @@ function julySteppers() {
 function julyCalor() {
 	const julMonths = [];
 	mods.julCalorie.forEach((july) => {
-		const julys = july.firstElementChild.firstChild.nodeValue;
+		const julys = july.firstChild.nextElementSibling.innerText;
 		julMonths.push(julys);
 	});
 	const toNum = julMonths.map(Number);
@@ -386,7 +385,7 @@ function julyCalor() {
 function julyHearts() {
 	const julyMonths = [];
 	mods.julHeart.forEach((july) => {
-		const julys = july.firstElementChild.firstChild.nodeValue;
+		const julys = july.firstChild.nextElementSibling.innerText;
 		julyMonths.push(julys);
 	});
 	const toNum = julyMonths.map(Number);
@@ -398,7 +397,7 @@ function julyHearts() {
 function augMilers() {
 	const augMonths = [];
 	mods.augMile.forEach((aug) => {
-		const augs = aug.firstElementChild.firstChild.nodeValue;
+		const augs = aug.firstChild.nextElementSibling.innerText;
 		augMonths.push(augs);
 	});
 	const toNum = augMonths.map(Number);
@@ -409,7 +408,7 @@ function augMilers() {
 function augSteppers() {
 	const augMonths = [];
 	mods.augStep.forEach((aug) => {
-		const augs = aug.firstElementChild.firstChild.nodeValue;
+		const augs = aug.firstChild.nextElementSibling.innerText;
 		augMonths.push(augs);
 	});
 	const toNum = augMonths.map(Number);
@@ -420,7 +419,7 @@ function augSteppers() {
 function augCalor() {
 	const augMonths = [];
 	mods.augCalorie.forEach((aug) => {
-		const augs = aug.firstElementChild.firstChild.nodeValue;
+		const augs = aug.firstChild.nextElementSibling.innerText;
 		augMonths.push(augs);
 	});
 	const toNum = augMonths.map(Number);
@@ -431,7 +430,7 @@ function augCalor() {
 function augHearts() {
 	const augMonths = [];
 	mods.augHeart.forEach((aug) => {
-		const augs = aug.firstElementChild.firstChild.nodeValue;
+		const augs = aug.firstChild.nextElementSibling.innerText;
 		augMonths.push(augs);
 	});
 	const toNum = augMonths.map(Number);
@@ -444,7 +443,7 @@ function augHearts() {
 function sepMilers() {
 	const sepMonths = [];
 	mods.sepMile.forEach((sep) => {
-		const seps = sep.firstElementChild.firstChild.nodeValue;
+		const seps = sep.firstChild.nextElementSibling.innerText;
 		sepMonths.push(seps);
 	});
 	const toNum = sepMonths.map(Number);
@@ -455,7 +454,7 @@ function sepMilers() {
 function sepSteppers() {
 	const sepMonths = [];
 	mods.sepStep.forEach((sep) => {
-		const seps = sep.firstElementChild.firstChild.nodeValue;
+		const seps = sep.firstChild.nextElementSibling.innerText;
 		sepMonths.push(seps);
 	});
 	const toNum = sepMonths.map(Number);
@@ -466,7 +465,7 @@ function sepSteppers() {
 function sepCalor() {
 	const sepMonths = [];
 	mods.sepCalorie.forEach((sep) => {
-		const seps = sep.firstElementChild.firstChild.nodeValue;
+		const seps = sep.firstChild.nextElementSibling.innerText;
 		sepMonths.push(seps);
 	});
 	const toNum = sepMonths.map(Number);
@@ -477,7 +476,7 @@ function sepCalor() {
 function sepHearts() {
 	const sepMonths = [];
 	mods.sepHeart.forEach((sep) => {
-		const seps = sep.firstElementChild.firstChild.nodeValue;
+		const seps = sep.firstChild.nextElementSibling.innerText;
 		sepMonths.push(seps);
 	});
 	const toNum = sepMonths.map(Number);
@@ -491,7 +490,7 @@ function sepHearts() {
 function octMilers() {
 	const octMonths = [];
 	mods.octMile.forEach((oct) => {
-		const octs = oct.firstElementChild.firstChild.nodeValue;
+		const octs = oct.firstChild.nextElementSibling.innerText;
 		octMonths.push(octs);
 	});
 	const toNum = octMonths.map(Number);
@@ -502,7 +501,7 @@ function octMilers() {
 function octSteppers() {
 	const octMonths = [];
 	mods.octStep.forEach((oct) => {
-		const octs = oct.firstElementChild.firstChild.nodeValue;
+		const octs = oct.firstChild.nextElementSibling.innerText;
 		octMonths.push(octs);
 	});
 	const toNum = octMonths.map(Number);
@@ -513,7 +512,7 @@ function octSteppers() {
 function octCalor() {
 	const octMonths = [];
 	mods.octCalorie.forEach((oct) => {
-		const octs = oct.firstElementChild.firstChild.nodeValue;
+		const octs = oct.firstChild.nextElementSibling.innerText;
 		octMonths.push(octs);
 	});
 	const toNum = octMonths.map(Number);
@@ -524,7 +523,7 @@ function octCalor() {
 function octHearts() {
 	const octMonths = [];
 	mods.octHeart.forEach((oct) => {
-		const octs = oct.firstElementChild.firstChild.nodeValue;
+		const octs = oct.firstChild.nextElementSibling.innerText;
 		octMonths.push(octs);
 	});
 	const toNum = octMonths.map(Number);
@@ -537,7 +536,7 @@ function octHearts() {
 function novMilers() {
 	const novMonths = [];
 	mods.novMile.forEach((nov) => {
-		const novs = nov.firstElementChild.firstChild.nodeValue;
+		const novs = nov.firstChild.nextElementSibling.innerText;
 		novMonths.push(novs);
 	});
 	const toNum = novMonths.map(Number);
@@ -548,7 +547,7 @@ function novMilers() {
 function novSteppers() {
 	const novMonths = [];
 	mods.novStep.forEach((nov) => {
-		const novs = nov.firstElementChild.firstChild.nodeValue;
+		const novs = nov.firstChild.nextElementSibling.innerText;
 		novMonths.push(novs);
 	});
 	const toNum = novMonths.map(Number);
@@ -559,7 +558,7 @@ function novSteppers() {
 function novCalor() {
 	const novMonths = [];
 	mods.novCalorie.forEach((nov) => {
-		const novs = nov.firstElementChild.firstChild.nodeValue;
+		const novs = nov.firstChild.nextElementSibling.innerText;
 		novMonths.push(novs);
 	});
 	const toNum = novMonths.map(Number);
@@ -570,7 +569,7 @@ function novCalor() {
 function novHearts() {
 	const novMonths = [];
 	mods.novHeart.forEach((nov) => {
-		const novs = nov.firstElementChild.firstChild.nodeValue;
+		const novs = nov.firstChild.nextElementSibling.innerText;
 		novMonths.push(novs);
 	});
 	const toNum = novMonths.map(Number);
@@ -583,7 +582,7 @@ function novHearts() {
 function decMilers() {
 	const decMonths = [];
 	mods.decMile.forEach((dec) => {
-		const decs = dec.firstElementChild.firstChild.nodeValue;
+		const decs = dec.firstChild.nextElementSibling.innerText;
 		decMonths.push(decs);
 	});
 	const toNum = decMonths.map(Number);
@@ -594,7 +593,7 @@ function decMilers() {
 function decSteppers() {
 	const decMonths = [];
 	mods.decStep.forEach((dec) => {
-		const decs = dec.firstElementChild.firstChild.nodeValue;
+		const decs = dec.firstChild.nextElementSibling.innerText;
 		decMonths.push(decs);
 	});
 	const toNum = decMonths.map(Number);
@@ -605,7 +604,7 @@ function decSteppers() {
 function decCalor() {
 	const decMonths = [];
 	mods.decCalorie.forEach((dec) => {
-		const decs = dec.firstElementChild.firstChild.nodeValue;
+		const decs = dec.firstChild.nextElementSibling.innerText;
 		decMonths.push(decs);
 	});
 	const toNum = decMonths.map(Number);
@@ -616,7 +615,7 @@ function decCalor() {
 function decHearts() {
 	const decMonths = [];
 	mods.decHeart.forEach((dec) => {
-		const decs = dec.firstElementChild.firstChild.nodeValue;
+		const decs = dec.firstChild.nextElementSibling.innerText;
 		decMonths.push(decs);
 	});
 	const toNum = decMonths.map(Number);

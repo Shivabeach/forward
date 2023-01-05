@@ -10,6 +10,7 @@
       <li class="item-5 inline-list fs-3"></li>
       <li class="item-6 inline-list fs-3"></li>
       <li class="item-7 inline-list fs-3"></li>
+      <li class="item-8 inline-list fs-3"></li>
     </ul>
   </menu>
   <!-- <header>
@@ -814,7 +815,7 @@
     </div>
   </div>
   <script src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/grid22-dist.js');?>"></script>
+  <script type="module" src="<?php echo base_url('assets/js/grid22-dist.js');?>"></script>
   <script type="module" src="<?php echo base_url('assets/js/grid22Util-dist.js');?>"></script>
 </body>
 

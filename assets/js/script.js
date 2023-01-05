@@ -8,6 +8,7 @@ const item4 = document.querySelector('.item-4');
 const item5 = document.querySelector('.item-5');
 const item6 = document.querySelector('.item-6');
 const item7 = document.querySelector('.item-7');
+const item8 = document.querySelector(".item-8")
 
 const date = document.getElementById('date');
 const title = document.getElementById('title');
@@ -56,6 +57,10 @@ item6.innerHTML = item66;
 const str6 = '2022 Stats';
 const item77 = str6.link('http://forward/pages/grid22');
 item7.innerHTML = item77;
+
+const str7 = '2023 Stats';
+const item88 = str7.link('http://forward/pages/grid23');
+item8.innerHTML = item88;
 
 for (let i = 0; i < document.links.length; i++) {
 	// this highlights the current active link
