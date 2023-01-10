@@ -59,21 +59,21 @@
     <div class="div26">
       <h5 class="date-range">Jan 1 - Jan 8</h5>
       <ul>
-        <li class="pb25 janStep">Steps: <strong>12682</strong> </li>
-        <li class="pb25 janMile">Miles: <strong>6</strong> </li>
+        <li class="pb25 janStep">Steps: <strong>18069</strong> </li>
+        <li class="pb25 janMile">Miles: <strong>8</strong> </li>
         <li class="pb25 janHeart">HeartRate: <strong>60.42</strong> </li>
-        <li class="pb25 janCalorie">Calories: <strong>10157</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 janCalorie">Calories: <strong>15213</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div27">
       <h5 class="date-range">Jan 8 - Jan 14</h5>
       <ul>
-        <li class="pb25 janStep">Steps: <strong></strong> </li>
-        <li class="pb25 janMile">Miles: <strong></strong> </li>
-        <li class="pb25 janHeart">HeartRate: <strong>59</strong> </li>
-        <li class="pb25 janCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 janStep">Steps: <strong>6790</strong> </li>
+        <li class="pb25 janMile">Miles: <strong>3</strong> </li>
+        <li class="pb25 janHeart">HeartRate: <strong>59.5</strong> </li>
+        <li class="pb25 janCalorie">Calories: <strong>4582</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
@@ -124,8 +124,8 @@
     <div class="div26">
       <h5 class="date-range">Jan 30 - Feb 5</h5>
       <ul>
-        <li class="pb25 febStep">Steps: <strong>21</strong> </li>
-        <li class="pb25 febMile">Miles: <strong>1</strong> </li>
+        <li class="pb25 febStep">Steps: <strong></strong> </li>
+        <li class="pb25 febMile">Miles: <strong></strong> </li>
         <li class="pb25 febHeart">HeartRate: <strong>61</strong> </li>
         <li class="pb25 febCalorie">Calories: <strong></strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
