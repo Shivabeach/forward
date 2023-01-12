@@ -1,6 +1,6 @@
 <body id="grid22">
   <menu class="top">
-    <h2 class="upper">Statistical Data For 2023</h2 class="upper">
+    <h2 class="upper">2023 Statistical Data</h2 class="upper">
     <ul role="list" class="inline-list">
       <li class="inline-list fs-3" id="demo12"></li>
       <li class="item-1 inline-list fs-3"></li>
@@ -70,10 +70,10 @@
     <div class="div27">
       <h5 class="date-range">Jan 8 - Jan 14</h5>
       <ul>
-        <li class="pb25 janStep">Steps: <strong>6790</strong> </li>
-        <li class="pb25 janMile">Miles: <strong>3</strong> </li>
+        <li class="pb25 janStep">Steps: <strong>12180</strong> </li>
+        <li class="pb25 janMile">Miles: <strong>5</strong> </li>
         <li class="pb25 janHeart">HeartRate: <strong>59.5</strong> </li>
-        <li class="pb25 janCalorie">Calories: <strong>4582</strong> </li>
+        <li class="pb25 janCalorie">Calories: <strong>8430</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>

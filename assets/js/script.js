@@ -1,4 +1,4 @@
-/** @format */
+
 
 // links
 const item1 = document.querySelector('.item-1');
@@ -8,7 +8,7 @@ const item4 = document.querySelector('.item-4');
 const item5 = document.querySelector('.item-5');
 const item6 = document.querySelector('.item-6');
 const item7 = document.querySelector('.item-7');
-const item8 = document.querySelector(".item-8")
+const item8 = document.querySelector(".item-8");
 
 const date = document.getElementById('date');
 const title = document.getElementById('title');
@@ -42,7 +42,7 @@ const str2 = 'General Health';
 const item33 = str2.link('http://forward/pages/health');
 item3.innerHTML = item33;
 
-const str3 = '2021 Stats';
+const str3 = 'Taxonomy';
 const item44 = str3.link('http://forward/pages/grids');
 item4.innerHTML = item44;
 
@@ -50,7 +50,7 @@ const str4 = 'Grid';
 const item55 = str4.link('http://forward/pages/learn');
 item5.innerHTML = item55;
 
-const str5 = 'Taxonomy';
+const str5 = '2021 Stats';
 const item66 = str5.link('http://forward/pages/taxes');
 item6.innerHTML = item66;
 

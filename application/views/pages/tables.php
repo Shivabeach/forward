@@ -1,6 +1,6 @@
 <body id="gridly">
   <menu class="top">
-    <h2 class="upper">Statistical Data</h2 class="upper">
+    <h2 class="upper">2021 Statistical Data</h2 class="upper">
     <ul role="list" class="inline-list">
       <li class="inline-list fs-3" id="demo12"></li>
       <li class="item-1 inline-list fs-3"></li>
@@ -10,6 +10,7 @@
       <li class="item-5 inline-list fs-3"></li>
       <li class="item-6 inline-list fs-3"></li>
       <li class="item-7 inline-list fs-3"></li>
+      <li class="item-8 inline-list fs-3"></li>
     </ul>
   </menu>
   <!-- <header>
