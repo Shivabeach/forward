@@ -1,39 +1,7 @@
 /** @format */
 
 @use '../abstracts' as *;
-//top grid on page
-// .grid-container {
-// 	width: 90%;
-// 	margin: 0 auto;
-// 	display: grid;
-// 	grid-template-columns: 200px auto 100px;
-// 	grid-template-rows: repeat(2, 75px);
-// 	grid-gap: 1rem;
-// }
-// //-----------------------------------------
-// purple grid
-// .example {
-// 	display: grid;
-// 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-// 	grid-gap: 1rem;
-// 	min-height: 100px;
-// 	background-color: $gen4;
-// 	width: 90%;
-// 	margin: 2rem auto;
-// }
 
-// [class^='example-item'] {
-// 	background-color: $opac;
-// 	padding: 1rem;
-// }
-// .tuts2,
-// .tuts5 {
-// 	background: $gen8;
-// }
-// [class^='tuts'] {
-// 	border: 1px solid black;
-// 	padding: 0.25rem;
-// }
 //-----------------------------------------
 // large grid
 #grid-page {

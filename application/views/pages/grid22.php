@@ -20,7 +20,7 @@
   <div dir="ltr" class="grid22">
     <!-- row 1 -->
     <div class="primer div1 div-head">
-      <h5>Stats</h5>
+      <h5>2022 Stats</h5>
       <div class="group">
         <span>Positive: </span><span id="positive"></span><br>
         <span>Negative: </span><span id="negative"></span> <br>

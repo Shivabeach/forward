@@ -133,7 +133,7 @@ class Pages extends CI_Controller
 
 	public function grid22()
 		{
-			$data['title'] = "2022";
+			$data['title'] = "2022 Stats";
 			$data["header"] = "2022";
 			$data["content"] = "pages/grid22";
 			$this->load->view("template/full", $data);

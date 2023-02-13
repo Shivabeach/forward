@@ -1,14 +1,9 @@
 /** @format */
-
 @use '../abstracts' as *;
-#tax {
-	//min-height: 100vh;
-	//width: 100vw;
-}
 
 #tax-container {
 	display: grid;
-	width: calc(80% + 100px);
+	width: calc(90% + 100px);
 	margin: 0 auto;
 	grid-template-columns: 30% 50% 20%;
 	grid-template-rows: 125px repeat(4, 1fr);

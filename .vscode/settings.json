@@ -26,5 +26,6 @@
   "eslint.format.enable": true,
   "[javascript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  }
+  },
+  "html.format.indentInnerHtml": true
 }

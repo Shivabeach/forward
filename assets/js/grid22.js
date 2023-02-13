@@ -69,12 +69,12 @@ function allCals() {
 function allExercise() {
 	const walking = [];
 	mods.exerc.forEach((move) => {
-		const movement = move.textContent;
+		const movement = move.firstElementChild.firstChild.nodeValue;
 		walking.push(movement);
 	});
 	const toNum = walking.map(Number);
 	const st = toNum.reduce((acc, cum) => acc + cum, 0);
-	// const results = st.toLocaleString('en-US');
+	//const results = st.toLocaleString('en-US');
 	mods.exer.textContent = `${st}`;
 }
 

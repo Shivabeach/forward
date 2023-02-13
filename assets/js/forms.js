@@ -5,7 +5,7 @@
 const date1 = document.getElementById('distance');
 const dates = document.querySelector('.dates');
 const blogger = document.getElementById('blogger');
-document.querySelector('#content').addEventListener('keyup', function () {
+document.querySelector('#content').addEventListener('keyup', function() {
 	const res = [];
 	const str = this.value.replace(/[\t\n\r\.\?\!]/gm, ' ').split(' ');
 	str.map((s) => {

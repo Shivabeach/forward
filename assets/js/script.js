@@ -1,5 +1,4 @@
-
-
+/** @format */
 // links
 const item1 = document.querySelector('.item-1');
 const item2 = document.querySelector('.item-2');
@@ -8,7 +7,7 @@ const item4 = document.querySelector('.item-4');
 const item5 = document.querySelector('.item-5');
 const item6 = document.querySelector('.item-6');
 const item7 = document.querySelector('.item-7');
-const item8 = document.querySelector(".item-8");
+const item8 = document.querySelector(".item-8")
 
 const date = document.getElementById('date');
 const title = document.getElementById('title');
@@ -19,6 +18,7 @@ const prime = document.getElementById('primeKeys');
 const error = document.getElementById('error');
 const three = document.getElementById('three');
 const copyr = document.querySelector('.copyr');
+const one = document.getElementById("one")
 // const div30 = document.querySelector('.div30');
 // const distance = document.getElementById('distance');
 // const place = document.getElementById('place');
@@ -27,6 +27,17 @@ function myTimer() {
 	const d = new Date();
 	demo.innerHTML = d.toLocaleTimeString();
 }
+
+if (one) {
+	const today = new Date();
+	const f = new Intl.DateTimeFormat('en-us', {
+		dateStyle: 'full',
+		//timeStyle: 'full',
+	});
+	//one.style.color = '#4b0082';
+	one.innerHTML = f.format(today);
+}
+
 
 const myVar = setInterval(myTimer, 1000);
 
@@ -43,7 +54,7 @@ const item33 = str2.link('http://forward/pages/health');
 item3.innerHTML = item33;
 
 const str3 = 'Taxonomy';
-const item44 = str3.link('http://forward/pages/grids');
+const item44 = str3.link('http://forward/pages/taxes');
 item4.innerHTML = item44;
 
 const str4 = 'Grid';
@@ -51,7 +62,7 @@ const item55 = str4.link('http://forward/pages/learn');
 item5.innerHTML = item55;
 
 const str5 = '2021 Stats';
-const item66 = str5.link('http://forward/pages/taxes');
+const item66 = str5.link('http://forward/pages/grids');
 item6.innerHTML = item66;
 
 const str6 = '2022 Stats';
