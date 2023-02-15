@@ -52,6 +52,17 @@
       Sidebar <span>named 2</span>
       <p class="topColor"></p>
       <h3>Date Routines</h3>
+      <div>
+        <p>
+          const today = new Date();<br>
+          const f = new Intl.DateTimeFormat('en-us', {<br>
+          &nbsp;&nbsp; dateStyle: 'full',<br>
+          &nbsp;&nbsp;//timeStyle: 'full',<br>
+          });<br>
+          &nbsp;&nbsp;// datey.style.color = '#4b0082';<br>
+          datey.innerHTML = f.format(today);
+        </p>
+      </div>
       <p>
         const date = new Date();<br>
         timers.innerHTML = date.toString();

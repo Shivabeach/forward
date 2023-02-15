@@ -64,6 +64,7 @@ const getAge = () => {
 	const currentAge = currentYear - birthYear;
 	age.innerHTML = currentAge;
 };
+getAge();
 //----------------------------------------
 // Colors. Checks the storage. If empty add choco. If not empty parse the input
 //-----------------------------------------
