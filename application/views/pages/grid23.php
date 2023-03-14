@@ -148,7 +148,7 @@
       <ul>
         <li class="pb25 febStep">Steps: <strong>25244</strong> </li>
         <li class="pb25 febMile">Miles: <strong>11</strong> </li>
-        <li class="pb25 febHeart">HeartRate: <strong>57.28</strong> </li>
+        <li class="pb25 febHeart">HeartRate: <strong>57.14</strong> </li>
         <li class="pb25 febCalorie">Calories: <strong>16641</strong> </li>
         <li class="pb25 ex">Exercise: <strong>2</strong> </li>
         <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
@@ -157,16 +157,19 @@
     <div class="div29">
       <h5 class="date-range">Feb 26 - Mar 4</h5>
       <ul>
-        <li class="pb25 febStep">Steps: <strong>341</strong> </li>
-        <li class="pb25 febMile">Miles: <strong>.15</strong> </li>
+        <li class="pb25 febStep">Steps: <strong>29706</strong> </li>
+        <li class="pb25 febMile">Miles: <strong>13</strong> </li>
         <li class="pb25 febHeart">HeartRate: <strong>57</strong> </li>
-        <li class="pb25 febCalorie">Calories: <strong>788</strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 febCalorie">Calories: <strong>17309</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>3</strong> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div30">
-      Spacer
+      <p>
+        Feb 26 - Mar 4. Was from tearing down the ivy from the retaining wall. Lots of movement. The job still isnt
+        finished
+      </p>
     </div>
     <!-- Mar 2022 -->
     <div class="primer div25 div-head">
@@ -179,29 +182,29 @@
       </div>
     </div>
     <div class="div26">
-      <h5 class="date-range">Mar 6 - Mar 12</h5>
+      <h5 class="date-range">Mar 5 - Mar 11</h5>
       <ul>
-        <li class="pb25 marStep">Steps: <strong></strong> </li>
-        <li class="pb25 marMile">Miles: <strong></strong> </li>
-        <li class="pb25 marHeart">HeartRate: <strong>59</strong> </li>
-        <li class="pb25 marCalorie">Calories: <strong></strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 marStep">Steps: <strong>25406</strong> </li>
+        <li class="pb25 marMile">Miles: <strong>11</strong> </li>
+        <li class="pb25 marHeart">HeartRate: <strong>56</strong> </li>
+        <li class="pb25 marCalorie">Calories: <strong>16493</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">0</span> <span class="neg">4</span> </li>
       </ul>
     </div>
     <div class="div27">
-      <h5 class="date-range">Mar 13 - Mar 19</h5>
+      <h5 class="date-range">Mar 12 - Mar 18</h5>
       <ul>
-        <li class="pb25 marStep">Steps: <strong></strong> </li>
-        <li class="pb25 marMile">Miles: <strong></strong> </li>
+        <li class="pb25 marStep">Steps: <strong>8845</strong> </li>
+        <li class="pb25 marMile">Miles: <strong>4</strong> </li>
         <li class="pb25 marHeart">HeartRate: <strong>57.5</strong> </li>
-        <li class="pb25 marCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 marCalorie">Calories: <strong>4655</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div28">
-      <h5 class="date-range">Mar 20 - Mar 26</h5>
+      <h5 class="date-range">Mar 19 - Mar 25</h5>
       <ul>
         <li class="pb25 marStep">Steps: <strong></strong> </li>
         <li class="pb25 marMile">Miles: <strong></strong> </li>
@@ -212,7 +215,7 @@
       </ul>
     </div>
     <div class="div29">
-      <h5 class="date-range">Mar 27 - Apr 2</h5>
+      <h5 class="date-range">Mar 26 - Apr 1</h5>
       <ul>
         <li class="pb25 marStep">Steps: <strong></strong> </li>
         <li class="pb25 marMile">Miles: <strong></strong> </li>
