@@ -617,7 +617,7 @@ dt {
 }
 
 li {
-  height: auto;
+  padding: 0.25rem;
   width: 100%;
 }
 
@@ -1330,7 +1330,7 @@ th {
   color: #d3f9d8;
 }
 .card--inside li {
-  color: #a5d8ff;
+  color: #bdb76b;
 }
 
 .box {
