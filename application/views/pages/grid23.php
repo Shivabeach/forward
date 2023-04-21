@@ -241,33 +241,33 @@
     <div class="div26">
       <h5 class="date-range">April 3 - Apr 9</h5>
       <ul>
-        <li class="pb25 aprStep">Steps: <strong>11763</strong> </li>
-        <li class="pb25 aprMile">Miles: <strong>5</strong> </li>
-        <li class="pb25 aprHeart">HeartRate: <strong>59</strong></li>
-        <li class="pb25 aprCalorie">Calories: <strong>7039</strong> </li>
+        <li class="pb25 aprStep">Steps: <strong>26091</strong> </li>
+        <li class="pb25 aprMile">Miles: <strong>11</strong> </li>
+        <li class="pb25 aprHeart">HeartRate: <strong>59.14</strong></li>
+        <li class="pb25 aprCalorie">Calories: <strong>16699</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">2</span> <span class="neg">2</span> </li>
       </ul>
     </div>
     <div class="div27">
       <h5 class="date-range">Apr 10 - Apr 16</h5>
       <ul>
-        <li class="pb25 aprStep">Steps: <strong></strong> </li>
-        <li class="pb25 aprMile">Miles: <strong></strong> </li>
-        <li class="pb25 aprHeart">HeartRate: <strong>57.14</strong></li>
-        <li class="pb25 aprCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 aprStep">Steps: <strong>22791</strong> </li>
+        <li class="pb25 aprMile">Miles: <strong>10</strong> </li>
+        <li class="pb25 aprHeart">HeartRate: <strong>55.71</strong></li>
+        <li class="pb25 aprCalorie">Calories: <strong>16352</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">0</span> <span class="neg">4</span> </li>
       </ul>
     </div>
     <div class="div28">
       <h5 class="date-range">Apr 17 - Apr 23</h5>
       <ul>
-        <li class="pb25 aprStep">Steps: <strong></strong> </li>
-        <li class="pb25 aprMile">Miles: <strong></strong> </li>
+        <li class="pb25 aprStep">Steps: <strong>21580</strong> </li>
+        <li class="pb25 aprMile">Miles: <strong>9</strong> </li>
         <li class="pb25 aprHeart">HeartRate: <strong>56.42</strong></li>
-        <li class="pb25 aprCalorie">Calories: <strong></strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
+        <li class="pb25 aprCalorie">Calories: <strong>14135</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
     </div>
