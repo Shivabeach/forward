@@ -427,34 +427,34 @@
     <div class="div26">
       <h5 class="date-range">July 2 - July 8</h5>
       <ul>
-        <li class="pb25 julStep">Steps: <strong>11132</strong> </li>
-        <li class="pb25 julMile ">Miles: <strong>5</strong> </li>
-        <li class="pb25 julHeart">HeartRate: <strong>55</strong> </li>
-        <li class="pb25 julCalorie">Calories: <strong>9116</strong> </li>
+        <li class="pb25 julStep">Steps: <strong>19638</strong> </li>
+        <li class="pb25 julMile ">Miles: <strong>9</strong> </li>
+        <li class="pb25 julHeart">HeartRate: <strong>56.57</strong> </li>
+        <li class="pb25 julCalorie">Calories: <strong>15847</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">3</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div27">
       <h5 class="date-range">July 9 - July 15</h5>
       <ul>
-        <li class="pb25 julStep">Steps: <strong></strong> </li>
-        <li class="pb25 julMile ">Miles: <strong></strong> </li>
-        <li class="pb25 julHeart">HeartRate: <strong>55.14</strong> </li>
-        <li class="pb25 julCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 julStep">Steps: <strong>18586</strong> </li>
+        <li class="pb25 julMile ">Miles: <strong>8</strong> </li>
+        <li class="pb25 julHeart">HeartRate: <strong>57.28</strong> </li>
+        <li class="pb25 julCalorie">Calories: <strong>15595</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">0</span> <span class="neg">3</span> </li>
       </ul>
     </div>
     <div class="div28">
       <h5 class="date-range">July 16 - July 22</h5>
       <ul>
-        <li class="pb25 julStep">Steps: <strong></strong> </li>
-        <li class="pb25 julMile ">Miles: <strong></strong> </li>
-        <li class="pb25 julHeart">HeartRate: <strong>53.85</strong> </li>
-        <li class="pb25 julCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 julStep">Steps: <strong>20336</strong> </li>
+        <li class="pb25 julMile ">Miles: <strong>9</strong> </li>
+        <li class="pb25 julHeart">HeartRate: <strong>57.28</strong> </li>
+        <li class="pb25 julCalorie">Calories: <strong>15783</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">3</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div29">
