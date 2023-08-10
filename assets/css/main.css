@@ -72,11 +72,11 @@ font-face {
 }
 
 :root {
-  --dark: hsla(331.11deg, 67.5%, 15.69%, 0.9);
-  --med-dark: hsl(341.11deg, 44.26%, 23.92%);
-  --lt-dark: hsl(340.62deg, 40.37%, 31.57%);
-  --hi-light: hsl(0deg, 53.25%, 54.71%);
-  --real: hsl(35.04deg, 85.03%, 28.82%);
+  --dark: hsla(331.11, 67.5%, 15.69%, 0.9);
+  --med-dark: hsl(341.11, 44.26%, 23.92%);
+  --lt-dark: hsl(340.62, 40.37%, 31.57%);
+  --hi-light: hsl(0, 53.25%, 54.71%);
+  --real: hsl(35.04, 85.03%, 28.82%);
 }
 
 :root {
@@ -254,7 +254,7 @@ output {
 }
 
 .white {
-  color: hsl(288deg, 100%, 98%);
+  color: hsl(288, 100%, 98%);
 }
 
 .group {
@@ -504,7 +504,7 @@ input {
 button[type=submit],
 button[type=reset] {
   border-radius: 6px;
-  background-color: hsl(251deg, 69%, 34%);
+  background-color: hsl(251, 69%, 34%);
   color: #bbdefb;
   margin: 0 5px;
   padding: 0.5rem 1rem;
@@ -518,7 +518,7 @@ button[type=reset]:hover {
 }
 
 fieldset {
-  border: 1px solid hsl(150.71deg, 100%, 50.2%);
+  border: 1px solid hsl(150.71, 100%, 50.2%);
 }
 
 legend {
@@ -565,7 +565,7 @@ select {
 
 /* Gradients */
 .exampl {
-  background: radial-gradient(circle at top left, hsl(180deg, 100%, 86.47%) 15%, #748ffc 5%, #5c7cfa, #4c6ef5, #4263eb, #364fc7);
+  background: radial-gradient(circle at top left, hsl(180, 100%, 86.47%) 15%, #748ffc 5%, #5c7cfa, #4c6ef5, #4263eb, #364fc7);
 }
 
 .ptext {
@@ -844,7 +844,7 @@ footer {
   width: 95%;
 }
 .top a {
-  color: hsl(312deg, 44%, 4%);
+  color: hsl(312, 44%, 4%);
   margin-right: 1rem;
   text-shadow: 1px 1px 1px #6724e1;
   text-decoration: none;
@@ -987,10 +987,10 @@ footer {
   border: 1px solid black;
 }
 #named2 p {
-  color: hsl(346deg, 81%, 9%);
+  color: hsl(346, 81%, 9%);
 }
 #named2 h3 {
-  color: hsl(336deg, 86%, 24%);
+  color: #720933;
 }
 
 #named3 {
@@ -1036,7 +1036,7 @@ footer {
 
 #convertedMiles,
 #showMiles {
-  color: hsl(14deg, 63%, 27%);
+  color: hsl(14, 63%, 27%);
 }
 
 /** @format */
@@ -1306,7 +1306,7 @@ th {
   padding: 5px;
   border-radius: 6px;
   background-color: #ed761f;
-  background-image: radial-gradient(at 0% 36%, hsl(154deg, 94%, 54%) 0, hsla(154deg, 94%, 54%, 0) 50%), radial-gradient(at 97% 16%, hsl(89deg, 95%, 57%) 0, hsla(89deg, 95%, 57%, 0) 50%), radial-gradient(at 83% 70%, hsl(64deg, 85%, 66%) 0, hsla(64deg, 85%, 66%, 0) 50%), radial-gradient(at 19% 78%, hsl(21deg, 86%, 68%) 0, hsla(21deg, 86%, 68%, 0) 50%), radial-gradient(at 43% 72%, hsl(115deg, 87%, 68%) 0, hsla(115deg, 87%, 68%, 0) 50%), radial-gradient(at 58% 18%, hsl(25deg, 86%, 60%) 0, hsla(25deg, 86%, 60%, 0) 50%);
+  background-image: radial-gradient(at 0% 36%, hsl(154, 94%, 54%) 0, hsla(154, 94%, 54%, 0) 50%), radial-gradient(at 97% 16%, hsl(89, 95%, 57%) 0, hsla(89, 95%, 57%, 0) 50%), radial-gradient(at 83% 70%, hsl(64, 85%, 66%) 0, hsla(64, 85%, 66%, 0) 50%), radial-gradient(at 19% 78%, hsl(21, 86%, 68%) 0, hsla(21, 86%, 68%, 0) 50%), radial-gradient(at 43% 72%, hsl(115, 87%, 68%) 0, hsla(115, 87%, 68%, 0) 50%), radial-gradient(at 58% 18%, hsl(25, 86%, 60%) 0, hsla(25, 86%, 60%, 0) 50%);
 }
 
 .div2,
@@ -1315,7 +1315,7 @@ th {
 .div5,
 .div6 {
   background-color: #800040;
-  background-image: radial-gradient(at 18% 21%, hsl(12deg, 90%, 65%) 0, hsla(12deg, 90%, 65%, 0) 50%), radial-gradient(at 17% 11%, hsl(183deg, 91%, 54%) 0, hsla(183deg, 91%, 54%, 0) 50%), radial-gradient(at 49% 90%, hsl(67deg, 92%, 65%) 0, hsla(67deg, 92%, 65%, 0) 50%), radial-gradient(at 98% 14%, hsl(359deg, 90%, 59%) 0, hsla(359deg, 90%, 59%, 0) 50%), radial-gradient(at 26% 84%, hsl(317deg, 87%, 56%) 0, hsla(317deg, 87%, 56%, 0) 50%), radial-gradient(at 7% 42%, hsl(295deg, 86%, 52%) 0, hsla(295deg, 86%, 52%, 0) 50%), radial-gradient(at 7% 7%, hsl(33deg, 92%, 59%) 0, hsla(33deg, 92%, 59%, 0) 50%);
+  background-image: radial-gradient(at 18% 21%, hsl(12, 90%, 65%) 0, hsla(12, 90%, 65%, 0) 50%), radial-gradient(at 17% 11%, hsl(183, 91%, 54%) 0, hsla(183, 91%, 54%, 0) 50%), radial-gradient(at 49% 90%, hsl(67, 92%, 65%) 0, hsla(67, 92%, 65%, 0) 50%), radial-gradient(at 98% 14%, hsl(359, 90%, 59%) 0, hsla(359, 90%, 59%, 0) 50%), radial-gradient(at 26% 84%, hsl(317, 87%, 56%) 0, hsla(317, 87%, 56%, 0) 50%), radial-gradient(at 7% 42%, hsl(295, 86%, 52%) 0, hsla(295, 86%, 52%, 0) 50%), radial-gradient(at 7% 7%, hsl(33, 92%, 59%) 0, hsla(33, 92%, 59%, 0) 50%);
 }
 
 #demo12 {
@@ -1337,7 +1337,7 @@ th {
 }
 
 fieldset {
-  color: hsl(35.04deg, 85.03%, 28.82%);
+  color: hsl(35.04, 85.03%, 28.82%);
 }
 
 #posi,
@@ -1362,10 +1362,10 @@ fieldset {
 }
 
 #forms {
-  background-color: hsla(331.11deg, 67.5%, 15.69%, 0.9);
+  background-color: hsla(331.11, 67.5%, 15.69%, 0.9);
 }
 #forms h1 {
-  color: hsl(35.04deg, 85.03%, 28.82%);
+  color: hsl(35.04, 85.03%, 28.82%);
   text-shadow: 1px 2px 3px black, -3px -2px 1px #f1f1d5;
 }
 #forms h4 {
