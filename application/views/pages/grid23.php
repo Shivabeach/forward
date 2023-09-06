@@ -492,7 +492,7 @@
       </ul>
     </div>
     <div class="div27">
-      <h5 class="date-range">Aug 7 - Aug 13</h5>
+      <h5 class="date-range">Aug 6 - Aug 12</h5>
       <ul>
         <li class="pb25 augStep">Steps: <strong>19157</strong> </li>
         <li class="pb25 augMile ">Miles: <strong>8</strong>
@@ -504,7 +504,7 @@
       </ul>
     </div>
     <div class="div28">
-      <h5 class="date-range">Aug 14 - Aug 20</h5>
+      <h5 class="date-range">Aug 13 - Aug 19</h5>
       <ul>
         <li class="pb25 augStep">Steps: <strong>18808</strong> </li>
         <li class="pb25 augMile ">Miles: <strong>8</strong> </li>
@@ -515,23 +515,23 @@
       </ul>
     </div>
     <div class="div29">
-      <h5 class="date-range">Aug 21 - Aug 27</h5>
+      <h5 class="date-range">Aug 20 - Aug 26</h5>
       <ul>
-        <li class="pb25 augStep">Steps: <strong></strong> </li>
-        <li class="pb25 augMile ">Miles: <strong></strong> </li>
-        <li class="pb25 augHeart">HeartRate: <strong>53.5</strong> </li>
-        <li class="pb25 augCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 augStep">Steps: <strong>20624</strong> </li>
+        <li class="pb25 augMile ">Miles: <strong>9</strong> </li>
+        <li class="pb25 augHeart">HeartRate: <strong>53.85</strong> </li>
+        <li class="pb25 augCalorie">Calories: <strong>16159</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div30">
-      <h5 class="date-range">Aug 28 - Sept 3</h5>
+      <h5 class="date-range">Aug 27 - Sept 2</h5>
       <ul>
-        <li class="pb25 augStep">Steps: <strong></strong> </li>
-        <li class="pb25 augMile ">Miles: <strong></strong> </li>
+        <li class="pb25 augStep">Steps: <strong>19317</strong> </li>
+        <li class="pb25 augMile ">Miles: <strong>8</strong> </li>
         <li class="pb25 augHeart">HeartRate: <strong>54.71</strong> </li>
-        <li class="pb25 augCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 augCalorie">Calories: <strong>14690</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
