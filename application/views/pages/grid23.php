@@ -571,12 +571,12 @@
     <div class="div28">
       <h5 class="date-range">Sept 17 - Sept 23</h5>
       <ul>
-        <li class="pb25 sepStep">Steps: <strong></strong> </li>
-        <li class="pb25 sepMile ">Miles: <strong></strong> </li>
-        <li class="pb25 sepHeart">HeartRate: <strong>56.25</strong> </li>
-        <li class="pb25 sepCalorie">Calories: <strong></strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 sepStep">Steps: <strong>22537</strong> </li>
+        <li class="pb25 sepMile ">Miles: <strong>10</strong> </li>
+        <li class="pb25 sepHeart">HeartRate: <strong>54.57</strong> </li>
+        <li class="pb25 sepCalorie">Calories: <strong>16279</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div29">
