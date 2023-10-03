@@ -582,12 +582,12 @@
     <div class="div29">
       <h5 class="date-range">Sept 24 - Sept 30</h5>
       <ul>
-        <li class="pb25 sepStep">Steps: <strong></strong> </li>
-        <li class="pb25 sepMile ">Miles: <strong></strong> </li>
-        <li class="pb25 sepHeart">HeartRate: <strong>55.28</strong> </li>
-        <li class="pb25 sepCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 sepStep">Steps: <strong>22907</strong> </li>
+        <li class="pb25 sepMile ">Miles: <strong>10.01</strong> </li>
+        <li class="pb25 sepHeart">HeartRate: <strong>55.85</strong> </li>
+        <li class="pb25 sepCalorie">Calories: <strong>16943</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div30">
