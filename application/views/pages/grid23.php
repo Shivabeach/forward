@@ -604,18 +604,18 @@
       </div>
     </div>
     <div class="div26">
-      <h5 class="date-range">Oct 2 - Oct 8</h5>
+      <h5 class="date-range">Oct 1 - Oct 7</h5>
       <ul>
-        <li class="pb25 octStep">Steps: <strong></strong> </li>
-        <li class="pb25 octMile ">Miles: <strong></strong> </li>
-        <li class="pb25 octHeart">HeartRate: <strong>57</strong> </li>
-        <li class="pb25 octCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 octStep">Steps: <strong>18076</strong> </li>
+        <li class="pb25 octMile ">Miles: <strong>7.92</strong> </li>
+        <li class="pb25 octHeart">HeartRate: <strong>59.717</strong> </li>
+        <li class="pb25 octCalorie">Calories: <strong>15637</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">0</span> <span class="neg">3</span> </li>
       </ul>
     </div>
     <div class="div27">
-      <h5 class="date-range">Oct 9 - Oct 15</h5>
+      <h5 class="date-range">Oct 8 - Oct 14</h5>
       <ul>
         <li class="pb25 octStep">Steps: <strong></strong> </li>
         <li class="pb25 octMile ">Miles: <strong></strong> </li>
@@ -626,7 +626,7 @@
       </ul>
     </div>
     <div class="div28">
-      <h5 class="date-range">Oct 16 - Oct 22</h5>
+      <h5 class="date-range">Oct 15 - Oct 21</h5>
       <ul>
         <li class="pb25 octStep">Steps: <strong></strong> </li>
         <li class="pb25 octMile ">Miles: <strong></strong> </li>
@@ -637,7 +637,7 @@
       </ul>
     </div>
     <div class="div29">
-      <h5 class="date-range">Oct 23 - Oct 29</h5>
+      <h5 class="date-range">Oct 22 - Oct 28</h5>
       <ul>
         <li class="pb25 octStep">Steps: <strong></strong> </li>
         <li class="pb25 octMile ">Miles: <strong></strong> </li>
