@@ -27,5 +27,8 @@
   "[javascript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
-  "html.format.indentInnerHtml": true
+  "html.format.indentInnerHtml": true,
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Fira Code Regular",
+  "files.trimTrailingWhitespace": true
 }

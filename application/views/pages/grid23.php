@@ -617,10 +617,10 @@
     <div class="div27">
       <h5 class="date-range">Oct 8 - Oct 14</h5>
       <ul>
-        <li class="pb25 octStep">Steps: <strong></strong> </li>
-        <li class="pb25 octMile ">Miles: <strong></strong> </li>
+        <li class="pb25 octStep">Steps: <strong>16562</strong> </li>
+        <li class="pb25 octMile ">Miles: <strong>7.26</strong> </li>
         <li class="pb25 octHeart">HeartRate: <strong>57.42</strong> </li>
-        <li class="pb25 octCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 octCalorie">Calories: <strong>13385</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong></li>
         <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
       </ul>
