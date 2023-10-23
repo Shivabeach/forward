@@ -617,23 +617,23 @@
     <div class="div27">
       <h5 class="date-range">Oct 8 - Oct 14</h5>
       <ul>
-        <li class="pb25 octStep">Steps: <strong>16562</strong> </li>
-        <li class="pb25 octMile ">Miles: <strong>7.26</strong> </li>
-        <li class="pb25 octHeart">HeartRate: <strong>57.42</strong> </li>
-        <li class="pb25 octCalorie">Calories: <strong>13385</strong> </li>
+        <li class="pb25 octStep">Steps: <strong>19537</strong> </li>
+        <li class="pb25 octMile ">Miles: <strong>8.56</strong> </li>
+        <li class="pb25 octHeart">HeartRate: <strong>60.71</strong> </li>
+        <li class="pb25 octCalorie">Calories: <strong>15835</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong></li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">3</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div28">
       <h5 class="date-range">Oct 15 - Oct 21</h5>
       <ul>
-        <li class="pb25 octStep">Steps: <strong></strong> </li>
-        <li class="pb25 octMile ">Miles: <strong></strong> </li>
-        <li class="pb25 octHeart">HeartRate: <strong>57.71</strong> </li>
-        <li class="pb25 octCalorie">Calories: <strong></strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 octStep">Steps: <strong>21956</strong> </li>
+        <li class="pb25 octMile ">Miles: <strong>9.61</strong> </li>
+        <li class="pb25 octHeart">HeartRate: <strong>60</strong> </li>
+        <li class="pb25 octCalorie">Calories: <strong>16009</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div29">
