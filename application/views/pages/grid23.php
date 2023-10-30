@@ -639,12 +639,12 @@
     <div class="div29">
       <h5 class="date-range">Oct 22 - Oct 28</h5>
       <ul>
-        <li class="pb25 octStep">Steps: <strong></strong> </li>
-        <li class="pb25 octMile ">Miles: <strong></strong> </li>
-        <li class="pb25 octHeart">HeartRate: <strong>59.85</strong> </li>
-        <li class="pb25 octCalorie">Calories: <strong></strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 octStep">Steps: <strong>22878</strong> </li>
+        <li class="pb25 octMile ">Miles: <strong>10.02</strong> </li>
+        <li class="pb25 octHeart">HeartRate: <strong>60.00</strong> </li>
+        <li class="pb25 octCalorie">Calories: <strong>16442</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div30">
