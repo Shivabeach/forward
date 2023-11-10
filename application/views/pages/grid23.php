@@ -661,14 +661,14 @@
       </div>
     </div>
     <div class="div26">
-      <h5 class="date-range">Oct 31 - Nov 5</h5>
+      <h5 class="date-range">Oct 29 - Nov 4</h5>
       <ul>
-        <li class="pb25 novStep">Steps: <strong></strong></li>
-        <li class="pb25 novMile ">Miles: <strong></strong> </li>
-        <li class="pb25 novHeart">HeartRate: <strong>59.85</strong> </li>
-        <li class="pb25 novCalorie">Calories: <strong></strong> </li>
+        <li class="pb25 novStep">Steps: <strong>21433</strong></li>
+        <li class="pb25 novMile ">Miles: <strong>9.38</strong> </li>
+        <li class="pb25 novHeart">HeartRate: <strong>61</strong> </li>
+        <li class="pb25 novCalorie">Calories: <strong>15845</strong> </li>
         <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="summary pb25"><span class="pos">0</span> <span class="neg">3</span> </li>
       </ul>
     </div>
     <div class="div27">
