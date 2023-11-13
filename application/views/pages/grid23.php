@@ -672,18 +672,18 @@
       </ul>
     </div>
     <div class="div27">
-      <h5 class="date-range">Nov 6 - Nov 12</h5>
+      <h5 class="date-range">Nov 5 - Nov 11</h5>
       <ul>
-        <li class="pb25 novStep">Steps: <strong></strong></li>
-        <li class="pb25 novMile ">Miles: <strong></strong> </li>
-        <li class="pb25 novHeart">HeartRate: <strong>59</strong> </li>
-        <li class="pb25 novCalorie">Calories: <strong></strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 novStep">Steps: <strong>22387</strong></li>
+        <li class="pb25 novMile ">Miles: <strong>9.81</strong> </li>
+        <li class="pb25 novHeart">HeartRate: <strong>60</strong> </li>
+        <li class="pb25 novCalorie">Calories: <strong>16293</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> </li>
+        <li class="summary pb25"><span class="pos">40</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <div class="div28">
-      <h5 class="date-range">Nov 13 - Nov 19</h5>
+      <h5 class="date-range">Nov 12 - Nov 18</h5>
       <ul>
         <li class="pb25 novStep">Steps: <strong></strong> <span class="steps show "></span></li>
         <li class="pb25 novMile ">Miles: <strong></strong> </li>
@@ -694,7 +694,7 @@
       </ul>
     </div>
     <div class="div29">
-      <h5 class="date-range">Nov 20 - Nov 26</h5>
+      <h5 class="date-range">Nov 19 - Nov 25</h5>
       <ul>
         <li class="pb25 novStep">Steps: <strong></strong> <span class="steps show "></span></li>
         <li class="pb25 novMile ">Miles: <strong></strong> </li>
@@ -705,7 +705,7 @@
       </ul>
     </div>
     <div class="div30">
-      <h5 class="date-range">Nov 27 - Dec 3</h5>
+      <h5 class="date-range">Nov 26 - Dec 2</h5>
       <ul>
         <li class="pb25 novStep">Steps: <strong></strong> <span class="steps show "></span></li>
         <li class="pb25 novMile ">Miles: <strong></strong> </li>
