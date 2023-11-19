@@ -13,10 +13,10 @@
       "editor.background": "#02042a"
     },
     "[Andromeda]": {
-      "editor.background": "#02042a"
+      "editor.background": "#10073D"
     },
     "[Coder Coder Dark Theme]": {
-      "editor.background": "#02042a"
+      "editor.background": "#10073D"
     },
     "activityBar.activeBackground": "#ff0000"
   },
@@ -29,8 +29,8 @@
   },
   "html.format.indentInnerHtml": true,
   "editor.minimap.enabled": false,
-  "editor.fontFamily": "Fira Code Regular",
+  "editor.fontFamily": "Fira Code",
   "files.trimTrailingWhitespace": true,
-  "editor.fontSize": 16,
+  "editor.fontSize": 17,
   "editor.tabSize": 2
 }
