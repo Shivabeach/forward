@@ -696,12 +696,12 @@
     <div class="div29">
       <h5 class="date-range">Nov 19 - Nov 25</h5>
       <ul>
-        <li class="pb25 novStep">Steps: <strong></strong> <span class="steps show "></span></li>
-        <li class="pb25 novMile ">Miles: <strong></strong> </li>
+        <li class="pb25 novStep">Steps: <strong>23257</strong> </li>
+        <li class="pb25 novMile ">Miles: <strong>10.14</strong> </li>
         <li class="pb25 novHeart">HeartRate: <strong>58.28</strong> </li>
-        <li class="pb25 novCalorie">Calories: <strong></strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 novCalorie">Calories: <strong>16219</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>2</strong> </li>
+        <li class="summary pb25"><span class="pos">1</span> <span class="neg">3</span> </li>
       </ul>
     </div>
     <div class="div30">
