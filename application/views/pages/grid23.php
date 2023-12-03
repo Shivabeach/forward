@@ -707,12 +707,12 @@
     <div class="div30">
       <h5 class="date-range">Nov 26 - Dec 2</h5>
       <ul>
-        <li class="pb25 novStep">Steps: <strong></strong> <span class="steps show "></span></li>
-        <li class="pb25 novMile ">Miles: <strong></strong> </li>
-        <li class="pb25 novHeart">HeartRate: <strong>56.85</strong> </li>
-        <li class="pb25 novCalorie">Calories: <strong></strong> </li>
-        <li class="pb25 ex">Exercise: <strong>0</strong> </li>
-        <li class="summary pb25"><span class="pos">0</span> <span class="neg">0</span> </li>
+        <li class="pb25 novStep">Steps: <strong>24331</strong> </li>
+        <li class="pb25 novMile ">Miles: <strong>10.66</strong> </li>
+        <li class="pb25 novHeart">HeartRate: <strong>59</strong> </li>
+        <li class="pb25 novCalorie">Calories: <strong>16290</strong> </li>
+        <li class="pb25 ex">Exercise: <strong>1</strong> </li>
+        <li class="summary pb25"><span class="pos">4</span> <span class="neg">0</span> </li>
       </ul>
     </div>
     <!-- Dec 2022 -->
