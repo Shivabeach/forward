@@ -13,11 +13,11 @@ const isItTrue = document.getElementById('isItTrue');
 const locate = document.getElementById('location');
 const removal = document.getElementById('removal');
 const display = document.querySelector('.displayArray');
-// const make = document.querySelector('.make');
+const make = document.querySelector('.make');
 const take = document.querySelector('.take');
 const today = document.getElementById('today');
 
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// fetch('https://jsonplaceholder.typicode.com/todos/4')
 // 	.then((response) => response.json())
 // 	.then((json) => console.log(json));
 
