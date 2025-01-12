@@ -104,7 +104,7 @@ tags.forEach((tag) => {
 const tagg = document.querySelectorAll('.tags');
 tagg.forEach((tag1) => {
 	if (tag1.textContent === 'Positive') {
-		tag1.style.backgroundColor = '#ffff00';
+		tag1.style.backgroundColor = '#00ff00';
 		tag1.style.color = '#000';
 	} else {
 		tag1.style.backgroundColor = '#ff0000';
