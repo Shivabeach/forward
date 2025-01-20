@@ -90,7 +90,8 @@
     </div>
     <div id="named4" class="names4"><span>named 4</span>
        <audio controls>
-        <source src="C:\wamp64\www\forward\application\views\pages\Sukiyaki.ogg" type="audio/mpeg">
+        <source src="C:\wamp64\www\forward\application\views\pages\Sukiyaki.ogg" type="audio/ogg">
+        <source src="C:\wamp64\www\forward\application\views\pages\Sukiyaki.mp3" type="audio/mpeg">
         <p>Your browser does not support the audio element.</p>
       </audio>
       <p>Sukyaki</p>
