@@ -25,7 +25,7 @@
   "editor.formatOnPaste": true,
   "eslint.format.enable": true,
   "[javascript]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "html.format.indentInnerHtml": true,
   "editor.minimap.enabled": false,

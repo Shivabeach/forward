@@ -13,8 +13,8 @@ const calculated = document.querySelector('.calculated');
 const timers = document.getElementById('timers');
 const gridpage = document.getElementById('grid-page');
 const box = document.querySelectorAll('.box');
-// const gridly = document.getElementById('gridly');
-// const dogs = document.querySelector('.dogs');
+//const gridly = document.getElementById('gridly');
+//const dogs = document.querySelector('.dogs');
 const age = document.querySelector('.age');
 const name5 = document.getElementById('named3');
 const colorDisplay = document.getElementById('colorDisplay');
@@ -23,9 +23,9 @@ const newArr = document.getElementById('newArr');
 const convertedMiles = document.getElementById('convertedMiles');
 const topper = document.querySelector('.top');
 const milesToKilo = document.getElementById('milesToKilo');
-const conv = document.getElementById('conv');
+//const conv = document.getElementById('conv');
 const showMe = document.getElementById('showMe');
-const kilos = document.getElementById('kilos');
+//const kilos = document.getElementById('kilos');
 const kiloToMiles = document.getElementById('kiloToMiles');
 const showMiles = document.getElementById('showMiles');
 const topColor = document.querySelector('.topColor');
@@ -40,10 +40,10 @@ const array1 = [1, 1, 3, 3, 4, 1, 6, 5, 7, 6];
 const newArray = array1.filter((num, i) => array1.indexOf(num) === i);
 newArr.innerHTML = newArray;
 
-// const average = (...args) => args.reduce((a, b) => a + b) / args.length;
+//const average = (...args) => args.reduce((a, b) => a + b) / args.length;
 // average(1, 2, 3, 4);
 
-// console.log(months.length);
+//console.log(months.length);
 const date = new Date();
 timers.innerHTML = date.toString();
 
@@ -143,8 +143,9 @@ function convertKToM() {
 	converting = converting.toFixed(2);
 	showMiles.innerHTML = `${converting} Miles`;
 }
+
 /* 0.6213712 */
-gridpage.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	getAge();
 	createColor();
 	displayArr();
@@ -176,3 +177,27 @@ click.addEventListener('click', (e) => {
 // 	const element = array1[i];
 // 	console.log(element);
 // }
+window.addEventListener('DOMContentLoaded', () => {
+	console.log('Loaded');
+});
+// const logs = document.querySelector('.event-log-contents');
+// const reload = document.querySelector('#reload');
+
+// reload.addEventListener('click', () => {
+// 	logs.textContent = '';
+// 	setTimeout(() => {
+// 		window.location.reload(true);
+// 	}, 200);
+// });
+
+// window.addEventListener('load', (event) => {
+// 	logs.textContent += 'load\n';
+// });
+
+// document.addEventListener('readystatechange', (event) => {
+// 	logs.textContent += `readystate: ${document.readyState}\n`;
+// });
+
+// document.addEventListener('DOMContentLoaded', (event) => {
+// 	logs.textContent += 'DOMContentLoaded\n';
+// });

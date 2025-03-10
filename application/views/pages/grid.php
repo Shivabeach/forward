@@ -12,23 +12,6 @@
       <li class="item-8 inline-list fs-3"></li>
     </ul>
   </menu>
-  <!-- <div class="grid-container">
-  	<div class="tuts1">Tuts 1</div>
-  	<div class="tuts2">tuts 2</div>
-  	<div class="tuts3">tuts 3</div>
-  	<div class="tuts4">Tuts 1</div>
-  	<div class="tuts5">tuts 2</div>
-  	<div class="tuts6">tuts 3</div>
-  </div>
-
-  <div class="example">
-	   <div class="example-item1"> Nankang NS-25 UHP All-Season Radial Tire - 255/40R19 100Y - Asymetrical</div>
-	   <div class="example-item2">2</div>
-	   <div class="example-item3">3</div>
-	   <div class="example-item4">4</div>
-	   <div class="example-item4">4</div>
-  </div> -->
-
   <div class="filer">
     <div id="named1" class="names1">
       <ul>
@@ -82,16 +65,18 @@
 
     </div>
     <div id="named3" class="names3 multi">
-      <p id="colorDisplay">Color was here</p>
+      <!-- <p class="event-log-contents"></p>
+      <button id="reload">Reload</button> -->
+      <p id="colorDisplay"></p>
       <p id="showLength"></p>
       <ul id="showMe"></ul>
 
 
     </div>
     <div id="named4" class="names4"><span>named 4</span>
-       <audio controls>
+      <audio controls>
         <source src="C:\wamp64\www\forward\application\views\pages\Sukiyaki.ogg" type="audio/ogg">
-        <source src="C:\wamp64\www\forward\application\views\pages\Sukiyaki.mp3" type="audio/mpeg">
+        <source src="C:\wamp64\www\forward\application\views\pages\Sukiyaki.mp3">
         <p>Your browser does not support the audio element.</p>
       </audio>
       <p>Sukyaki</p>
