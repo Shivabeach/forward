@@ -2,7 +2,7 @@
 
 // 1.609344
 // 1 * 0.6213712 kph to mph
-import { listen, log, months, properCase } from './utils.js';
+// import { listen, log, months, properCase } from './utils.js';
 
 /* for calculations */
 const number1 = document.querySelector('.no1');
@@ -13,8 +13,8 @@ const calculated = document.querySelector('.calculated');
 const timers = document.getElementById('timers');
 const gridpage = document.getElementById('grid-page');
 const box = document.querySelectorAll('.box');
-//const gridly = document.getElementById('gridly');
-//const dogs = document.querySelector('.dogs');
+// const gridly = document.getElementById('gridly');
+// const dogs = document.querySelector('.dogs');
 const age = document.querySelector('.age');
 const name5 = document.getElementById('named3');
 const colorDisplay = document.getElementById('colorDisplay');
@@ -23,9 +23,9 @@ const newArr = document.getElementById('newArr');
 const convertedMiles = document.getElementById('convertedMiles');
 const topper = document.querySelector('.top');
 const milesToKilo = document.getElementById('milesToKilo');
-//const conv = document.getElementById('conv');
+// const conv = document.getElementById('conv');
 const showMe = document.getElementById('showMe');
-//const kilos = document.getElementById('kilos');
+// const kilos = document.getElementById('kilos');
 const kiloToMiles = document.getElementById('kiloToMiles');
 const showMiles = document.getElementById('showMiles');
 const topColor = document.querySelector('.topColor');
@@ -40,10 +40,10 @@ const array1 = [1, 1, 3, 3, 4, 1, 6, 5, 7, 6];
 const newArray = array1.filter((num, i) => array1.indexOf(num) === i);
 newArr.innerHTML = newArray;
 
-//const average = (...args) => args.reduce((a, b) => a + b) / args.length;
+// const average = (...args) => args.reduce((a, b) => a + b) / args.length;
 // average(1, 2, 3, 4);
 
-//console.log(months.length);
+// console.log(months.length);
 const date = new Date();
 timers.innerHTML = date.toString();
 
@@ -52,11 +52,15 @@ timers.innerHTML = date.toString();
  *  @param  {String} boxes) {	if         (gridpage) {		boxes.style.color [description]
  *  @return {[type]}        [description]
  */
-box.forEach((boxes) => {
-	if (gridpage) {
-		boxes.style.color = '#521B29';
-	}
-});
+// Apply a specific color to all elements with the class `.box`
+// if they exist and the `gridpage` element is present in the DOM.
+if (box && box.length > 0) {
+	box.forEach((box) => {
+		if (gridpage) {
+			box.style.color = '#521B29';
+		}
+	});
+}
 
 const getAge = () => {
 	const currentYear = date.getFullYear();

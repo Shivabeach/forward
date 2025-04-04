@@ -42,3 +42,40 @@ addEventListener('DOMContentLoaded', () => {
 	pusher(col);
 	displayArr();
 });
+
+const MIN_TITLE_LENGTH = 6;
+const MIN_CONTENT_LENGTH = 15;
+
+function validateField(field, condition, message) {
+	if (condition) {
+		messages.push(message);
+		field.classList.add('error-border');
+	}
+}
+
+blogger?.addEventListener('click', (e) => {
+	const messages = [];
+	validateField(date, date.value.trim() === '', 'Date cannot be empty');
+	validateField(
+		title,
+		title.value.length <= MIN_TITLE_LENGTH,
+		'Fill out the title'
+	);
+	validateField(
+		content,
+		content.value.length <= MIN_CONTENT_LENGTH,
+		'A total lack of content'
+	);
+	validateField(tags, tags.value.trim() === '', 'Need a Positive or Negative');
+	validateField(
+		prime,
+		prime.value.length <= MIN_TITLE_LENGTH,
+		'Need some guiding words'
+	);
+
+	if (messages.length > 0) {
+		e.preventDefault();
+		error.innerText = messages.join(', ');
+		error.style.display = 'block';
+	}
+});
