@@ -7,7 +7,7 @@ const item4 = document.querySelector('.item-4');
 const item5 = document.querySelector('.item-5');
 const item6 = document.querySelector('.item-6');
 const item7 = document.querySelector('.item-7');
-const item8 = document.querySelector(".item-8")
+const item8 = document.querySelector('.item-8');
 
 const date = document.getElementById('date');
 const title = document.getElementById('title');
@@ -18,7 +18,7 @@ const prime = document.getElementById('primeKeys');
 const error = document.getElementById('error');
 const three = document.getElementById('three');
 const copyr = document.querySelector('.copyr');
-const one = document.getElementById("one")
+const one = document.getElementById('one');
 // const div30 = document.querySelector('.div30');
 // const distance = document.getElementById('distance');
 // const place = document.getElementById('place');
@@ -37,7 +37,6 @@ if (one) {
 	//one.style.color = '#4b0082';
 	one.innerHTML = f.format(today);
 }
-
 
 const myVar = setInterval(myTimer, 1000);
 
@@ -112,38 +111,42 @@ tagg.forEach((tag1) => {
 	}
 });
 // form validation with an array
-if (blogger != null) {
-	blogger.addEventListener('click', (e) => {
-		const messages = [];
-		if (date.value === '' || date.value === null) {
-			messages.push('Date cannot be empty');
-			date.style.border = '3px solid #ff0000';
-		}
-		if (title.value <= 6) {
-			messages.push('Fill out the title');
-			title.style.border = '3px solid #ff0000';
-		}
-		if (content.value <= 15) {
-			messages.push('a total lack of content');
-			content.style.border = '3px solid #ff0000';
-		}
+const MIN_TITLE_LENGTH = 6;
+const MIN_CONTENT_LENGTH = 15;
 
-		if (tags.value === '' || tags.value === null) {
-			messages.push('Need a Positive or Negative');
-			tags.style.border = '3px solid #ff0000';
-		}
-		if (prime.value <= 6) {
-			messages.push('Need some guiding words');
-			prime.style.border = '3px solid #ff0000';
-		}
-
-		// display messages / errors
-		if (messages.length > 0) {
-			e.preventDefault();
-			error.innerText = messages.join(', ');
-		}
-	});
+function validateField(field, condition, message) {
+	if (condition) {
+		messages.push(message);
+		field.classList.add('error-border');
+	}
 }
+
+blogger?.addEventListener('click', (e) => {
+	const messages = [];
+	validateField(date, date.value.trim() === '', 'Date cannot be empty');
+	validateField(
+		title,
+		title.value.length <= MIN_TITLE_LENGTH,
+		'Fill out the title'
+	);
+	validateField(
+		content,
+		content.value.length <= MIN_CONTENT_LENGTH,
+		'A total lack of content'
+	);
+	validateField(tags, tags.value.trim() === '', 'Need a Positive or Negative');
+	validateField(
+		prime,
+		prime.value.length <= MIN_TITLE_LENGTH,
+		'Need some guiding words'
+	);
+
+	if (messages.length > 0) {
+		e.preventDefault();
+		error.innerText = messages.join(', ');
+		error.style.display = 'block';
+	}
+});
 const para = document.createElement('p');
 const textual = 'This is completely about my weight';
 para.append(textual);

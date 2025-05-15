@@ -42,7 +42,10 @@ addEventListener('DOMContentLoaded', () => {
 	pusher(col);
 	displayArr();
 });
-
+/**
+ ** Form validation
+ *todo Find a useful way to use the error message
+ */
 const MIN_TITLE_LENGTH = 6;
 const MIN_CONTENT_LENGTH = 15;
 
