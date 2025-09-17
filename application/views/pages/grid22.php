@@ -14,7 +14,7 @@
     </ul>
   </menu>
   <!-- <header>
-    <h1><?=ucwords($title);?></h1>
+    <h1><?= ucwords($title); ?></h1>
   </header>
   -->
   <div dir="ltr" class="grid22">
@@ -814,9 +814,9 @@
       <h3>December</h3>
     </div>
   </div>
-  <script src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
-  <script type="module" src="<?php echo base_url('assets/js/grid22-dist.js');?>"></script>
-  <script type="module" src="<?php echo base_url('assets/js/grid22Util-dist.js');?>"></script>
+  <script src="<?php echo base_url('assets/js/script-dist.js'); ?>"></script>
+  <script type="module" src="<?php echo base_url('assets/js/grid22-dist.js'); ?>"></script>
+
 </body>
 
 </html>

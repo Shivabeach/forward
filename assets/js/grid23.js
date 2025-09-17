@@ -1,4 +1,6 @@
-import * as mods from './grid22Util.js';
+/** @format */
+
+import * as mods from './grid22Util.mjs';
 /** @format */
 /* Main stats */
 /**
